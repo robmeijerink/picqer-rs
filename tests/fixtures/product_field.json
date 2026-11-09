@@ -1,0 +1,17 @@
+{
+  "idproductfield": 6247,
+  "title": "Priority",
+  "type": "select",
+  "values": [
+    "none",
+    "low",
+    "high"
+  ],
+  "required": true,
+  "visible_picklist": false,
+  "visible_invoice": false,
+  "visible_shippinglist": false,
+  "visible_portal": false,
+  "visible_purchase_order": true,
+  "visible_receipt": false
+}

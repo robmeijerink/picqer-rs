@@ -1,0 +1,121 @@
+[
+  {
+    "idpicklist_batch": 9773319,
+    "idwarehouse": 14153,
+    "idpicklist_batch_preset": 18113,
+    "picklist_batchid": 5,
+    "title": "Singles batch",
+    "display_title": "Singles batch",
+    "type": "singles",
+    "status": "completed",
+    "assigned_to": {
+      "iduser": 1,
+      "full_name": "Alex Example",
+      "username": "alex"
+    },
+    "completed_by": {
+      "iduser": 1,
+      "full_name": "Alex Example",
+      "username": "alex"
+    },
+    "total_products": 0,
+    "total_picklists": 0,
+    "comment_count": 0,
+    "completed_at": "2026-11-09 19:14:19",
+    "created_at": "2026-11-09 19:14:18",
+    "updated_at": "2026-11-09 19:14:19",
+    "idfulfilment_customer": null
+  },
+  {
+    "idpicklist_batch": 9773308,
+    "idwarehouse": 14153,
+    "idpicklist_batch_preset": null,
+    "picklist_batchid": 4,
+    "title": null,
+    "display_title": "09-11-2026",
+    "type": "singles",
+    "status": "completed",
+    "assigned_to": null,
+    "completed_by": {
+      "iduser": 1,
+      "full_name": "Alex Example",
+      "username": "alex"
+    },
+    "total_products": 0,
+    "total_picklists": 0,
+    "comment_count": 0,
+    "completed_at": "2026-11-09 19:12:36",
+    "created_at": "2026-11-09 19:12:36",
+    "updated_at": "2026-11-09 19:12:36",
+    "idfulfilment_customer": null
+  },
+  {
+    "idpicklist_batch": 9773303,
+    "idwarehouse": 14153,
+    "idpicklist_batch_preset": null,
+    "picklist_batchid": 3,
+    "title": null,
+    "display_title": "09-11-2026",
+    "type": "singles",
+    "status": "completed",
+    "assigned_to": null,
+    "completed_by": {
+      "iduser": 1,
+      "full_name": "Alex Example",
+      "username": "alex"
+    },
+    "total_products": 0,
+    "total_picklists": 0,
+    "comment_count": 0,
+    "completed_at": "2026-11-09 19:12:20",
+    "created_at": "2026-11-09 19:11:47",
+    "updated_at": "2026-11-09 19:12:20",
+    "idfulfilment_customer": null
+  },
+  {
+    "idpicklist_batch": 9772360,
+    "idwarehouse": 14153,
+    "idpicklist_batch_preset": 18113,
+    "picklist_batchid": 2,
+    "title": "Singles batch",
+    "display_title": "Singles batch",
+    "type": "singles",
+    "status": "open",
+    "assigned_to": {
+      "iduser": 1,
+      "full_name": "Alex Example",
+      "username": "alex"
+    },
+    "completed_by": null,
+    "total_products": 31,
+    "total_picklists": 25,
+    "comment_count": 0,
+    "completed_at": null,
+    "created_at": "2026-11-09 16:51:42",
+    "updated_at": "2026-11-09 16:51:42",
+    "idfulfilment_customer": null
+  },
+  {
+    "idpicklist_batch": 9772358,
+    "idwarehouse": 14153,
+    "idpicklist_batch_preset": 18112,
+    "picklist_batchid": 1,
+    "title": "Normal batch",
+    "display_title": "Normal batch",
+    "type": "normal",
+    "status": "open",
+    "assigned_to": {
+      "iduser": 1,
+      "full_name": "Alex Example",
+      "username": "alex"
+    },
+    "completed_by": null,
+    "total_products": 148,
+    "total_picklists": 25,
+    "comment_count": 0,
+    "completed_at": null,
+    "created_at": "2026-11-09 16:51:27",
+    "updated_at": "2026-11-09 16:51:27",
+    "idfulfilment_customer": null
+  }
+]

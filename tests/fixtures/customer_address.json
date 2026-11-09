@@ -1,0 +1,14 @@
+{
+  "idcustomer_address": 169839491,
+  "name": "Example Trading B.V.",
+  "contactname": null,
+  "address": "Voorbeeldstraat 1",
+  "address2": "Unit 4",
+  "zipcode": "1234 AB",
+  "city": "Amsterdam",
+  "region": "Noord-Holland",
+  "country": "NL",
+  "full_address": "Example Trading B.V.\nVoorbeeldstraat 1\nUnit 4\n1234 AB Amsterdam\nNederland",
+  "defaultinvoice": true,
+  "defaultdelivery": true
+}

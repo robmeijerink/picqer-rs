@@ -1,0 +1,100 @@
+{
+  "title": "Webshop Orders",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/webshoporders"
+    },
+    {
+      "method": "GET",
+      "path": "/webshoporders/{idcompany_webshop_order}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idcompany_webshop_order",
+          "integer",
+          "generated"
+        ],
+        [
+          "idcompany_webshop",
+          "integer",
+          "required"
+        ],
+        [
+          "idorder",
+          "integer",
+          "optional"
+        ],
+        [
+          "foreign_id",
+          "string",
+          "required"
+        ],
+        [
+          "foreign_number",
+          "string",
+          "optional"
+        ],
+        [
+          "foreign_status",
+          "string",
+          "optional"
+        ],
+        [
+          "status",
+          "string",
+          "required"
+        ],
+        [
+          "reason",
+          "string",
+          "optional"
+        ],
+        [
+          "ordered",
+          "datetime",
+          "required"
+        ],
+        [
+          "created",
+          "datetime",
+          "required"
+        ],
+        [
+          "updated",
+          "datetime",
+          "required"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "foreign_id"
+        ],
+        [
+          "foreign_number"
+        ],
+        [
+          "idorder"
+        ],
+        [
+          "idcompany_webshop"
+        ]
+      ]
+    }
+  ]
+}

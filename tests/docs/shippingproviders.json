@@ -1,0 +1,48 @@
+{
+  "title": "Shipping providers",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/shippingproviders"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idshippingprovider",
+          "integer"
+        ],
+        [
+          "name",
+          "string"
+        ],
+        [
+          "provider",
+          "string"
+        ],
+        [
+          "active",
+          "boolean"
+        ],
+        [
+          "profiles",
+          "array"
+        ],
+        [
+          "profiles.idshippingprovider_profile",
+          "integer"
+        ],
+        [
+          "profiles.name",
+          "string"
+        ]
+      ]
+    }
+  ]
+}

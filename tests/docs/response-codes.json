@@ -1,0 +1,183 @@
+{
+  "title": "Response and error codes",
+  "endpoints": [],
+  "tables": [
+    {
+      "heading": "Errors",
+      "columns": [
+        "code",
+        "reason"
+      ],
+      "rows": [
+        [
+          "400 Bad Request",
+          "Data in JSON body is not correctly structured or required arguments are missing"
+        ],
+        [
+          "401 Unauthorized",
+          "Login credentials are incorrect or account has no access to this function"
+        ],
+        [
+          "403 Forbidden",
+          "No access to this object or no rights to this feature"
+        ],
+        [
+          "404 Not Found",
+          "Object could not be found"
+        ],
+        [
+          "422 Unprocessable Entity",
+          "Validation failed. For product location updates , field messages are returned in the top-level errors object."
+        ],
+        [
+          "429 Too Many Requests",
+          "Rate limit reached"
+        ],
+        [
+          "500 Internal Server Error",
+          "Picqer is mistaken"
+        ]
+      ]
+    },
+    {
+      "heading": "Picqer error codes",
+      "columns": [
+        "code"
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "5"
+        ],
+        [
+          "6"
+        ],
+        [
+          "7"
+        ],
+        [
+          "8"
+        ],
+        [
+          "9"
+        ],
+        [
+          "10"
+        ],
+        [
+          "12"
+        ],
+        [
+          "13"
+        ],
+        [
+          "14"
+        ],
+        [
+          "15"
+        ],
+        [
+          "16"
+        ],
+        [
+          "17"
+        ],
+        [
+          "18"
+        ],
+        [
+          "19"
+        ],
+        [
+          "20"
+        ],
+        [
+          "21"
+        ],
+        [
+          "22"
+        ],
+        [
+          "23"
+        ],
+        [
+          "24"
+        ],
+        [
+          "25"
+        ],
+        [
+          "26"
+        ],
+        [
+          "27"
+        ],
+        [
+          "28"
+        ],
+        [
+          "29"
+        ],
+        [
+          "30"
+        ],
+        [
+          "31"
+        ],
+        [
+          "32"
+        ],
+        [
+          "33"
+        ],
+        [
+          "34"
+        ],
+        [
+          "35"
+        ],
+        [
+          "36"
+        ],
+        [
+          "37"
+        ],
+        [
+          "38"
+        ],
+        [
+          "39"
+        ],
+        [
+          "40"
+        ],
+        [
+          "41"
+        ],
+        [
+          "42"
+        ],
+        [
+          "43"
+        ],
+        [
+          "44"
+        ],
+        [
+          "45"
+        ],
+        [
+          "46"
+        ],
+        [
+          "47"
+        ],
+        [
+          "48"
+        ]
+      ]
+    }
+  ]
+}

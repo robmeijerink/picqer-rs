@@ -1,0 +1,130 @@
+{
+  "title": "Locations",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/locations"
+    },
+    {
+      "method": "GET",
+      "path": "/locations/{idlocation}"
+    },
+    {
+      "method": "GET",
+      "path": "/locations/{idlocation}"
+    },
+    {
+      "method": "POST",
+      "path": "/locations"
+    },
+    {
+      "method": "POST",
+      "path": "/locations"
+    },
+    {
+      "method": "PUT",
+      "path": "/locations/{idlocation}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/locations/{idlocation}"
+    },
+    {
+      "method": "GET",
+      "path": "/locations/{idlocation}/products"
+    },
+    {
+      "method": "GET",
+      "path": "/locations/{idlocation}/products"
+    },
+    {
+      "method": "PUT",
+      "path": "/locations/{idlocation}/products/{idproduct}/intent"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idlocation",
+          "integer",
+          "generated"
+        ],
+        [
+          "idwarehouse",
+          "integer",
+          "required"
+        ],
+        [
+          "type",
+          "string",
+          "optional"
+        ],
+        [
+          "idlocation_type*",
+          "integer",
+          "optional"
+        ],
+        [
+          "parent_idlocation*",
+          "integer",
+          "optional"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "remarks",
+          "string",
+          "optional"
+        ],
+        [
+          "unlink_on_empty*",
+          "boolean",
+          "optional"
+        ],
+        [
+          "is_bulk_location*",
+          "boolean",
+          "optional"
+        ],
+        [
+          "is_exclusive_location*",
+          "boolean",
+          "optional"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "type"
+        ],
+        [
+          "idwarehouse"
+        ],
+        [
+          "name"
+        ],
+        [
+          "idlocation_type*"
+        ],
+        [
+          "only_available*"
+        ]
+      ]
+    }
+  ]
+}

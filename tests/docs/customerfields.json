@@ -1,0 +1,44 @@
+{
+  "title": "Customerfields",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/customerfields"
+    },
+    {
+      "method": "GET",
+      "path": "/customerfields/{idcustomerfield}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idcustomerfield",
+          "integer"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "type",
+          "text"
+        ],
+        [
+          "values",
+          "array"
+        ],
+        [
+          "required",
+          "boolean"
+        ]
+      ]
+    }
+  ]
+}

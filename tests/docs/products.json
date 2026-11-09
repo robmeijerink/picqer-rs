@@ -1,0 +1,319 @@
+{
+  "title": "Products",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/products"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}"
+    },
+    {
+      "method": "POST",
+      "path": "/products"
+    },
+    {
+      "method": "PUT",
+      "path": "/products/{idproduct}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/products/{idproduct}/pricelists/{idpricelist}"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/warehouses"
+    },
+    {
+      "method": "PUT",
+      "path": "/products/{idproduct}/warehouses/{idwarehouse}"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/images"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/images"
+    },
+    {
+      "method": "DELETE",
+      "path": "/products/{idproduct}/images/{idproduct_image}"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/locations"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/locations"
+    },
+    {
+      "method": "PUT",
+      "path": "/products/{idproduct}/locations/{idlocation}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/products/{idproduct}/locations/{idlocation}"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/tags"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/tags"
+    },
+    {
+      "method": "DELETE",
+      "path": "/products/{idproduct}/tags/{idtag}"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/pricehistory"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/fixedstockpricehistory"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/expected"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idproduct",
+          "integer",
+          "generated"
+        ],
+        [
+          "idvatgroup",
+          "integer",
+          "required"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "price",
+          "float",
+          "required"
+        ],
+        [
+          "fixedstockprice",
+          "float",
+          "optional"
+        ],
+        [
+          "idsupplier",
+          "integer",
+          "optional"
+        ],
+        [
+          "productcode",
+          "string",
+          "required"
+        ],
+        [
+          "productcode_supplier",
+          "string",
+          "optional"
+        ],
+        [
+          "deliverytime",
+          "integer",
+          "optional"
+        ],
+        [
+          "description",
+          "string",
+          "optional"
+        ],
+        [
+          "barcode",
+          "string",
+          "optional"
+        ],
+        [
+          "type",
+          "string",
+          "optional"
+        ],
+        [
+          "unlimitedstock",
+          "boolean",
+          "optional"
+        ],
+        [
+          "weight",
+          "integer",
+          "optional"
+        ],
+        [
+          "length",
+          "integer",
+          "optional"
+        ],
+        [
+          "width",
+          "integer",
+          "optional"
+        ],
+        [
+          "height",
+          "integer",
+          "optional"
+        ],
+        [
+          "minimum_purchase_quantity",
+          "integer",
+          "optional"
+        ],
+        [
+          "purchase_in_quantities_of",
+          "integer",
+          "optional"
+        ],
+        [
+          "hs_code",
+          "string",
+          "optional"
+        ],
+        [
+          "country_of_origin",
+          "string",
+          "optional"
+        ],
+        [
+          "mid_code",
+          "string",
+          "optional"
+        ],
+        [
+          "active",
+          "boolean",
+          "optional"
+        ],
+        [
+          "track_lot_numbers",
+          "boolean",
+          "optional"
+        ],
+        [
+          "track_expiration_dates",
+          "boolean",
+          "optional"
+        ],
+        [
+          "idfulfilment_customer",
+          "integer",
+          "optional"
+        ],
+        [
+          "analysis_pick_amount_per_day",
+          "float",
+          "generated"
+        ],
+        [
+          "analysis_abc_classification",
+          "string",
+          "optional|generated"
+        ],
+        [
+          "pricelists",
+          "array",
+          "optional"
+        ],
+        [
+          "pricelists.idpricelist",
+          "integer",
+          "required"
+        ],
+        [
+          "pricelists.price",
+          "float",
+          "required"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "inactive"
+        ],
+        [
+          "tag"
+        ],
+        [
+          "type"
+        ],
+        [
+          "productcode"
+        ],
+        [
+          "idsupplier"
+        ],
+        [
+          "idproducts"
+        ],
+        [
+          "search"
+        ],
+        [
+          "idfulfilment_customer"
+        ]
+      ]
+    },
+    {
+      "heading": "Location Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idlocation",
+          "integer",
+          "required"
+        ],
+        [
+          "note",
+          "string",
+          "optional"
+        ],
+        [
+          "is_preferred",
+          "boolean",
+          "optional"
+        ],
+        [
+          "lot_number",
+          "string",
+          "optional (PUT only)"
+        ],
+        [
+          "expiration_date",
+          "string",
+          "optional (PUT only)"
+        ]
+      ]
+    }
+  ]
+}

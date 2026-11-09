@@ -1,0 +1,413 @@
+{
+  "title": "Orders",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/orders"
+    },
+    {
+      "method": "GET",
+      "path": "/orders/{idorder}"
+    },
+    {
+      "method": "POST",
+      "path": "/orders"
+    },
+    {
+      "method": "POST",
+      "path": "/orders"
+    },
+    {
+      "method": "PUT",
+      "path": "/orders/{idorder}"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/process"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/pause"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/resume"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/change-to-concept"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/reopen"
+    },
+    {
+      "method": "DELETE",
+      "path": "/orders/{idorder}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/orders/{idorder}?force=true"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/undo-cancellation"
+    },
+    {
+      "method": "GET",
+      "path": "/orders/{idorder}/productstatus"
+    },
+    {
+      "method": "GET",
+      "path": "/orders/{idorder}/notes"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/notes"
+    },
+    {
+      "method": "GET",
+      "path": "/orders/{idorder}/tags"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/tags"
+    },
+    {
+      "method": "DELETE",
+      "path": "/orders/{idorder}/tags/{idtag}"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/allocate"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/deallocate"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/prioritise"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/process-backorders"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/anonymize"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/products"
+    },
+    {
+      "method": "PUT",
+      "path": "/orders/{idorder}/orderfields/{idorderfield}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idorder",
+          "integer",
+          "generated"
+        ],
+        [
+          "idcustomer",
+          "integer",
+          "optional"
+        ],
+        [
+          "idtemplate",
+          "integer",
+          "optional"
+        ],
+        [
+          "idshippingprovider_profile",
+          "integer",
+          "optional"
+        ],
+        [
+          "orderid",
+          "integer",
+          "generated"
+        ],
+        [
+          "deliveryname",
+          "string",
+          "optional*"
+        ],
+        [
+          "deliverycontactname",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryaddress2",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryzipcode",
+          "string",
+          "optional"
+        ],
+        [
+          "deliverycity",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryregion",
+          "string",
+          "optional"
+        ],
+        [
+          "deliverycountry",
+          "string",
+          "optional*"
+        ],
+        [
+          "full_delivery_address",
+          "string",
+          "optional"
+        ],
+        [
+          "invoicename",
+          "string",
+          "optional*"
+        ],
+        [
+          "invoicecontactname",
+          "string",
+          "optional"
+        ],
+        [
+          "invoiceaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "invoiceaddress2",
+          "string",
+          "optional"
+        ],
+        [
+          "invoicezipcode",
+          "string",
+          "optional"
+        ],
+        [
+          "invoicecity",
+          "string",
+          "optional"
+        ],
+        [
+          "invoiceregion",
+          "string",
+          "optional"
+        ],
+        [
+          "invoicecountry",
+          "string",
+          "optional*"
+        ],
+        [
+          "full_invoice_address",
+          "string",
+          "optional"
+        ],
+        [
+          "telephone",
+          "string",
+          "optional"
+        ],
+        [
+          "emailaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "reference",
+          "string",
+          "optional"
+        ],
+        [
+          "customer_remarks",
+          "string",
+          "optional"
+        ],
+        [
+          "partialdelivery",
+          "boolean",
+          "optional"
+        ],
+        [
+          "discount",
+          "float",
+          "optional"
+        ],
+        [
+          "invoiced",
+          "boolean",
+          "optional"
+        ],
+        [
+          "status",
+          "string",
+          "generated"
+        ],
+        [
+          "paused_reason",
+          "string",
+          "optional"
+        ],
+        [
+          "via_portal",
+          "boolean",
+          "generated"
+        ],
+        [
+          "idfulfilment_customer",
+          "integer",
+          "optional"
+        ],
+        [
+          "warehouses",
+          "array",
+          "optional"
+        ],
+        [
+          "tags",
+          "array",
+          "optional"
+        ],
+        [
+          "pickup_point_data",
+          "array",
+          "optional"
+        ],
+        [
+          "preferred_delivery_date",
+          "date",
+          "optional"
+        ],
+        [
+          "language",
+          "string",
+          "optional"
+        ],
+        [
+          "products",
+          "array",
+          "required"
+        ],
+        [
+          "products.idproduct",
+          "integer",
+          "required"
+        ],
+        [
+          "products.amount",
+          "integer",
+          "required"
+        ],
+        [
+          "products.productcode",
+          "varchar",
+          "optional"
+        ],
+        [
+          "products.name",
+          "varchar",
+          "optional"
+        ],
+        [
+          "products.remarks",
+          "varchar",
+          "optional"
+        ],
+        [
+          "products.price",
+          "float",
+          "optional"
+        ],
+        [
+          "products.idvatgroup",
+          "integer",
+          "optional"
+        ],
+        [
+          "pricelists",
+          "array",
+          "optional"
+        ],
+        [
+          "picklists",
+          "array",
+          "optional"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "search"
+        ],
+        [
+          "sinceid"
+        ],
+        [
+          "beforeid"
+        ],
+        [
+          "sincedate"
+        ],
+        [
+          "untildate"
+        ],
+        [
+          "orderid"
+        ],
+        [
+          "status"
+        ],
+        [
+          "reference"
+        ],
+        [
+          "emailaddress"
+        ],
+        [
+          "idcustomer"
+        ],
+        [
+          "idwarehouse"
+        ],
+        [
+          "idfulfilment_customer"
+        ],
+        [
+          "tag"
+        ]
+      ]
+    }
+  ]
+}

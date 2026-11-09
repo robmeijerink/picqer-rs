@@ -1,0 +1,17 @@
+{
+  "idlocation": 12816667,
+  "idwarehouse": 14153,
+  "parent_idlocation": 12816666,
+  "name": "A.1",
+  "remarks": null,
+  "unlink_on_empty": false,
+  "location_type": {
+    "idlocation_type": 1,
+    "name": "Standaard",
+    "default": true,
+    "color": "#0000f0"
+  },
+  "is_bulk_location": false,
+  "is_exclusive_location": false,
+  "type": "location"
+}

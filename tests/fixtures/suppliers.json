@@ -1,0 +1,32 @@
+[
+  {
+    "idsupplier": 229481,
+    "name": "Example Supplier 1",
+    "contactname": null,
+    "address": "Voorbeeldstraat 1",
+    "address2": null,
+    "zipcode": "1001AA",
+    "city": "Voorbeeldstad",
+    "region": null,
+    "country": "NL",
+    "telephone": null,
+    "emailaddress": null,
+    "remarks": null,
+    "language": "nl"
+  },
+  {
+    "idsupplier": 229482,
+    "name": "Example Supplier 2",
+    "contactname": null,
+    "address": "Voorbeeldstraat 2",
+    "address2": null,
+    "zipcode": "1002AA",
+    "city": "Voorbeeldstad",
+    "region": null,
+    "country": "NL",
+    "telephone": null,
+    "emailaddress": null,
+    "remarks": null,
+    "language": "nl"
+  }
+]

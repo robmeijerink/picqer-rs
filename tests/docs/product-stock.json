@@ -1,0 +1,141 @@
+{
+  "title": "Product stock",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/stock"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/stock/{idwarehouse}"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/stock/{idwarehouse}"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/stock/{idwarehouse}"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/move-stock"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/move-stock"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/move-stock"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/move-stock"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Get stock in single warehouse",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "locations.lot_number",
+          "string|null"
+        ],
+        [
+          "locations.expiration_date",
+          "date|null"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idlocation",
+          "integer",
+          "optional, but recommended"
+        ],
+        [
+          "change",
+          "integer",
+          "required if `amount` not provided"
+        ],
+        [
+          "amount",
+          "integer",
+          "required if `change` not provided"
+        ],
+        [
+          "reason",
+          "string",
+          "required"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "amount",
+          "integer",
+          "required"
+        ],
+        [
+          "move_claims_of_idpicklist",
+          "integer",
+          "optional"
+        ],
+        [
+          "from",
+          "object",
+          "required"
+        ],
+        [
+          "from.idlocation",
+          "integer/null",
+          "required"
+        ],
+        [
+          "from.idwarehouse",
+          "integer",
+          "required when `from.idlocation` is `null`"
+        ],
+        [
+          "to",
+          "object",
+          "required"
+        ],
+        [
+          "to.idlocation",
+          "integer/null",
+          "required"
+        ],
+        [
+          "to.idwarehouse",
+          "integer",
+          "required when `to.idlocation` is `null`"
+        ],
+        [
+          "reason",
+          "string",
+          "required when moving between warehouses"
+        ]
+      ]
+    }
+  ]
+}

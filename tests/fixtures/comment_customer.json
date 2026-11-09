@@ -1,0 +1,24 @@
+{
+  "idcomment": 21259287,
+  "body": "picqer-rs probe on customer",
+  "author_type": "user",
+  "author": {
+    "iduser": 43968,
+    "username": "alice",
+    "full_name": "Alice Example",
+    "image_url": "https://example.picqer.com/api/v1/users/43968/avatar"
+  },
+  "source_type": "customer",
+  "source": {
+    "idcustomer": 146465613,
+    "customerid": null,
+    "name": "Example Customer 1"
+  },
+  "mentions": [],
+  "show_at_related": false,
+  "reactions": [],
+  "images": [],
+  "is_visible_fulfilment": false,
+  "created_at": "2026-11-09 15:10:20",
+  "updated_at": "2026-11-09 15:10:20"
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Webhook Examples",
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    }
+  ],
+  "tables": []
+}

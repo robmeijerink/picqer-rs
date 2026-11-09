@@ -1,0 +1,475 @@
+{
+  "pages": {
+    "backorders": {
+      "covered": [
+        "DELETE /backorders/{idbackorder}",
+        "GET /backorders",
+        "GET /backorders/{idbackorder}",
+        "GET /orders/{idorder}/backorders",
+        "POST /backorders/process"
+      ],
+      "not_covered": []
+    },
+    "comments": {
+      "covered": [
+        "DELETE /comments/{idcomment}",
+        "GET /comments",
+        "GET /comments/{idcomment}",
+        "GET /customers/{idcustomer}/comments",
+        "GET /orders/{idorder}/comments",
+        "GET /picklists/batches/{idpicklist_batch}/comments",
+        "GET /picklists/{idpicklist}/comments",
+        "GET /products/{idproduct}/comments",
+        "GET /purchaseorders/{idpurchaseorder}/comments",
+        "GET /receipts/{idreceipt}/comments",
+        "GET /returns/{idreturn}/comments",
+        "GET /suppliers/{idsupplier}/comments",
+        "POST /customers/{idcustomer}/comments",
+        "POST /orders/{idorder}/comments",
+        "POST /picklists/batches/{idpicklist_batch}/comments",
+        "POST /picklists/{idpicklist}/comments",
+        "POST /products/{idproduct}/comments",
+        "POST /purchaseorders/{idpurchaseorder}/comments",
+        "POST /receipts/{idreceipt}/comments",
+        "POST /returns/{idreturn}/comments",
+        "POST /suppliers/{idsupplier}/comments"
+      ],
+      "not_covered": []
+    },
+    "custom-shippingmethod-json-push": {
+      "covered": [],
+      "not_covered": [
+        "POST https://your-endpoint-url.com"
+      ]
+    },
+    "customerfields": {
+      "covered": [
+        "GET /customerfields",
+        "GET /customerfields/{idcustomerfield}"
+      ],
+      "not_covered": []
+    },
+    "customers": {
+      "covered": [
+        "DELETE /customers/{idcustomer}",
+        "DELETE /customers/{idcustomer}/addresses/{idcustomer_address}",
+        "DELETE /customers/{idcustomer}/tags/{idtag}",
+        "GET /customers",
+        "GET /customers/{idcustomer}",
+        "GET /customers/{idcustomer}/addresses",
+        "GET /customers/{idcustomer}/tags",
+        "POST /customers",
+        "POST /customers/{idcustomer}/addresses",
+        "POST /customers/{idcustomer}/tags",
+        "PUT /customers/{idcustomer}",
+        "PUT /customers/{idcustomer}/addresses/{idcustomer_address}"
+      ],
+      "not_covered": []
+    },
+    "external-shipping-provider-integrations-technical": {
+      "covered": [],
+      "not_covered": [
+        "GET https://example.com/picqer-integration/config-options",
+        "POST https://example.com/picqer-integration/shipments"
+      ]
+    },
+    "fulfilment-customer-reports": {
+      "covered": [
+        "GET /fulfilment/customers/{idfulfilment_customer}/report"
+      ],
+      "not_covered": []
+    },
+    "fulfilment-customers": {
+      "covered": [
+        "GET /fulfilment/customers",
+        "GET /fulfilment/customers/{id}",
+        "POST /fulfilment/customers",
+        "PUT /fulfilment/customers/{id}"
+      ],
+      "not_covered": []
+    },
+    "introduction": {
+      "covered": [],
+      "not_covered": [
+        "GET /customers?offset=100"
+      ]
+    },
+    "location-stock-history": {
+      "covered": [
+        "GET /location-stock-history",
+        "GET /location-stock-history/{idproduct_location_stock_history}"
+      ],
+      "not_covered": []
+    },
+    "locations": {
+      "covered": [
+        "DELETE /locations/{idlocation}",
+        "GET /locations",
+        "GET /locations/{idlocation}",
+        "GET /locations/{idlocation}/products",
+        "POST /locations",
+        "PUT /locations/{idlocation}",
+        "PUT /locations/{idlocation}/products/{idproduct}/intent"
+      ],
+      "not_covered": []
+    },
+    "locationtypes": {
+      "covered": [
+        "DELETE /location_types/{id}",
+        "GET /location_types",
+        "GET /location_types/{id}",
+        "POST /location_types",
+        "POST /location_types/{id}/default",
+        "PUT /location_types/{id}"
+      ],
+      "not_covered": []
+    },
+    "orderfields": {
+      "covered": [
+        "GET /orderfields",
+        "GET /orderfields/{idorderfield}"
+      ],
+      "not_covered": []
+    },
+    "orders": {
+      "covered": [
+        "DELETE /orders/{idorder}",
+        "DELETE /orders/{idorder}/tags/{idtag}",
+        "DELETE /orders/{idorder}?force=true",
+        "GET /orders",
+        "GET /orders/{idorder}",
+        "GET /orders/{idorder}/productstatus",
+        "GET /orders/{idorder}/tags",
+        "POST /orders",
+        "POST /orders/{idorder}/allocate",
+        "POST /orders/{idorder}/anonymize",
+        "POST /orders/{idorder}/change-to-concept",
+        "POST /orders/{idorder}/deallocate",
+        "POST /orders/{idorder}/pause",
+        "POST /orders/{idorder}/prioritise",
+        "POST /orders/{idorder}/process",
+        "POST /orders/{idorder}/process-backorders",
+        "POST /orders/{idorder}/products",
+        "POST /orders/{idorder}/reopen",
+        "POST /orders/{idorder}/resume",
+        "POST /orders/{idorder}/tags",
+        "POST /orders/{idorder}/undo-cancellation",
+        "PUT /orders/{idorder}",
+        "PUT /orders/{idorder}/orderfields/{idorderfield}"
+      ],
+      "not_covered": [
+        "GET /orders/{idorder}/notes",
+        "POST /orders/{idorder}/notes"
+      ]
+    },
+    "packagings": {
+      "covered": [
+        "GET /packagings",
+        "GET /packagings/{id}",
+        "POST /packagings",
+        "PUT /packagings/{id}"
+      ],
+      "not_covered": []
+    },
+    "packingstations": {
+      "covered": [
+        "GET /packingstations",
+        "GET /packingstations/{id}"
+      ],
+      "not_covered": []
+    },
+    "picking-containers": {
+      "covered": [
+        "DELETE /picking-containers/{idpicking_container}",
+        "GET /picking-containers",
+        "GET /picking-containers/{idpicking_container}",
+        "POST /picking-containers",
+        "POST /picking-containers/{idpicking_container}/link",
+        "PUT /picking-containers/{idpicking_container}"
+      ],
+      "not_covered": []
+    },
+    "picklist-batch-presets": {
+      "covered": [
+        "GET /picklists/batches/presets",
+        "GET /picklists/batches/presets/{idpicklist_batch_preset}"
+      ],
+      "not_covered": []
+    },
+    "picklist-batches": {
+      "covered": [
+        "DELETE /picklists/batches/{idpicklist_batch}/picklists/{idpicklist}",
+        "GET /picklists/batches",
+        "GET /picklists/batches/{idpicklist_batch}",
+        "GET /picklists/batches/{idpicklist_batch}/pdf",
+        "GET /picklists/batches/{idpicklist_batch}/products/{idproduct}/picklists",
+        "POST /picklists/batches",
+        "POST /picklists/batches/{idpicklist_batch}/assign",
+        "POST /picklists/batches/{idpicklist_batch}/picklists"
+      ],
+      "not_covered": []
+    },
+    "picklist-shipments": {
+      "covered": [
+        "GET /picklists/{idpicklist}/shipments",
+        "GET /picklists/{idpicklist}/shippingmethods",
+        "GET /shipments",
+        "GET /shipments/{idshipment}",
+        "POST /picklists/{idpicklist}/shipments?return=shipment"
+      ],
+      "not_covered": []
+    },
+    "picklists": {
+      "covered": [
+        "GET /picklists",
+        "GET /picklists/{idpicklist}",
+        "GET /picklists/{idpicklist}/packaging-advice",
+        "GET /picklists/{idpicklist}/packinglistpdf",
+        "GET /picklists/{idpicklist}/picklistpdf",
+        "POST /picklists/{idpicklist}/assign",
+        "POST /picklists/{idpicklist}/cancel",
+        "POST /picklists/{idpicklist}/cancelproduct",
+        "POST /picklists/{idpicklist}/close",
+        "POST /picklists/{idpicklist}/pause",
+        "POST /picklists/{idpicklist}/pick",
+        "POST /picklists/{idpicklist}/pickall",
+        "POST /picklists/{idpicklist}/resume",
+        "POST /picklists/{idpicklist}/snooze",
+        "POST /picklists/{idpicklist}/split",
+        "POST /picklists/{idpicklist}/unassign",
+        "PUT /picklists/{idpicklist}",
+        "PUT /picklists/{idpicklist}/packaging-advice",
+        "PUT /picklists/{idpicklist}/products/{idpicklist_product}/pick_locations"
+      ],
+      "not_covered": []
+    },
+    "pricelists": {
+      "covered": [
+        "GET /pricelists",
+        "GET /pricelists/{idpricelist}"
+      ],
+      "not_covered": []
+    },
+    "product-compositions": {
+      "covered": [
+        "DELETE /products/{idproduct}/parts/{idproduct_part}",
+        "GET /products/{idproduct}/compositions",
+        "GET /products/{idproduct}/parts",
+        "GET /products/{idproduct}/parts/{idproduct_part}",
+        "POST /products/{idproduct}/parts",
+        "POST /products/{idproduct}/produce",
+        "PUT /products/{idproduct}/parts/{idproduct_part}"
+      ],
+      "not_covered": []
+    },
+    "product-stock": {
+      "covered": [
+        "GET /products/{idproduct}/stock",
+        "GET /products/{idproduct}/stock/{idwarehouse}",
+        "POST /products/{idproduct}/move-stock",
+        "POST /products/{idproduct}/stock/{idwarehouse}"
+      ],
+      "not_covered": []
+    },
+    "productfields": {
+      "covered": [
+        "GET /productfields",
+        "GET /productfields/{idproductfield}"
+      ],
+      "not_covered": []
+    },
+    "products": {
+      "covered": [
+        "DELETE /products/{idproduct}/images/{idproduct_image}",
+        "DELETE /products/{idproduct}/locations/{idlocation}",
+        "DELETE /products/{idproduct}/pricelists/{idpricelist}",
+        "DELETE /products/{idproduct}/tags/{idtag}",
+        "GET /products",
+        "GET /products/{idproduct}",
+        "GET /products/{idproduct}/expected",
+        "GET /products/{idproduct}/fixedstockpricehistory",
+        "GET /products/{idproduct}/images",
+        "GET /products/{idproduct}/locations",
+        "GET /products/{idproduct}/pricehistory",
+        "GET /products/{idproduct}/tags",
+        "GET /products/{idproduct}/warehouses",
+        "POST /products",
+        "POST /products/{idproduct}/images",
+        "POST /products/{idproduct}/locations",
+        "POST /products/{idproduct}/tags",
+        "PUT /products/{idproduct}",
+        "PUT /products/{idproduct}/locations/{idlocation}",
+        "PUT /products/{idproduct}/warehouses/{idwarehouse}"
+      ],
+      "not_covered": []
+    },
+    "purchaseorders": {
+      "covered": [
+        "GET /purchaseorders",
+        "GET /purchaseorders/{idpurchaseorder}",
+        "POST /purchaseorders",
+        "POST /purchaseorders/{idpurchaseorder}/cancel",
+        "POST /purchaseorders/{idpurchaseorder}/close",
+        "POST /purchaseorders/{idpurchaseorder}/mark-as-purchased",
+        "POST /purchaseorders/{idpurchaseorder}/products",
+        "PUT /purchaseorders/{idpurchaseorder}"
+      ],
+      "not_covered": []
+    },
+    "receipts": {
+      "covered": [
+        "DELETE /receipts/{idreceipt}",
+        "GET /receipts",
+        "GET /receipts/{idreceipt}",
+        "GET /receipts/{idreceipt}/expected-products",
+        "GET /receipts/{idreceipt}/expected-products/{idproduct}",
+        "POST /receipts",
+        "POST /receipts/{idreceipt}/products",
+        "POST /receipts/{idreceipt}/products/{idreceipt_product}/revert",
+        "PUT /receipts/{idreceipt}"
+      ],
+      "not_covered": []
+    },
+    "returns": {
+      "covered": [
+        "DELETE /returns/{idreturn}",
+        "GET /return_reasons",
+        "GET /return_statuses",
+        "GET /returns",
+        "GET /returns/{idreturn}",
+        "GET /returns/{idreturn}/logs",
+        "POST /returns",
+        "POST /returns/{idreturn}/logs",
+        "POST /returns/{idreturn}/receive",
+        "POST /returns/{idreturn}/replacement_products",
+        "POST /returns/{idreturn}/returned_products",
+        "PUT /returns/{idreturn}"
+      ],
+      "not_covered": []
+    },
+    "shippingproviders": {
+      "covered": [
+        "GET /shippingproviders"
+      ],
+      "not_covered": []
+    },
+    "stats": {
+      "covered": [
+        "GET /stats",
+        "GET /stats/{key}"
+      ],
+      "not_covered": []
+    },
+    "stockhistory": {
+      "covered": [
+        "GET /stockhistory",
+        "GET /stockhistory/{idproduct_stock_history}"
+      ],
+      "not_covered": []
+    },
+    "suppliers": {
+      "covered": [
+        "GET /suppliers",
+        "GET /suppliers/{idsupplier}",
+        "POST /suppliers",
+        "PUT /suppliers/{idsupplier}"
+      ],
+      "not_covered": []
+    },
+    "tags": {
+      "covered": [
+        "DELETE /tags/{idtag}",
+        "GET /tags",
+        "GET /tags/{idtag}",
+        "POST /tags",
+        "PUT /tags/{idtag}"
+      ],
+      "not_covered": []
+    },
+    "tasks": {
+      "covered": [
+        "DELETE /tasks/{id}",
+        "GET /tasks",
+        "GET /tasks/{id}",
+        "POST /tasks",
+        "POST /tasks/{id}/complete",
+        "POST /tasks/{id}/uncomplete",
+        "PUT /tasks/{id}"
+      ],
+      "not_covered": []
+    },
+    "templates": {
+      "covered": [
+        "GET /templates",
+        "GET /templates/{idtemplate}"
+      ],
+      "not_covered": []
+    },
+    "users": {
+      "covered": [
+        "GET /users",
+        "GET /users/me",
+        "GET /users/{iduser}"
+      ],
+      "not_covered": []
+    },
+    "vatgroups": {
+      "covered": [
+        "GET /vatgroups"
+      ],
+      "not_covered": []
+    },
+    "warehouses": {
+      "covered": [
+        "GET /warehouses",
+        "GET /warehouses/{idwarehouse}",
+        "GET /warehouses/{idwarehouse}/stock"
+      ],
+      "not_covered": []
+    },
+    "webhook-examples": {
+      "covered": [],
+      "not_covered": [
+        "POST http(s)://example.com/your-endpoint"
+      ]
+    },
+    "webhooks": {
+      "covered": [
+        "DELETE /hooks/{idhook}",
+        "GET /hooks",
+        "GET /hooks/{idhook}",
+        "POST /hooks",
+        "POST /hooks/{idhook}/reactivate"
+      ],
+      "not_covered": [
+        "POST http(s)://example.com/your-endpoint"
+      ]
+    },
+    "webshop-orders": {
+      "covered": [
+        "GET /webshoporders",
+        "GET /webshoporders/{idcompany_webshop_order}"
+      ],
+      "not_covered": []
+    }
+  },
+  "not_in_snapshot": [
+    "DELETE /orders/{idorder}/orderfields/{idorderfield}",
+    "DELETE /orders/{idorder}/products/{idorder_product}",
+    "DELETE /purchaseorders/{idpurchaseorder}/products/{idpurchaseorder_product}",
+    "DELETE /returns/{idreturn}/replacement_products/{idreturn_product_replacement}",
+    "DELETE /returns/{idreturn}/returned_products/{idreturn_product}",
+    "GET /orders/{idorder}/orderfields",
+    "GET /orders/{idorder}/products",
+    "GET /purchaseorders/{idpurchaseorder}/products",
+    "GET /returns/{idreturn}/replacement_products",
+    "GET /returns/{idreturn}/returned_products",
+    "GET /vatgroups/{idvatgroup}",
+    "POST /products/{idproduct}/activate",
+    "POST /products/{idproduct}/inactivate",
+    "PUT /orders/{idorder}/products/{idorder_product}",
+    "PUT /purchaseorders/{idpurchaseorder}/products/{idpurchaseorder_product}",
+    "PUT /returns/{idreturn}/replacement_products/{idreturn_product_replacement}",
+    "PUT /returns/{idreturn}/returned_products/{idreturn_product}"
+  ]
+}

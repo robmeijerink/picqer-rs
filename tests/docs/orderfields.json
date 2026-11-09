@@ -1,0 +1,56 @@
+{
+  "title": "Orderfields",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/orderfields"
+    },
+    {
+      "method": "GET",
+      "path": "/orderfields/{idorderfield}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idorderfield",
+          "integer"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "type",
+          "text"
+        ],
+        [
+          "values",
+          "array"
+        ],
+        [
+          "required",
+          "boolean"
+        ],
+        [
+          "visible_picklist",
+          "boolean"
+        ],
+        [
+          "visible_portal",
+          "boolean"
+        ],
+        [
+          "only_accessible_via_api",
+          "boolean"
+        ]
+      ]
+    }
+  ]
+}

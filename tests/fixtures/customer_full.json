@@ -1,0 +1,60 @@
+{
+  "idcustomer": 146476317,
+  "idtemplate": null,
+  "customerid": "EX-1794232710",
+  "name": "Example Trading B.V.",
+  "contactname": "Jane Example",
+  "telephone": "+31 20 123 4567",
+  "emailaddress": "jane@example.com",
+  "discount": 12.5,
+  "vatnumber": "NL123456789B01",
+  "calculatevat": true,
+  "remarks": "Internal remark",
+  "defaultorderremarks": "Leave at the door",
+  "default_order_remarks": "Leave at the door",
+  "auto_split": true,
+  "partialdelivery": true,
+  "language": "en",
+  "idfulfilment_customer": null,
+  "comment_count": 0,
+  "addresses": [
+    {
+      "idcustomer_address": 169839491,
+      "name": "Example Trading B.V.",
+      "contactname": null,
+      "address": "Voorbeeldstraat 1",
+      "address2": "Unit 4",
+      "zipcode": "1234 AB",
+      "city": "Amsterdam",
+      "region": "Noord-Holland",
+      "country": "NL",
+      "full_address": "Example Trading B.V.\nVoorbeeldstraat 1\nUnit 4\n1234 AB Amsterdam\nNederland",
+      "defaultinvoice": true,
+      "defaultdelivery": true
+    },
+    {
+      "idcustomer_address": 169839492,
+      "name": "Warehouse",
+      "contactname": "Jan Magazijn",
+      "address": "Havenweg 9",
+      "address2": null,
+      "zipcode": "3000 AA",
+      "city": "Rotterdam",
+      "region": null,
+      "country": "NL",
+      "full_address": "Warehouse\nJan Magazijn\nHavenweg 9\n3000 AA Rotterdam\nNederland",
+      "defaultinvoice": false,
+      "defaultdelivery": false
+    }
+  ],
+  "customerfields": [],
+  "tags": {
+    "lightspeed": {
+      "idtag": 262297,
+      "title": "lightspeed",
+      "color": "#1dc42e",
+      "inherit": false,
+      "textColor": "#000000"
+    }
+  }
+}

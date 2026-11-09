@@ -1,0 +1,29 @@
+[
+  {
+    "idhook": 70253,
+    "name": "picqer-rs probe http",
+    "event": "webshop_orders.imported",
+    "address": "http://example.com/x",
+    "active": false,
+    "secret": false,
+    "idfulfilment_customer": null
+  },
+  {
+    "idhook": 70254,
+    "name": "picqer-rs probe",
+    "event": "webshop_orders.imported",
+    "address": "https://example.com/picqer-rs-probe",
+    "active": false,
+    "secret": false,
+    "idfulfilment_customer": null
+  },
+  {
+    "idhook": 70255,
+    "name": "picqer-rs live hook secret",
+    "event": "movements.moved",
+    "address": "https://example.com/picqer-rs-live-secret",
+    "active": false,
+    "secret": true,
+    "idfulfilment_customer": null
+  }
+]

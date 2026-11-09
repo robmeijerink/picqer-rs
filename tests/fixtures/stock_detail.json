@@ -1,0 +1,22 @@
+{
+  "idwarehouse": 14153,
+  "stock": 14,
+  "reserved": 6,
+  "reservedbackorders": 0,
+  "reservedpicklists": 6,
+  "reservedallocations": 0,
+  "freestock": 8,
+  "locations": [
+    {
+      "idlocation": 12816878,
+      "idwarehouse": 14153,
+      "name": "A.4.8.3",
+      "stock": 14,
+      "reserved_picklists": 6,
+      "free_stock": 8,
+      "is_bulk_location": false,
+      "lot_number": null,
+      "expiration_date": null
+    }
+  ]
+}

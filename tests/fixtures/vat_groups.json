@@ -1,0 +1,20 @@
+[
+  {
+    "idvatgroup": 29348,
+    "name": "BTW Hoog",
+    "percentage": 21,
+    "standard": false
+  },
+  {
+    "idvatgroup": 29349,
+    "name": "BTW Laag",
+    "percentage": 9,
+    "standard": false
+  },
+  {
+    "idvatgroup": 29350,
+    "name": "Nultarief",
+    "percentage": 0,
+    "standard": false
+  }
+]

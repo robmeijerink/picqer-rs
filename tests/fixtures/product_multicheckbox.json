@@ -1,0 +1,76 @@
+{
+  "idproduct": 52949296,
+  "idvatgroup": 29348,
+  "idsupplier": null,
+  "productcode": "EXAMPLE-1",
+  "name": "Example product",
+  "price": 20,
+  "fixedstockprice": 18,
+  "productcode_supplier": null,
+  "deliverytime": null,
+  "description": null,
+  "barcode": "",
+  "unlimitedstock": false,
+  "assembled": false,
+  "type": "normal",
+  "weight": 0,
+  "length": null,
+  "width": null,
+  "height": null,
+  "minimum_purchase_quantity": 0,
+  "purchase_in_quantities_of": 0,
+  "hs_code": null,
+  "country_of_origin": null,
+  "mid_code": null,
+  "show_on_portal": true,
+  "active": true,
+  "created": "2026-11-09 15:22:06",
+  "updated": "2026-11-09 15:22:06",
+  "idfulfilment_customer": null,
+  "comment_count": 0,
+  "analysis_abc_classification": null,
+  "analysis_pick_amount_per_day": null,
+  "tags": {},
+  "productfields": [
+    {
+      "idproductfield": 6242,
+      "title": "Season",
+      "value": "summer"
+    },
+    {
+      "idproductfield": 6246,
+      "title": "Countries",
+      "value": "netherlands;belgium;luxembourg"
+    },
+    {
+      "idproductfield": 6247,
+      "title": "Priority",
+      "value": "low"
+    }
+  ],
+  "images": [],
+  "stock": [
+    {
+      "idwarehouse": 14153,
+      "stock": 0,
+      "reserved": 0,
+      "reservedbackorders": 0,
+      "reservedpicklists": 0,
+      "reservedallocations": 0,
+      "freestock": 0
+    }
+  ],
+  "pricelists": [],
+  "suppliers": [
+    {
+      "idsupplier": null,
+      "productcode": null,
+      "deliverytime": null,
+      "minimum_purchase_quantity": 0,
+      "purchase_in_quantities_of": 0,
+      "is_default": true
+    }
+  ],
+  "track_lot_numbers": false,
+  "track_expiration_dates": false
+}

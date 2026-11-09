@@ -1,0 +1,36 @@
+[
+  {
+    "idreturn_product_replacement": 650605,
+    "idreturn": 7170814,
+    "idproduct": 52947943,
+    "idpicklist": null,
+    "idbackorder": null,
+    "price": 564.18,
+    "amount": 5,
+    "status": "concept",
+    "changeable": true,
+    "product": {
+      "idproduct": 52947943,
+      "image_url": "https://files.example.com/5e4ac1cd-c348-4dcb-89af-6cde0384baee/thumbnail-36-36-0-0-100.jpg",
+      "productcode": "FK816708",
+      "name": "Honig Watch Tripple"
+    }
+  },
+  {
+    "idreturn_product_replacement": 650606,
+    "idreturn": 7170814,
+    "idproduct": 52947920,
+    "idpicklist": null,
+    "idbackorder": null,
+    "price": 508.78,
+    "amount": 1,
+    "status": "concept",
+    "changeable": true,
+    "product": {
+      "idproduct": 52947920,
+      "image_url": "https://files.example.com/84152d38-17dc-4535-a9ad-cd10e8ed709b/thumbnail-36-36-0-0-100.jpg",
+      "productcode": "EW219805",
+      "name": "Snom  Lounge 30 liters"
+    }
+  }
+]

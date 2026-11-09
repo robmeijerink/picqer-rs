@@ -1,0 +1,23 @@
+[
+  {
+    "idpurchaseorder": 3450512,
+    "idpurchaseorder_product": 56049173,
+    "idwarehouse": 14153,
+    "amount_to_receive": 3,
+    "delivery_date": "2026-11-14"
+  },
+  {
+    "idpurchaseorder": 3450506,
+    "idpurchaseorder_product": 56049048,
+    "idwarehouse": 14153,
+    "amount_to_receive": 6,
+    "delivery_date": "2026-11-17"
+  },
+  {
+    "idpurchaseorder": 3450510,
+    "idpurchaseorder_product": 56049121,
+    "idwarehouse": 14153,
+    "amount_to_receive": 5,
+    "delivery_date": "2026-11-17"
+  }
+]

@@ -1,0 +1,2 @@
+[{"idfulfilment_customer":11014,"name":"Fulfilling Partners","active":true,"can_login":true,"username":"partners","emailaddress":"info@example.com","language":"nl","idtemplate":14879,"preferred_idwarehouse":14153,"last_login_at":"2026-11-02 09:30:00","comment_count":0},
+{"idfulfilment_customer":11015,"name":"Plain","active":true,"can_login":false,"username":null,"emailaddress":null,"language":"en","idtemplate":null,"preferred_idwarehouse":null,"last_login_at":null,"comment_count":0}]

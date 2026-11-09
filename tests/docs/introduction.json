@@ -1,0 +1,10 @@
+{
+  "title": "Picqer API",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/customers?offset=100"
+    }
+  ],
+  "tables": []
+}

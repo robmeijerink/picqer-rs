@@ -1,0 +1,12 @@
+[
+  {
+    "idpicklist_batch_preset": 18112,
+    "name": "Normal batch",
+    "active": true
+  },
+  {
+    "idpicklist_batch_preset": 18113,
+    "name": "Singles batch",
+    "active": true
+  }
+]

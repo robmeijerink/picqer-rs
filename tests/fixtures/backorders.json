@@ -1,0 +1,53 @@
+[
+  {
+    "idbackorder": 502452454,
+    "idorder_product": 742054638,
+    "idorder": 282382018,
+    "idreturn": null,
+    "idproduct": 52947941,
+    "idcustomer": 146465616,
+    "idwarehouse": 14153,
+    "amount": 1,
+    "amountavailable": 0,
+    "amount_available": 0,
+    "priority": 4,
+    "has_parts": false,
+    "part_of_idbackorder": null,
+    "parts_per_parent": null,
+    "created_at": "2026-11-09 12:48:28"
+  },
+  {
+    "idbackorder": 502452451,
+    "idorder_product": 742054642,
+    "idorder": 282382021,
+    "idreturn": null,
+    "idproduct": 52947917,
+    "idcustomer": 146465670,
+    "idwarehouse": 14153,
+    "amount": 2,
+    "amountavailable": 0,
+    "amount_available": 0,
+    "priority": 3,
+    "has_parts": false,
+    "part_of_idbackorder": null,
+    "parts_per_parent": null,
+    "created_at": "2026-11-09 12:48:28"
+  },
+  {
+    "idbackorder": 502452450,
+    "idorder_product": 742054645,
+    "idorder": 282382022,
+    "idreturn": null,
+    "idproduct": 52947917,
+    "idcustomer": 146465651,
+    "idwarehouse": 14153,
+    "amount": 2,
+    "amountavailable": 0,
+    "amount_available": 0,
+    "priority": 2,
+    "has_parts": false,
+    "part_of_idbackorder": null,
+    "parts_per_parent": null,
+    "created_at": "2026-11-09 12:48:28"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "title": "Picklist batches",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/picklists/batches"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/batches/{idpicklist_batch}"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/batches/{idpicklist_batch}/pdf"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/batches"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/batches/{idpicklist_batch}/picklists"
+    },
+    {
+      "method": "DELETE",
+      "path": "/picklists/batches/{idpicklist_batch}/picklists/{idpicklist}"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/batches/{idpicklist_batch}/assign"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/batches/{idpicklist_batch}/products/{idproduct}/picklists"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idpicklist_batch",
+          "integer"
+        ],
+        [
+          "picklist_batchid",
+          "string"
+        ],
+        [
+          "title",
+          "string|null"
+        ],
+        [
+          "display_title",
+          "string"
+        ],
+        [
+          "idwarehouse",
+          "integer"
+        ],
+        [
+          "idpicklist_batch_preset",
+          "integer|null"
+        ],
+        [
+          "type",
+          "string"
+        ],
+        [
+          "status",
+          "string"
+        ],
+        [
+          "assigned_to",
+          "array"
+        ],
+        [
+          "completed_by",
+          "array"
+        ],
+        [
+          "total_products",
+          "integer"
+        ],
+        [
+          "total_picklists",
+          "integer"
+        ],
+        [
+          "completed_at",
+          "datetime"
+        ],
+        [
+          "created_at",
+          "datetime"
+        ],
+        [
+          "updated_at",
+          "datetime"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "idwarehouse"
+        ],
+        [
+          "assigned_to_iduser"
+        ],
+        [
+          "type"
+        ],
+        [
+          "status"
+        ],
+        [
+          "products"
+        ]
+      ]
+    }
+  ]
+}

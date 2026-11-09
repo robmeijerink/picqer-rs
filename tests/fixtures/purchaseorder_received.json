@@ -1,0 +1,50 @@
+{
+  "idpurchaseorder": 3451434,
+  "idsupplier": 229503,
+  "idwarehouse": 14153,
+  "idtemplate": 14879,
+  "purchaseorderid": "PO2026-1025",
+  "supplier_orderid": null,
+  "supplier_name": null,
+  "status": "received",
+  "remarks": "x",
+  "delivery_date": "2030-02-03",
+  "language": "en",
+  "purchased_by_iduser": null,
+  "purchased_at": "2026-11-09 16:19:28",
+  "completed_by_iduser": 43968,
+  "completed_at": "2026-11-09 16:19:29",
+  "created_by_iduser": null,
+  "created": "2026-11-09 16:19:28",
+  "updated": "2026-11-09 16:19:29",
+  "products": [
+    {
+      "idpurchaseorder_product": 56060629,
+      "idproduct": 52947999,
+      "idvatgroup": 29348,
+      "productcode": "AF863248",
+      "productcode_supplier": "NIK-AF863248",
+      "name": "Nikon Replacement Camera Calculator S",
+      "price": 1.5,
+      "amount": 3,
+      "amountreceived": 0,
+      "delivery_date": null,
+      "weight": 711
+    },
+    {
+      "idpurchaseorder_product": 56060630,
+      "idproduct": 52948028,
+      "idvatgroup": 29348,
+      "productcode": "AI229209",
+      "productcode_supplier": "NES-AI229209",
+      "name": "Nestle Wireless Photo 30 liters",
+      "price": 517.06,
+      "amount": 1,
+      "amountreceived": 0,
+      "delivery_date": null,
+      "weight": 2417
+    }
+  ],
+  "idfulfilment_customer": 11012,
+  "comment_count": 0
+}

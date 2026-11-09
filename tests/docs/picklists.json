@@ -1,0 +1,484 @@
+{
+  "title": "Picklists",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/picklists"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/{idpicklist}"
+    },
+    {
+      "method": "PUT",
+      "path": "/picklists/{idpicklist}"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/close"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/pick"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/pickall"
+    },
+    {
+      "method": "PUT",
+      "path": "/picklists/{idpicklist}/products/{idpicklist_product}/pick_locations"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/assign"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/unassign"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/{idpicklist}/packaging-advice"
+    },
+    {
+      "method": "PUT",
+      "path": "/picklists/{idpicklist}/packaging-advice"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/{idpicklist}/picklistpdf"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/{idpicklist}/packinglistpdf"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/snooze"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/pause"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/resume"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/cancelproduct"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/split"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/cancel"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idpicklist",
+          "integer",
+          "generated"
+        ],
+        [
+          "picklistid",
+          "string",
+          "generated"
+        ],
+        [
+          "idcustomer",
+          "integer",
+          "optional"
+        ],
+        [
+          "idorder",
+          "integer",
+          "optional"
+        ],
+        [
+          "idreturn",
+          "integer",
+          "optional"
+        ],
+        [
+          "idwarehouse",
+          "integer",
+          "required"
+        ],
+        [
+          "idtemplate",
+          "integer",
+          "required"
+        ],
+        [
+          "idpicklist_batch",
+          "integer",
+          "optional"
+        ],
+        [
+          "idshippingprovider_profile",
+          "integer",
+          "optional"
+        ],
+        [
+          "deliveryname",
+          "string",
+          "required"
+        ],
+        [
+          "deliverycontact",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryaddress2",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryzipcode",
+          "string",
+          "optional"
+        ],
+        [
+          "deliverycity",
+          "string",
+          "optional"
+        ],
+        [
+          "deliveryregion",
+          "string",
+          "optional"
+        ],
+        [
+          "deliverycountry",
+          "string",
+          "required"
+        ],
+        [
+          "telephone",
+          "string",
+          "optional"
+        ],
+        [
+          "emailaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "reference",
+          "string",
+          "optional"
+        ],
+        [
+          "assigned_to_iduser",
+          "integer",
+          "optional"
+        ],
+        [
+          "invoiced",
+          "boolean",
+          "required"
+        ],
+        [
+          "urgent",
+          "boolean",
+          "required"
+        ],
+        [
+          "preferred_delivery_date",
+          "date",
+          "optional"
+        ],
+        [
+          "status",
+          "string",
+          "required"
+        ],
+        [
+          "paused_reason",
+          "string",
+          "optional"
+        ],
+        [
+          "totalproducts",
+          "integer",
+          "required"
+        ],
+        [
+          "totalpicked",
+          "integer",
+          "required"
+        ],
+        [
+          "weight",
+          "integer",
+          "required"
+        ],
+        [
+          "snoozed_until",
+          "datetime",
+          "optional"
+        ],
+        [
+          "closed_by_iduser",
+          "integer",
+          "optional"
+        ],
+        [
+          "closed_at",
+          "datetime",
+          "optional"
+        ],
+        [
+          "created",
+          "datetime",
+          "required"
+        ],
+        [
+          "updated",
+          "datetime",
+          "required"
+        ],
+        [
+          "idfulfilment_customer",
+          "integer",
+          "optional"
+        ],
+        [
+          "products",
+          "array",
+          "required"
+        ],
+        [
+          "products.idproduct",
+          "integer",
+          "generated"
+        ],
+        [
+          "products.idorder_product",
+          "integer",
+          "optional"
+        ],
+        [
+          "products.idreturn_product_replacement",
+          "integer",
+          "optional"
+        ],
+        [
+          "products.idvatgroup",
+          "integer",
+          "required"
+        ],
+        [
+          "products.productcode",
+          "string",
+          "required"
+        ],
+        [
+          "products.name",
+          "string",
+          "required"
+        ],
+        [
+          "products.remarks",
+          "string",
+          "optional"
+        ],
+        [
+          "products.amount",
+          "integer",
+          "required"
+        ],
+        [
+          "products.amount_picked",
+          "integer",
+          "required"
+        ],
+        [
+          "products.price",
+          "float",
+          "required"
+        ],
+        [
+          "products.weight",
+          "integer",
+          "optional"
+        ],
+        [
+          "products.stock_location",
+          "string",
+          "deprecated"
+        ],
+        [
+          "products.pick_locations",
+          "array",
+          "required"
+        ],
+        [
+          "products.pick_locations.idpicklist_product_location",
+          "integer",
+          "generated"
+        ],
+        [
+          "products.pick_locations.idlocation",
+          "integer|null",
+          "generated"
+        ],
+        [
+          "products.pick_locations.name",
+          "string",
+          "required"
+        ],
+        [
+          "products.pick_locations.amount",
+          "amount",
+          "required"
+        ],
+        [
+          "products.pick_locations.amount_picked",
+          "amount_picked",
+          "required"
+        ],
+        [
+          "products.pick_locations.lot_number",
+          "string|null",
+          "generated"
+        ],
+        [
+          "products.pick_locations.expiration_date",
+          "date|null",
+          "generated"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "sinceid"
+        ],
+        [
+          "beforeid"
+        ],
+        [
+          "sincedate"
+        ],
+        [
+          "untildate"
+        ],
+        [
+          "closed_after"
+        ],
+        [
+          "closed_before"
+        ],
+        [
+          "picklistid"
+        ],
+        [
+          "assigned_to_iduser"
+        ],
+        [
+          "idwarehouse"
+        ],
+        [
+          "status"
+        ],
+        [
+          "idfulfilment_customer"
+        ],
+        [
+          "tag"
+        ]
+      ]
+    },
+    {
+      "heading": "Change pick locations on the picklist",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idlocation",
+          "integer"
+        ],
+        [
+          "amount",
+          "integer"
+        ]
+      ]
+    },
+    {
+      "heading": "Cancel a product from the picklist",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idpicklist_product",
+          "integer"
+        ],
+        [
+          "product",
+          "string"
+        ],
+        [
+          "amount",
+          "integer"
+        ],
+        [
+          "idlocation",
+          "integer"
+        ]
+      ]
+    },
+    {
+      "heading": "Split a picklist",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "products",
+          "array"
+        ],
+        [
+          "products[].idpicklist_product",
+          "integer"
+        ],
+        [
+          "products[].amount",
+          "integer"
+        ],
+        [
+          "products[].idlocation",
+          "integer"
+        ]
+      ]
+    }
+  ]
+}

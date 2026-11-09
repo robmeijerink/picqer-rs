@@ -1,0 +1,276 @@
+{
+  "title": "Returns",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/returns"
+    },
+    {
+      "method": "GET",
+      "path": "/returns/{idreturn}"
+    },
+    {
+      "method": "POST",
+      "path": "/returns"
+    },
+    {
+      "method": "PUT",
+      "path": "/returns/{idreturn}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/returns/{idreturn}"
+    },
+    {
+      "method": "POST",
+      "path": "/returns/{idreturn}/returned_products"
+    },
+    {
+      "method": "POST",
+      "path": "/returns/{idreturn}/replacement_products"
+    },
+    {
+      "method": "GET",
+      "path": "/returns/{idreturn}/logs"
+    },
+    {
+      "method": "POST",
+      "path": "/returns/{idreturn}/logs"
+    },
+    {
+      "method": "POST",
+      "path": "/returns/{idreturn}/receive"
+    },
+    {
+      "method": "GET",
+      "path": "/return_statuses"
+    },
+    {
+      "method": "GET",
+      "path": "/return_reasons"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idreturn",
+          "integer",
+          "generated"
+        ],
+        [
+          "idcustomer",
+          "integer",
+          "optional"
+        ],
+        [
+          "idorder",
+          "integer",
+          "optional"
+        ],
+        [
+          "idreturn_status",
+          "integer",
+          "required"
+        ],
+        [
+          "idtemplate",
+          "integer",
+          "required"
+        ],
+        [
+          "returnid",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "optional"
+        ],
+        [
+          "contactname",
+          "string",
+          "optional"
+        ],
+        [
+          "address",
+          "string",
+          "optional"
+        ],
+        [
+          "address2",
+          "string",
+          "optional"
+        ],
+        [
+          "zipcode",
+          "string",
+          "optional"
+        ],
+        [
+          "city",
+          "string",
+          "optional"
+        ],
+        [
+          "region",
+          "string",
+          "optional"
+        ],
+        [
+          "country",
+          "string",
+          "optional"
+        ],
+        [
+          "telephone",
+          "string",
+          "optional"
+        ],
+        [
+          "emailaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "language",
+          "string",
+          "optional"
+        ],
+        [
+          "reference",
+          "string",
+          "optional"
+        ],
+        [
+          "tracking_code",
+          "string",
+          "optional"
+        ],
+        [
+          "received_at",
+          "datetime",
+          "optional"
+        ],
+        [
+          "completed_by_iduser",
+          "integer",
+          "read-only"
+        ],
+        [
+          "idfulfilment_customer",
+          "integer",
+          "optional"
+        ],
+        [
+          "returned_products",
+          "array",
+          "optional"
+        ],
+        [
+          "returned_products.idreturn_reason",
+          "integer",
+          "required"
+        ],
+        [
+          "returned_products.idproduct",
+          "integer",
+          "required"
+        ],
+        [
+          "returned_products.price",
+          "float",
+          "required"
+        ],
+        [
+          "returned_products.amount",
+          "integer",
+          "required"
+        ],
+        [
+          "replacement_products",
+          "array",
+          "optional"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "search"
+        ],
+        [
+          "status"
+        ],
+        [
+          "emailaddress"
+        ],
+        [
+          "idcustomer"
+        ],
+        [
+          "created_after"
+        ],
+        [
+          "updated_after"
+        ]
+      ]
+    },
+    {
+      "heading": "Add comment or change status",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idreturn_status",
+          "integer",
+          "optional"
+        ],
+        [
+          "message",
+          "string",
+          "optional"
+        ],
+        [
+          "notify_customer",
+          "boolean",
+          "optional, default: false"
+        ]
+      ]
+    },
+    {
+      "heading": "Receive returned products",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "return_products.lot_number",
+          "string",
+          "conditional"
+        ],
+        [
+          "return_products.expiration_date",
+          "date",
+          "conditional"
+        ]
+      ]
+    }
+  ]
+}

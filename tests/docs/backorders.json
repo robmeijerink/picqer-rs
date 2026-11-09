@@ -1,0 +1,138 @@
+{
+  "title": "Backorders",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/backorders"
+    },
+    {
+      "method": "GET",
+      "path": "/backorders/{idbackorder}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/backorders/{idbackorder}"
+    },
+    {
+      "method": "POST",
+      "path": "/backorders/process"
+    },
+    {
+      "method": "GET",
+      "path": "/orders/{idorder}/backorders"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idbackorder",
+          "integer",
+          "generated"
+        ],
+        [
+          "idorder_product",
+          "integer",
+          "generated"
+        ],
+        [
+          "idorder",
+          "integer",
+          "required"
+        ],
+        [
+          "idreturn",
+          "integer",
+          "optional"
+        ],
+        [
+          "idproduct",
+          "integer",
+          "required"
+        ],
+        [
+          "idcustomer",
+          "integer",
+          "required"
+        ],
+        [
+          "idwarehouse",
+          "integer",
+          "required"
+        ],
+        [
+          "amount",
+          "integer",
+          "required"
+        ],
+        [
+          "amount_available",
+          "integer",
+          "required"
+        ],
+        [
+          "priority",
+          "integer",
+          "required"
+        ],
+        [
+          "has_parts",
+          "boolean",
+          "optional"
+        ],
+        [
+          "part_of_idbackorder",
+          "integer",
+          "optional"
+        ],
+        [
+          "created_at",
+          "datetime",
+          "required"
+        ],
+        [
+          "is_purchased",
+          "boolean",
+          "optional"
+        ],
+        [
+          "date_available",
+          "datetime",
+          "read-only"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "idorder"
+        ],
+        [
+          "idproduct"
+        ],
+        [
+          "idcustomer"
+        ],
+        [
+          "sinceid"
+        ],
+        [
+          "sincedate"
+        ],
+        [
+          "idfulfilment_customer"
+        ]
+      ]
+    }
+  ]
+}

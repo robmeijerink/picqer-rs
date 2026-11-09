@@ -1,0 +1,45 @@
+{
+  "idshipment": 194206218,
+  "idpicklist": 198029214,
+  "idorder": 282431557,
+  "idreturn": null,
+  "idshippingprovider": 4,
+  "idcompany_shippingprovider": 15793,
+  "idcompany_shippingprovider_profile": 53795,
+  "provider": "Manual",
+  "providername": "TestManual",
+  "public_providername": "Example",
+  "profile_name": "TestManualProfile",
+  "carrier_key": "postal",
+  "labelurl": "https://files.example.com/a2269221-058a-47ff-833f-33dd9af4cad2/label.pdf",
+  "labelurl_pdf": "https://files.example.com/a2269221-058a-47ff-833f-33dd9af4cad2/label.pdf",
+  "labelurl_zpl": null,
+  "trackingcode": "ABC",
+  "trackingurl": "https://example.com/t/ABC",
+  "tracktraceurl": "https://example.com/t/ABC",
+  "weight": 900,
+  "created_by_iduser": 1,
+  "cancelled": false,
+  "created": "2026-11-09 18:39:35",
+  "updated": "2026-11-09 18:39:35",
+  "idfulfilment_customer": 11012,
+  "idpackaging": 3132,
+  "parcels": [
+    {
+      "idparcel": 180992014,
+      "idpackaging": 3132,
+      "weight": 900,
+      "tracking_code": "ABC",
+      "tracking_url": "https://example.com/t/ABC",
+      "documents": [
+        {
+          "idparcel_document": 274471306,
+          "type": "label",
+          "size": "A6",
+          "format": "pdf",
+          "url": "https://files.example.com/a2269221-058a-47ff-833f-33dd9af4cad2/label.pdf"
+        }
+      ]
+    }
+  ]
+}

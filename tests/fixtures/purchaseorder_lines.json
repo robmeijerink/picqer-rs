@@ -1,0 +1,15 @@
+[
+  {
+    "idpurchaseorder_product": 56060629,
+    "idproduct": 52947999,
+    "idvatgroup": 29348,
+    "productcode": "AF863248",
+    "productcode_supplier": "NIK-AF863248",
+    "name": "Nikon Replacement Camera Calculator S",
+    "price": 1.5,
+    "amount": 3,
+    "amountreceived": 0,
+    "delivery_date": null,
+    "weight": 711
+  }
+]

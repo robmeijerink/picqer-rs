@@ -1,0 +1,27 @@
+[
+  {
+    "idlocation": 12817277,
+    "idwarehouse": 14153,
+    "parent_idlocation": 12817274,
+    "name": "B.6.1.3",
+    "remarks": null,
+    "unlink_on_empty": false,
+    "location_type": {
+      "idlocation_type": 1,
+      "name": "Standaard",
+      "default": true,
+      "color": "#0000f0"
+    },
+    "is_bulk_location": false,
+    "is_exclusive_location": false,
+    "type": "location",
+    "stock_for_product": {
+      "stock": 22,
+      "stock_reserved_picklists": 17
+    },
+    "note": null,
+    "is_preferred": false,
+    "lot_number": null,
+    "expiration_date": null
+  }
+]

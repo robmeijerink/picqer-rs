@@ -1,0 +1,101 @@
+{
+  "title": "Location Types",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/location_types"
+    },
+    {
+      "method": "GET",
+      "path": "/location_types/{id}"
+    },
+    {
+      "method": "POST",
+      "path": "/location_types"
+    },
+    {
+      "method": "PUT",
+      "path": "/location_types/{id}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/location_types/{id}"
+    },
+    {
+      "method": "POST",
+      "path": "/location_types/{id}/default"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idlocation_type",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "default",
+          "boolean",
+          "generated"
+        ],
+        [
+          "color",
+          "string",
+          "required"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "color",
+          "string",
+          "required"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "name",
+          "string",
+          "optional"
+        ],
+        [
+          "color",
+          "string",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

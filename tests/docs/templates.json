@@ -1,0 +1,40 @@
+{
+  "title": "Templates",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/templates"
+    },
+    {
+      "method": "GET",
+      "path": "/templates/{idtemplate}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idtemplate",
+          "integer"
+        ],
+        [
+          "name",
+          "string"
+        ],
+        [
+          "custom_css",
+          "string"
+        ],
+        [
+          "default",
+          "boolean"
+        ]
+      ]
+    }
+  ]
+}

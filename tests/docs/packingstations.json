@@ -1,0 +1,55 @@
+{
+  "title": "Packing stations",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/packingstations"
+    },
+    {
+      "method": "GET",
+      "path": "/packingstations/{id}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idpacking_station",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "printer_packinglists",
+          "Printer",
+          "optional"
+        ],
+        [
+          "printer_shipping_labels",
+          "Printer",
+          "optional"
+        ],
+        [
+          "printer_shipping_documents",
+          "Printer",
+          "optional"
+        ],
+        [
+          "printer_product_labels",
+          "Printer",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

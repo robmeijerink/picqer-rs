@@ -1,0 +1,179 @@
+{
+  "title": "Packagings",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/packagings"
+    },
+    {
+      "method": "GET",
+      "path": "/packagings/{id}"
+    },
+    {
+      "method": "POST",
+      "path": "/packagings"
+    },
+    {
+      "method": "PUT",
+      "path": "/packagings/{id}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idpackaging",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "barcode",
+          "string",
+          "optional"
+        ],
+        [
+          "length",
+          "integer",
+          "optional"
+        ],
+        [
+          "width",
+          "integer",
+          "optional"
+        ],
+        [
+          "height",
+          "integer",
+          "optional"
+        ],
+        [
+          "use_in_auto_advice",
+          "boolean",
+          "optional"
+        ],
+        [
+          "active",
+          "boolean",
+          "required"
+        ],
+        [
+          "created_at",
+          "datetime",
+          "required"
+        ],
+        [
+          "updated_at",
+          "datetime",
+          "required"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "inactive"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "barcode",
+          "string",
+          "optional"
+        ],
+        [
+          "length",
+          "integer",
+          "optional"
+        ],
+        [
+          "width",
+          "integer",
+          "optional"
+        ],
+        [
+          "height",
+          "integer",
+          "optional"
+        ],
+        [
+          "use_in_auto_advice",
+          "boolean",
+          "optional"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "name",
+          "string",
+          "optional"
+        ],
+        [
+          "barcode",
+          "string",
+          "optional"
+        ],
+        [
+          "length",
+          "integer",
+          "optional"
+        ],
+        [
+          "width",
+          "integer",
+          "optional"
+        ],
+        [
+          "height",
+          "integer",
+          "optional"
+        ],
+        [
+          "use_in_auto_advice",
+          "boolean",
+          "optional"
+        ],
+        [
+          "active",
+          "boolean",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

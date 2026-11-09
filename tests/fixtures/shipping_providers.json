@@ -1,0 +1,20 @@
+[
+  {
+    "idshippingprovider": 15792,
+    "name": "PostNL",
+    "provider": "PostNL",
+    "active": true,
+    "created": "2026-11-09 16:47:31",
+    "updated": "2026-11-09 16:47:31",
+    "profiles": [
+      {
+        "idshippingprovider_profile": 53794,
+        "name": "Testprofile",
+        "standard": true,
+        "active": true,
+        "created": "2026-11-09 16:47:44",
+        "updated": "2026-11-09 16:47:44"
+      }
+    ]
+  }
+]

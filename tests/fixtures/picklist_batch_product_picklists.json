@@ -1,0 +1,174 @@
+[
+  {
+    "idpicklist": 197985537,
+    "picklistid": "P2026-1082",
+    "idcustomer": 146465603,
+    "idorder": 282382642,
+    "idreturn": null,
+    "idwarehouse": 14153,
+    "idtemplate": 14879,
+    "idpicklist_batch": 9772360,
+    "idshippingprovider_profile": null,
+    "deliveryname": "Sam Voorbeeld",
+    "deliverycontact": null,
+    "deliveryaddress": "Voorbeeldstraat 1",
+    "deliveryaddress2": null,
+    "deliveryzipcode": "1234AB",
+    "deliverycity": "Voorbeeldstad",
+    "deliveryregion": "x",
+    "deliverycountry": "NL",
+    "telephone": null,
+    "emailaddress": null,
+    "reference": "skikoffer #473712",
+    "assigned_to_iduser": 1,
+    "invoiced": false,
+    "urgent": false,
+    "preferred_delivery_date": null,
+    "status": "new",
+    "paused_reason": null,
+    "totalproducts": 1,
+    "totalpicked": 0,
+    "weight": 897,
+    "snoozed_until": null,
+    "closed_by_iduser": null,
+    "closed_at": null,
+    "created": "2026-11-09 12:47:53",
+    "updated": "2026-11-09 16:51:42",
+    "idfulfilment_customer": 11012,
+    "tags": [
+      {
+        "idtag": 262297,
+        "title": "lightspeed",
+        "color": "#1dc42e",
+        "inherit": false,
+        "textColor": "#000000"
+      },
+      {
+        "idtag": 262298,
+        "title": "skikoffer",
+        "color": "#ba7033",
+        "inherit": false,
+        "textColor": "#000000"
+      }
+    ],
+    "products": [
+      {
+        "idpicklist_product": 478589346,
+        "idproduct": 52948001,
+        "idorder_product": 742055768,
+        "idreturn_product_replacement": null,
+        "idvatgroup": 29348,
+        "productcode": "WT309651",
+        "name": "Diesel Photo Black",
+        "remarks": null,
+        "amount": 1,
+        "amountpicked": 0,
+        "amount_picked": 0,
+        "price": 40.91,
+        "weight": 897,
+        "stocklocation": "A.4.6.4",
+        "stock_location": "A.4.6.4",
+        "partof_idpicklist_product": null,
+        "has_parts": false,
+        "pick_locations": [
+          {
+            "idpicklist_product_location": 318251652,
+            "idlocation": 12816867,
+            "name": "A.4.6.4",
+            "amount": 1,
+            "amount_picked": 0,
+            "lot_number": null,
+            "expiration_date": null
+          }
+        ]
+      }
+    ],
+    "comment_count": 0
+  },
+  {
+    "idpicklist": 197985590,
+    "picklistid": "P2026-1126",
+    "idcustomer": 146465685,
+    "idorder": 282382562,
+    "idreturn": null,
+    "idwarehouse": 14153,
+    "idtemplate": 14879,
+    "idpicklist_batch": 9772360,
+    "idshippingprovider_profile": null,
+    "deliveryname": "Sam Voorbeeld",
+    "deliverycontact": null,
+    "deliveryaddress": "Voorbeeldstraat 1",
+    "deliveryaddress2": null,
+    "deliveryzipcode": "1234AB",
+    "deliverycity": "Voorbeeldstad",
+    "deliveryregion": "x",
+    "deliverycountry": "NL",
+    "telephone": null,
+    "emailaddress": null,
+    "reference": "wintersjaal #924308",
+    "assigned_to_iduser": 1,
+    "invoiced": false,
+    "urgent": false,
+    "preferred_delivery_date": null,
+    "status": "new",
+    "paused_reason": null,
+    "totalproducts": 1,
+    "totalpicked": 0,
+    "weight": 897,
+    "snoozed_until": null,
+    "closed_by_iduser": null,
+    "closed_at": null,
+    "created": "2026-11-09 12:47:58",
+    "updated": "2026-11-09 16:51:42",
+    "idfulfilment_customer": 11012,
+    "tags": [
+      {
+        "idtag": 262299,
+        "title": "magento",
+        "color": "#c17da4",
+        "inherit": false,
+        "textColor": "#000000"
+      },
+      {
+        "idtag": 262300,
+        "title": "wintersjaal",
+        "color": "#24f221",
+        "inherit": false,
+        "textColor": "#000000"
+      }
+    ],
+    "products": [
+      {
+        "idpicklist_product": 478589439,
+        "idproduct": 52948001,
+        "idorder_product": 742055609,
+        "idreturn_product_replacement": null,
+        "idvatgroup": 29348,
+        "productcode": "WT309651",
+        "name": "Diesel Photo Black",
+        "remarks": null,
+        "amount": 1,
+        "amountpicked": 0,
+        "amount_picked": 0,
+        "price": 40.91,
+        "weight": 897,
+        "stocklocation": "A.4.6.4",
+        "stock_location": "A.4.6.4",
+        "partof_idpicklist_product": null,
+        "has_parts": false,
+        "pick_locations": [
+          {
+            "idpicklist_product_location": 318251743,
+            "idlocation": 12816867,
+            "name": "A.4.6.4",
+            "amount": 1,
+            "amount_picked": 0,
+            "lot_number": null,
+            "expiration_date": null
+          }
+        ]
+      }
+    ],
+    "comment_count": 0
+  }
+]

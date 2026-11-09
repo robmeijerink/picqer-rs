@@ -1,0 +1,17 @@
+{
+  "idlocation": 12818218,
+  "idwarehouse": 14153,
+  "parent_idlocation": null,
+  "name": "ZZ-probe",
+  "remarks": null,
+  "unlink_on_empty": null,
+  "location_type": {
+    "idlocation_type": 9380,
+    "name": "Standaard",
+    "default": true,
+    "color": "#0000f0"
+  },
+  "is_bulk_location": null,
+  "is_exclusive_location": null,
+  "type": "location"
+}

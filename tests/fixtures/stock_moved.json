@@ -1,0 +1,107 @@
+{
+  "amount": 1,
+  "from": {
+    "location": {
+      "idlocation": 12818304,
+      "idwarehouse": 14153,
+      "parent_idlocation": null,
+      "name": "ZZP-fx1",
+      "remarks": null,
+      "unlink_on_empty": false,
+      "location_type": {
+        "idlocation_type": 9380,
+        "name": "Standaard",
+        "default": true,
+        "color": "#0000f0"
+      },
+      "is_bulk_location": false,
+      "is_exclusive_location": false,
+      "type": "location"
+    },
+    "warehouse": {
+      "idwarehouse": 14153,
+      "stock": 5,
+      "reserved": 0,
+      "reservedbackorders": 0,
+      "reservedpicklists": 0,
+      "reservedallocations": 0,
+      "freestock": 5,
+      "locations": [
+        {
+          "idlocation": 12818304,
+          "idwarehouse": 14153,
+          "name": "ZZP-fx1",
+          "stock": 4,
+          "reserved_picklists": 0,
+          "free_stock": 4,
+          "is_bulk_location": false,
+          "lot_number": null,
+          "expiration_date": null
+        },
+        {
+          "idlocation": 12818305,
+          "idwarehouse": 14153,
+          "name": "ZZP-fx2",
+          "stock": 1,
+          "reserved_picklists": 0,
+          "free_stock": 1,
+          "is_bulk_location": false,
+          "lot_number": null,
+          "expiration_date": null
+        }
+      ]
+    }
+  },
+  "to": {
+    "location": {
+      "idlocation": 12818305,
+      "idwarehouse": 14153,
+      "parent_idlocation": null,
+      "name": "ZZP-fx2",
+      "remarks": null,
+      "unlink_on_empty": false,
+      "location_type": {
+        "idlocation_type": 9380,
+        "name": "Standaard",
+        "default": true,
+        "color": "#0000f0"
+      },
+      "is_bulk_location": false,
+      "is_exclusive_location": false,
+      "type": "location"
+    },
+    "warehouse": {
+      "idwarehouse": 14153,
+      "stock": 5,
+      "reserved": 0,
+      "reservedbackorders": 0,
+      "reservedpicklists": 0,
+      "reservedallocations": 0,
+      "freestock": 5,
+      "locations": [
+        {
+          "idlocation": 12818304,
+          "idwarehouse": 14153,
+          "name": "ZZP-fx1",
+          "stock": 4,
+          "reserved_picklists": 0,
+          "free_stock": 4,
+          "is_bulk_location": false,
+          "lot_number": null,
+          "expiration_date": null
+        },
+        {
+          "idlocation": 12818305,
+          "idwarehouse": 14153,
+          "name": "ZZP-fx2",
+          "stock": 1,
+          "reserved_picklists": 0,
+          "free_stock": 1,
+          "is_bulk_location": false,
+          "lot_number": null,
+          "expiration_date": null
+        }
+      ]
+    }
+  }
+}

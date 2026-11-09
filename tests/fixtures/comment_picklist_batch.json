@@ -1,0 +1,23 @@
+{
+  "idcomment": 21288812,
+  "body": "picqer-rs live test",
+  "author_type": "user",
+  "author": {
+    "iduser": 43968,
+    "username": "alice",
+    "full_name": "Alice Example",
+    "image_url": "https://example.picqer.com/api/v1/users/43968/avatar"
+  },
+  "source_type": "picklist_batch",
+  "source": {
+    "idpicklist_batch": 9773319,
+    "picklist_batchid": 5
+  },
+  "mentions": [],
+  "show_at_related": false,
+  "reactions": [],
+  "images": [],
+  "is_visible_fulfilment": false,
+  "created_at": "2026-11-09 15:10:20",
+  "updated_at": "2026-11-09 15:10:20"
+}

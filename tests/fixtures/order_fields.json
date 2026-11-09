@@ -1,0 +1,14 @@
+[
+  {
+    "idorderfield": 4741,
+    "title": "OrderFieldText",
+    "type": "text",
+    "values": [],
+    "only_accessible_via_api": true,
+    "required": false,
+    "visible_picklist": false,
+    "visible_packinglist": false,
+    "visible_orderconfirmation": false,
+    "visible_portal": false
+  }
+]

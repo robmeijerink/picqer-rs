@@ -1,0 +1,36 @@
+{
+  "title": "VAT Groups",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/vatgroups"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idvatgroup",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "percentage",
+          "float",
+          "required"
+        ]
+      ]
+    }
+  ]
+}

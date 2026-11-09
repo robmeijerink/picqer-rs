@@ -1,0 +1,93 @@
+{
+  "idreceipt": 5227596,
+  "idwarehouse": 14153,
+  "version": 1,
+  "supplier": {
+    "idsupplier": 229504,
+    "name": "picqer-rs-live-supplier"
+  },
+  "purchaseorder": {
+    "idpurchaseorder": 3452020,
+    "purchaseorderid": "PO2026-1032"
+  },
+  "receiptid": "RC2026-1003",
+  "status": "processing",
+  "remarks": null,
+  "completed_by": null,
+  "amount_received": 0,
+  "amount_received_excessive": 0,
+  "completed_at": null,
+  "created": "2026-11-09 20:57:42",
+  "updated": "2026-11-09 20:57:42",
+  "fulfilment_customer": null,
+  "comment_count": 0,
+  "products": [
+    {
+      "idreceipt_product": 128535533,
+      "idpurchaseorder_product": 56064961,
+      "idproduct": 52948437,
+      "idpurchaseorder": 3452020,
+      "productcode": "picqer-rs-probe-a",
+      "productcode_supplier": null,
+      "name": "picqer-rs probe minimal",
+      "barcode": null,
+      "amount": 0,
+      "amount_ordered": 5,
+      "amount_receiving": 0,
+      "added_by_receipt": false,
+      "abc_classification": null,
+      "amount_previously_received": 0,
+      "amount_more_than_ordered": 0,
+      "amount_backorders": 0,
+      "image": null,
+      "stock": 0,
+      "stock_location": {
+        "idlocation": 12818406,
+        "idwarehouse": 14153,
+        "parent_idlocation": null,
+        "name": "ZZP-rc1",
+        "remarks": null,
+        "unlink_on_empty": false,
+        "location_type": {
+          "idlocation_type": 9380,
+          "name": "Standaard",
+          "default": true,
+          "color": "#0000f0"
+        },
+        "is_bulk_location": false,
+        "is_exclusive_location": false,
+        "type": "location"
+      },
+      "locations": [
+        {
+          "idlocation": 12818406,
+          "idwarehouse": 14153,
+          "parent_idlocation": null,
+          "name": "ZZP-rc1",
+          "remarks": null,
+          "unlink_on_empty": false,
+          "location_type": {
+            "idlocation_type": 9380,
+            "name": "Standaard",
+            "default": true,
+            "color": "#0000f0"
+          },
+          "is_bulk_location": false,
+          "is_exclusive_location": false,
+          "type": "location",
+          "stock": 0
+        }
+      ],
+      "candidate_purchaseorders": [
+        {
+          "idpurchaseorder": 3452020,
+          "idpurchaseorder_product": 56064961,
+          "purchaseorderid": "PO2026-1032",
+          "already_in_use": false,
+          "created_for_receipt": false
+        }
+      ],
+      "product_locations": []
+    }
+  ]
+}

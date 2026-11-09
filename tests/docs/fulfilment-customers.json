@@ -1,0 +1,88 @@
+{
+  "title": "Fulfilment customers",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/fulfilment/customers"
+    },
+    {
+      "method": "GET",
+      "path": "/fulfilment/customers/{id}"
+    },
+    {
+      "method": "POST",
+      "path": "/fulfilment/customers"
+    },
+    {
+      "method": "PUT",
+      "path": "/fulfilment/customers/{id}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idfulfilment_customer",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "can_login",
+          "boolean",
+          "optional"
+        ],
+        [
+          "username",
+          "string",
+          "optional"
+        ],
+        [
+          "password",
+          "string",
+          "optional and write-only"
+        ],
+        [
+          "emailaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "language",
+          "string",
+          "optional"
+        ],
+        [
+          "idtemplate",
+          "integer",
+          "optional"
+        ],
+        [
+          "last_login_at",
+          "datetime",
+          "read-only"
+        ],
+        [
+          "allowed_shipping_profiles",
+          "array",
+          "optional"
+        ],
+        [
+          "preferred_idwarehouse",
+          "integer",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

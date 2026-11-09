@@ -1,0 +1,37 @@
+[
+  {
+    "oldprice": 1,
+    "pricechange": 0.23,
+    "newprice": 1.23,
+    "iduser": 43968,
+    "date": "2026-11-09 13:47:55"
+  },
+  {
+    "oldprice": 1.23,
+    "pricechange": -6.23,
+    "newprice": -5,
+    "iduser": 43968,
+    "date": "2026-11-09 13:47:56"
+  },
+  {
+    "oldprice": -5,
+    "pricechange": 17.5,
+    "newprice": 12.5,
+    "iduser": 43968,
+    "date": "2026-11-09 13:47:56"
+  },
+  {
+    "oldprice": 12.5,
+    "pricechange": 21474836.47,
+    "newprice": 21474848.97,
+    "iduser": 43968,
+    "date": "2026-11-09 13:47:56"
+  },
+  {
+    "oldprice": 21474836.47,
+    "pricechange": -21474835.47,
+    "newprice": 1,
+    "iduser": 43968,
+    "date": "2026-11-09 14:34:16"
+  }
+]

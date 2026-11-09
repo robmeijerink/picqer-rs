@@ -1,0 +1,12 @@
+{
+  "idproduct_location_stock_history": 386101640,
+  "idproduct": 52947932,
+  "idlocation": 12817277,
+  "contra_idlocation": null,
+  "iduser": 1,
+  "old_stock": 19,
+  "stock_change": 3,
+  "new_stock": 22,
+  "change_type": "mutation",
+  "changed_at": "2026-11-09 16:51:04"
+}

@@ -1,0 +1,130 @@
+{
+  "idreturn": 7170814,
+  "idreturn_status": 17650,
+  "idcustomer": 146465700,
+  "idorder": 282382107,
+  "idtemplate": 14879,
+  "returnid": "R2026-1022",
+  "name": "Sam Voorbeeld",
+  "contactname": "Kim Voorbeeld",
+  "address": "Voorbeeldstraat 1",
+  "address2": null,
+  "zipcode": "1234AB",
+  "city": "Voorbeeldstad",
+  "region": null,
+  "country": "NL",
+  "full_address": "Sam Voorbeeld\nKim Voorbeeld\nVoorbeeldstraat 1\n1234AB Voorbeeldstad\nNederland",
+  "telephone": null,
+  "emailaddress": null,
+  "language": "nl",
+  "reference": "skikoffer #473789",
+  "tracking_code": null,
+  "received_at": null,
+  "completed_at": null,
+  "completed_by_iduser": null,
+  "created_at": "2026-11-07 10:17:01",
+  "updated_at": "2026-11-09 12:47:56",
+  "idfulfilment_customer": 11012,
+  "completed_by_fulfilment_customer_at": null,
+  "return_status": {
+    "idreturn_status": 17650,
+    "name": "In repair",
+    "default": false,
+    "completed": false,
+    "color": "ff4444",
+    "created_at": "2026-11-09 12:47:51",
+    "updated_at": "2026-11-09 12:47:51",
+    "deleted_at": null
+  },
+  "customer": {
+    "idcustomer": 146465700,
+    "customerid": null,
+    "name": "Sam Voorbeeld",
+    "contactname": null,
+    "comment_count": 0
+  },
+  "order": {
+    "idorder": 282382107,
+    "orderid": "O2026-1076",
+    "reference": "",
+    "created_at": "2026-09-04 07:02:47",
+    "comment_count": 0
+  },
+  "returned_products": [
+    {
+      "idreturn_product": 11591124,
+      "idreturn": 7170814,
+      "idreturn_reason": 13907,
+      "idproduct": 52947981,
+      "idwarehouse": null,
+      "idlocation": null,
+      "price": 284.58,
+      "amount": 5,
+      "status": "expected",
+      "changeable": true,
+      "lot_number": null,
+      "expiration_date": null,
+      "product": {
+        "idproduct": 52947981,
+        "image_url": "https://files.example.com/30feb2de-a9a8-48c7-94cf-53cb7512316a/thumbnail-36-36-0-0-100.jpg",
+        "productcode": "IR934793",
+        "name": "Sony 1080i L",
+        "active": true,
+        "type": "normal",
+        "track_lot_numbers": false,
+        "track_expiration_dates": false
+      },
+      "return_reason": {
+        "idreturn_reason": 13907,
+        "name": "Wrong size"
+      },
+      "location": null
+    }
+  ],
+  "replacement_products": [
+    {
+      "idreturn_product_replacement": 650605,
+      "idreturn": 7170814,
+      "idproduct": 52947943,
+      "idpicklist": null,
+      "idbackorder": null,
+      "price": 564.18,
+      "amount": 5,
+      "status": "concept",
+      "changeable": true,
+      "product": {
+        "idproduct": 52947943,
+        "image_url": "https://files.example.com/5e4ac1cd-c348-4dcb-89af-6cde0384baee/thumbnail-36-36-0-0-100.jpg",
+        "productcode": "FK816708",
+        "name": "Honig Watch Tripple"
+      }
+    },
+    {
+      "idreturn_product_replacement": 650606,
+      "idreturn": 7170814,
+      "idproduct": 52947920,
+      "idpicklist": null,
+      "idbackorder": null,
+      "price": 508.78,
+      "amount": 1,
+      "status": "concept",
+      "changeable": true,
+      "product": {
+        "idproduct": 52947920,
+        "image_url": "https://files.example.com/84152d38-17dc-4535-a9ad-cd10e8ed709b/thumbnail-36-36-0-0-100.jpg",
+        "productcode": "EW219805",
+        "name": "Snom  Lounge 30 liters"
+      }
+    }
+  ],
+  "totals": {
+    "returned_products_count": 5,
+    "returned_products_value": 1422.8999999999999,
+    "returned_products_value_vat": 298.8,
+    "replacement_products_count": 14,
+    "replacement_products_value": 6997.629999999999,
+    "replacement_products_value_vat": 1469.54,
+    "days_after_order_shipped": null
+  },
+  "comment_count": 0
+}

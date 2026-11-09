@@ -1,0 +1,63 @@
+{
+  "title": "Picking Containers",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/picking-containers"
+    },
+    {
+      "method": "GET",
+      "path": "/picking-containers/{idpicking_container}"
+    },
+    {
+      "method": "POST",
+      "path": "/picking-containers"
+    },
+    {
+      "method": "PUT",
+      "path": "/picking-containers/{idpicking_container}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/picking-containers/{idpicking_container}"
+    },
+    {
+      "method": "POST",
+      "path": "/picking-containers/{idpicking_container}/link"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idpicking_container",
+          "integer"
+        ],
+        [
+          "idpicklist",
+          "integer"
+        ],
+        [
+          "name",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "idpicklist"
+        ]
+      ]
+    }
+  ]
+}

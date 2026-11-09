@@ -1,0 +1,398 @@
+{
+  "title": "Comments",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/comments/{idcomment}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/comments/{idcomment}"
+    },
+    {
+      "method": "GET",
+      "path": "/orders/{idorder}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/{idorder}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/returns/{idreturn}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/returns/{idreturn}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/{idpicklist}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/batches/{idpicklist_batch}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/batches/{idpicklist_batch}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/suppliers/{idsupplier}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/suppliers/{idsupplier}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/purchaseorders/{idpurchaseorder}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/purchaseorders/{idpurchaseorder}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/{idreceipt}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/receipts/{idreceipt}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/comments"
+    },
+    {
+      "method": "GET",
+      "path": "/customers/{idcustomer}/comments"
+    },
+    {
+      "method": "POST",
+      "path": "/customers/{idcustomer}/comments"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idcomment",
+          "integer",
+          "generated"
+        ],
+        [
+          "body",
+          "string",
+          "required"
+        ],
+        [
+          "author_type",
+          "string",
+          "generated"
+        ],
+        [
+          "author",
+          "object",
+          "generated"
+        ],
+        [
+          "source_type",
+          "string",
+          "generated"
+        ],
+        [
+          "source",
+          "object",
+          "generated"
+        ],
+        [
+          "mentions",
+          "array",
+          "generated"
+        ],
+        [
+          "mentions.text",
+          "string",
+          "generated"
+        ],
+        [
+          "mentions.mentioned_type",
+          "string",
+          "generated"
+        ],
+        [
+          "mention.mentioned",
+          "object",
+          "generated"
+        ],
+        [
+          "show_at_related",
+          "boolean",
+          "optional"
+        ],
+        [
+          "is_visible_fulfilment",
+          "boolean",
+          "optional"
+        ],
+        [
+          "created_at",
+          "datetime",
+          "generated"
+        ],
+        [
+          "updated_at",
+          "datetime",
+          "generated"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "idauthor"
+        ],
+        [
+          "author_type"
+        ],
+        [
+          "idmentioned"
+        ],
+        [
+          "mentioned_type"
+        ]
+      ]
+    },
+    {
+      "heading": "Orders",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idorder",
+          "integer"
+        ],
+        [
+          "orderid",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Returns",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idreturn",
+          "integer"
+        ],
+        [
+          "returnid",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Picklists",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idpicklist",
+          "integer"
+        ],
+        [
+          "picklistid",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Picklist batches",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idpicklist_batch",
+          "integer"
+        ],
+        [
+          "picklist_batchid",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Suppliers",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idsupplier",
+          "integer"
+        ],
+        [
+          "name",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Purchase orders",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idpurchaseorder",
+          "integer"
+        ],
+        [
+          "purchaseorderid",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Receipts",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idreceipt",
+          "integer"
+        ],
+        [
+          "receiptid",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Products",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idproduct",
+          "integer"
+        ],
+        [
+          "productcode",
+          "string"
+        ],
+        [
+          "name",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Customers",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idcustomer",
+          "integer"
+        ],
+        [
+          "customerid",
+          ""
+        ],
+        [
+          "name",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Authors & mentions",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "iduser",
+          "integer"
+        ],
+        [
+          "username",
+          "string"
+        ],
+        [
+          "full_name",
+          "string"
+        ],
+        [
+          "image_url",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Authors & mentions",
+      "columns": [
+        "attribute",
+        "type"
+      ],
+      "rows": [
+        [
+          "idfulfilment_customer",
+          "integer"
+        ],
+        [
+          "username",
+          "string"
+        ],
+        [
+          "name",
+          "string"
+        ]
+      ]
+    }
+  ]
+}

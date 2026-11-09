@@ -1,0 +1,209 @@
+{
+  "title": "Customers",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/customers"
+    },
+    {
+      "method": "GET",
+      "path": "/customers/{idcustomer}"
+    },
+    {
+      "method": "POST",
+      "path": "/customers"
+    },
+    {
+      "method": "PUT",
+      "path": "/customers/{idcustomer}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/customers/{idcustomer}"
+    },
+    {
+      "method": "GET",
+      "path": "/customers/{idcustomer}/addresses"
+    },
+    {
+      "method": "POST",
+      "path": "/customers/{idcustomer}/addresses"
+    },
+    {
+      "method": "PUT",
+      "path": "/customers/{idcustomer}/addresses/{idcustomer_address}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/customers/{idcustomer}/addresses/{idcustomer_address}"
+    },
+    {
+      "method": "GET",
+      "path": "/customers/{idcustomer}/tags"
+    },
+    {
+      "method": "POST",
+      "path": "/customers/{idcustomer}/tags"
+    },
+    {
+      "method": "DELETE",
+      "path": "/customers/{idcustomer}/tags/{idtag}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idcustomer",
+          "integer",
+          "generated"
+        ],
+        [
+          "customerid",
+          "integer",
+          "optional"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "contactname",
+          "string",
+          "optional"
+        ],
+        [
+          "telephone",
+          "string",
+          "optional"
+        ],
+        [
+          "emailaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "discount",
+          "float",
+          "optional"
+        ],
+        [
+          "vatnumber",
+          "string",
+          "optional"
+        ],
+        [
+          "calculatevat",
+          "boolean",
+          "optional"
+        ],
+        [
+          "remarks",
+          "string",
+          "optional"
+        ],
+        [
+          "default_order_remarks",
+          "string",
+          "optional"
+        ],
+        [
+          "language",
+          "string",
+          "optional"
+        ],
+        [
+          "auto_split",
+          "boolean",
+          "optional"
+        ],
+        [
+          "idtemplate",
+          "integer",
+          "optional"
+        ],
+        [
+          "idfulfilment_customer",
+          "integer",
+          "optional"
+        ],
+        [
+          "addresses",
+          "array",
+          "optional"
+        ],
+        [
+          "addresses.name",
+          "string",
+          "required"
+        ],
+        [
+          "addresses.contactname",
+          "string",
+          "optional"
+        ],
+        [
+          "addresses.address",
+          "string",
+          "optional"
+        ],
+        [
+          "addresses.address2",
+          "string",
+          "optional"
+        ],
+        [
+          "addresses.zipcode",
+          "string",
+          "optional"
+        ],
+        [
+          "addresses.city",
+          "string",
+          "optional"
+        ],
+        [
+          "addresses.region",
+          "string",
+          "optional"
+        ],
+        [
+          "addresses.country",
+          "string",
+          "optional"
+        ],
+        [
+          "addresses.defaultinvoice",
+          "boolean",
+          "optional"
+        ],
+        [
+          "addresses.defaultdelivery",
+          "boolean",
+          "optional"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "search"
+        ],
+        [
+          "customerid"
+        ]
+      ]
+    }
+  ]
+}

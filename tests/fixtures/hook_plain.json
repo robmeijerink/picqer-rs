@@ -1,0 +1,9 @@
+{
+  "idhook": 70253,
+  "name": "picqer-rs probe http",
+  "event": "webshop_orders.imported",
+  "address": "http://example.com/x",
+  "active": false,
+  "secret": false,
+  "idfulfilment_customer": null
+}

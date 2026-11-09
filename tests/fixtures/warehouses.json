@@ -1,0 +1,10 @@
+[
+  {
+    "idwarehouse": 14153,
+    "name": "Hoofdmagazijn",
+    "accept_orders": true,
+    "counts_for_general_stock": true,
+    "priority": 1,
+    "active": true
+  }
+]

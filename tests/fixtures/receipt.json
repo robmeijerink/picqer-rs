@@ -1,0 +1,110 @@
+{
+  "idreceipt": 5227431,
+  "receiptid": "RC2026-1000",
+  "idwarehouse": 14153,
+  "version": 2,
+  "status": "completed",
+  "supplier": {
+    "idsupplier": 229482,
+    "name": "Fitness Plaza"
+  },
+  "purchaseorder": {
+    "idpurchaseorder": 3451566,
+    "purchaseorderid": "PO2026-1031"
+  },
+  "comment_count": 0,
+  "amount_received": 4,
+  "fulfilment_customer": {
+    "idfulfilment_customer": 11012,
+    "name": "test"
+  },
+  "products": [
+    {
+      "idreceipt_product": 128533558,
+      "idpurchaseorder": 3451566,
+      "idpurchaseorder_product": 56061674,
+      "idproduct": 52947932,
+      "purchaseorderid": "PO2026-1031",
+      "productcode": "FL360325",
+      "productcode_supplier": "HP-FL360325",
+      "name": "HP Lounge R3000 L",
+      "barcode": "8830610701195",
+      "abc_classification": null,
+      "image": "https://files.example.com/30253420-bb8d-400b-9b7f-0a095b889897/thumbnail-36-36-0-0-100.jpg",
+      "price": 475.1,
+      "amount": 3,
+      "amount_ordered": 3,
+      "added_by_receipt": false,
+      "received_by_iduser": 1,
+      "reverted_by_iduser": null,
+      "reverted_at": null,
+      "lot_number": null,
+      "expiration_date": null,
+      "location": {
+        "idlocation": 12817277,
+        "idwarehouse": 14153,
+        "parent_idlocation": 12817274,
+        "name": "B.6.1.3",
+        "remarks": null,
+        "unlink_on_empty": false,
+        "location_type": {
+          "idlocation_type": 1,
+          "name": "Standaard",
+          "default": true,
+          "color": "#0000f0"
+        },
+        "is_bulk_location": false,
+        "is_exclusive_location": false,
+        "type": "location"
+      },
+      "created_at": "2026-11-09 16:51:04"
+    },
+    {
+      "idreceipt_product": 128533557,
+      "idpurchaseorder": 3451566,
+      "idpurchaseorder_product": 56061675,
+      "idproduct": 52948007,
+      "purchaseorderid": "PO2026-1031",
+      "productcode": "HF925956",
+      "productcode_supplier": "PEP-HF925956",
+      "name": "Pepsi Efficient 1.5 MP Camcorder Black",
+      "barcode": "9366647323147",
+      "abc_classification": null,
+      "image": "https://files.example.com/6d54e4c9-1afb-4135-af06-182ceeee8a08/thumbnail-36-36-0-0-100.jpg",
+      "price": 231.51,
+      "amount": 1,
+      "amount_ordered": 1,
+      "added_by_receipt": false,
+      "received_by_iduser": 1,
+      "reverted_by_iduser": null,
+      "reverted_at": null,
+      "lot_number": null,
+      "expiration_date": null,
+      "location": {
+        "idlocation": 12816791,
+        "idwarehouse": 14153,
+        "parent_idlocation": 12816790,
+        "name": "A.3.3.1",
+        "remarks": null,
+        "unlink_on_empty": false,
+        "location_type": {
+          "idlocation_type": 1,
+          "name": "Standaard",
+          "default": true,
+          "color": "#0000f0"
+        },
+        "is_bulk_location": false,
+        "is_exclusive_location": false,
+        "type": "location"
+      },
+      "created_at": "2026-11-09 16:51:04"
+    }
+  ],
+  "completed_at": "2026-11-09 16:51:11",
+  "completed_by": {
+    "iduser": 1,
+    "name": "Alex Example"
+  },
+  "created": "2026-11-09 16:50:54",
+  "updated": "2026-11-09 16:51:11"
+}

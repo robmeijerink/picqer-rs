@@ -1,0 +1,254 @@
+[
+  {
+    "idreturn_log": 23066723,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "received_products",
+    "message": "4 x \"picqer-rs live test locations\" toegevoegd aan ZZP-ret (Hoofdmagazijn)",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:36:18",
+    "updated_at": "2026-11-09 21:36:18",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066722,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "received_products",
+    "message": "2 x \"picqer-rs live test locations\" toegevoegd aan voorraad",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:59",
+    "updated_at": "2026-11-09 21:35:59",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066721,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "received_products",
+    "message": "2 x \"picqer-rs live test locations\" gemarkeerd als verwacht",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:44",
+    "updated_at": "2026-11-09 21:35:44",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066720,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "received_products",
+    "message": "1 x \"picqer-rs live test locations\" gemarkeerd als onverkoopbaar",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:44",
+    "updated_at": "2026-11-09 21:35:44",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066719,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "received_products",
+    "message": "2 x \"picqer-rs live test locations\" gemarkeerd als ontvangen",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:43",
+    "updated_at": "2026-11-09 21:35:43",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066718,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "status_changed",
+    "message": null,
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:24",
+    "updated_at": "2026-11-09 21:35:24",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066717,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17649,
+    "iduser": 1,
+    "type": "completed",
+    "message": "done",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:24",
+    "updated_at": "2026-11-09 21:35:24",
+    "return_status": {
+      "idreturn_status": 17649,
+      "name": "Compleet",
+      "color": "5cb85c"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066716,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17650,
+    "iduser": 1,
+    "type": "comment",
+    "message": "notify",
+    "notified_customer": true,
+    "created_at": "2026-11-09 21:35:24",
+    "updated_at": "2026-11-09 21:35:24",
+    "return_status": {
+      "idreturn_status": 17650,
+      "name": "In repair",
+      "color": "ff4444"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066715,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17650,
+    "iduser": 1,
+    "type": "status_changed",
+    "message": "both",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:23",
+    "updated_at": "2026-11-09 21:35:23",
+    "return_status": {
+      "idreturn_status": 17650,
+      "name": "In repair",
+      "color": "ff4444"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066714,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "status_changed",
+    "message": null,
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:23",
+    "updated_at": "2026-11-09 21:35:23",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066713,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17650,
+    "iduser": 1,
+    "type": "comment",
+    "message": "probe comment",
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:35:23",
+    "updated_at": "2026-11-09 21:35:23",
+    "return_status": {
+      "idreturn_status": 17650,
+      "name": "In repair",
+      "color": "ff4444"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  },
+  {
+    "idreturn_log": 23066706,
+    "idpicklist": null,
+    "picklistid": null,
+    "idreturn_status": 17648,
+    "iduser": 1,
+    "type": "created",
+    "message": null,
+    "notified_customer": false,
+    "created_at": "2026-11-09 21:34:40",
+    "updated_at": "2026-11-09 21:34:40",
+    "return_status": {
+      "idreturn_status": 17648,
+      "name": "Ontvangen",
+      "color": "1db0de"
+    },
+    "user": {
+      "iduser": 1,
+      "name": "Alex Example"
+    }
+  }
+]

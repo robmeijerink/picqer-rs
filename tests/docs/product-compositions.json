@@ -1,0 +1,34 @@
+{
+  "title": "Product composition and parts",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/parts"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/compositions"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/parts/{idproduct_part}"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/parts"
+    },
+    {
+      "method": "PUT",
+      "path": "/products/{idproduct}/parts/{idproduct_part}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/products/{idproduct}/parts/{idproduct_part}"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/produce"
+    }
+  ],
+  "tables": []
+}

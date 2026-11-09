@@ -1,0 +1,42 @@
+[
+  {
+    "idreturn_status": 17648,
+    "name": "Ontvangen",
+    "default": true,
+    "completed": false,
+    "color": "1db0de",
+    "created_at": "2026-11-09 12:15:56",
+    "updated_at": "2026-11-09 12:15:56",
+    "deleted_at": null
+  },
+  {
+    "idreturn_status": 17650,
+    "name": "In repair",
+    "default": false,
+    "completed": false,
+    "color": "ff4444",
+    "created_at": "2026-11-09 12:47:51",
+    "updated_at": "2026-11-09 12:47:51",
+    "deleted_at": null
+  },
+  {
+    "idreturn_status": 17651,
+    "name": "Waiting for bank transfer",
+    "default": false,
+    "completed": false,
+    "color": "d8c9a6",
+    "created_at": "2026-11-09 12:47:51",
+    "updated_at": "2026-11-09 12:47:51",
+    "deleted_at": null
+  },
+  {
+    "idreturn_status": 17649,
+    "name": "Compleet",
+    "default": false,
+    "completed": true,
+    "color": "5cb85c",
+    "created_at": "2026-11-09 12:15:56",
+    "updated_at": "2026-11-09 12:15:56",
+    "deleted_at": null
+  }
+]

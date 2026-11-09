@@ -1,0 +1,19 @@
+{
+  "idbackorder": 502452454,
+  "idorder_product": 742054638,
+  "idorder": 282382018,
+  "idreturn": null,
+  "idproduct": 52947941,
+  "idcustomer": 146465616,
+  "idwarehouse": 14153,
+  "amount": 1,
+  "amountavailable": 0,
+  "amount_available": 0,
+  "priority": 4,
+  "has_parts": false,
+  "part_of_idbackorder": null,
+  "parts_per_parent": null,
+  "created_at": "2026-11-09 12:48:28",
+  "is_purchased": false,
+  "date_available": null
+}

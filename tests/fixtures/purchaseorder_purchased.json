@@ -1,0 +1,37 @@
+{
+  "idpurchaseorder": 3451434,
+  "idsupplier": 229503,
+  "idwarehouse": 14153,
+  "idtemplate": 14879,
+  "purchaseorderid": "PO2026-1025",
+  "supplier_orderid": null,
+  "supplier_name": null,
+  "status": "purchased",
+  "remarks": null,
+  "delivery_date": "2030-02-03",
+  "language": "en",
+  "purchased_by_iduser": null,
+  "purchased_at": "2026-11-09 16:19:28",
+  "completed_by_iduser": null,
+  "completed_at": null,
+  "created_by_iduser": null,
+  "created": "2026-11-09 16:19:28",
+  "updated": "2026-11-09 16:19:28",
+  "products": [
+    {
+      "idpurchaseorder_product": 56060629,
+      "idproduct": 52947999,
+      "idvatgroup": 29348,
+      "productcode": "AF863248",
+      "productcode_supplier": "NIK-AF863248",
+      "name": "Nikon Replacement Camera Calculator S",
+      "price": 1.5,
+      "amount": 3,
+      "amountreceived": 0,
+      "delivery_date": null,
+      "weight": 711
+    }
+  ],
+  "idfulfilment_customer": 11012,
+  "comment_count": 0
+}

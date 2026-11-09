@@ -1,0 +1,25 @@
+{
+  "idlocation": 12818304,
+  "idwarehouse": 14153,
+  "parent_idlocation": null,
+  "name": "ZZP-fx1",
+  "remarks": null,
+  "unlink_on_empty": false,
+  "location_type": {
+    "idlocation_type": 9380,
+    "name": "Standaard",
+    "default": true,
+    "color": "#0000f0"
+  },
+  "is_bulk_location": false,
+  "is_exclusive_location": false,
+  "type": "location",
+  "stock_for_product": {
+    "stock": null,
+    "stock_reserved_picklists": null
+  },
+  "note": "top shelf",
+  "is_preferred": true,
+  "lot_number": null,
+  "expiration_date": null
+}

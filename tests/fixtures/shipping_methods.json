@@ -1,0 +1,33 @@
+[
+  {
+    "idshippingprovider_profile": 53794,
+    "name": "PostNL - Testprofile",
+    "provider": "PostNL",
+    "multi_colli_supported": true,
+    "selected": true,
+    "extra_fields": []
+  },
+  {
+    "idshippingprovider_profile": 53795,
+    "name": "TestManual - TestManualProfile",
+    "provider": "TestManual",
+    "multi_colli_supported": false,
+    "selected": false,
+    "extra_fields": [
+      {
+        "key": "code",
+        "name": "Tracking code",
+        "description": null,
+        "is_required": false,
+        "default_value": null
+      },
+      {
+        "key": "tracking_url",
+        "name": "Tracking URL",
+        "description": null,
+        "is_required": false,
+        "default_value": null
+      }
+    ]
+  }
+]

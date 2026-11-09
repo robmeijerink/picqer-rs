@@ -1,0 +1,28 @@
+[
+  {
+    "idcompany_webshop_order": 101,
+    "idcompany_webshop": 1,
+    "idorder": 5001,
+    "foreign_id": "WEB12345",
+    "foreign_number": "ORDER-2025-001",
+    "foreign_status": "completed",
+    "status": "imported",
+    "reason": null,
+    "ordered": "2025-07-10 10:00:00",
+    "created": "2025-07-10 10:05:15",
+    "updated": "2025-07-11 14:30:00"
+  },
+  {
+    "idcompany_webshop_order": 102,
+    "idcompany_webshop": 2,
+    "idorder": null,
+    "foreign_id": "SHOP-ABC-6789",
+    "foreign_number": "SO-2025-002",
+    "foreign_status": "pending",
+    "status": "expected",
+    "reason": null,
+    "ordered": "2025-07-12 09:30:00",
+    "created": "2025-07-12 09:35:00",
+    "updated": "2025-07-12 09:35:00"
+  }
+]

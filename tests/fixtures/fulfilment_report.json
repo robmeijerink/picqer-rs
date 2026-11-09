@@ -1,0 +1,5 @@
+{"meta_data":{"idfulfilment_customer":11014,"start_date":"2026-11-01","end_date":"2026-11-09"},
+"inbound":{"receipts_count":2,"receipts_rows_count":5,"receipts_products_total_amount":40,"purchase_orders_count":1,"purchase_order_rows_count":3},
+"outbound":{"picklists_count":4,"picklist_rows_count":6,"picklist_products_count":9,"shipments":[],"shipments_count":3,"shipment_country_count":1,"shipment_profile_count":1,"parcel_count":3},
+"storage_usage":{"stock_locations_in_use_count":1,"stock_locations_in_use":[{"idlocation":1,"idwarehouse":14153,"warehouse_name":"Hoofdmagazijn","stock_location":"A-01","unique_products":2,"total_items":"12"}],"stock_location_types_in_use":[{"idwarehouse":14153,"warehouse_name":"Hoofdmagazijn","idlocation_type":9380,"name":"Standaard","unique_locations":1}],"products_total":2,"stock_total":12},
+"returns":{"returns_count":0,"return_rows_count":0,"return_products_count":0}}

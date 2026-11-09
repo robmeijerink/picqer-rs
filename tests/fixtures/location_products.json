@@ -1,0 +1,26 @@
+[
+  {
+    "idproduct": 52947932,
+    "productcode": "FL360325",
+    "productcode_supplier": "HP-FL360325",
+    "name": "HP Lounge R3000 L",
+    "barcode": "8830610701195",
+    "price": 552.44,
+    "image_url": "https://files.example.com/30253420-bb8d-400b-9b7f-0a095b889897/thumbnail-100-100-0-0-50.jpg",
+    "track_lot_numbers": false,
+    "track_expiration_dates": false,
+    "stock": {
+      "idwarehouse": 14153,
+      "stock": 22,
+      "reserved": 17,
+      "reservedbackorders": 0,
+      "reservedpicklists": 17,
+      "reservedallocations": 0,
+      "freestock": 5
+    },
+    "stock_for_location": {
+      "stock": 22,
+      "stock_reserved_picklists": 17
+    }
+  }
+]

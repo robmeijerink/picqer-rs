@@ -1,0 +1,11 @@
+[
+  {
+    "idwarehouse": 14153,
+    "stock": 14,
+    "reserved": 6,
+    "reservedbackorders": 0,
+    "reservedpicklists": 6,
+    "reservedallocations": 0,
+    "freestock": 8
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "error": true,
+  "error_code": 5,
+  "error_message": "Error: Veld \"productcode\" is verplicht., Veld \"naam\" is verplicht., Veld \"prijs\" is verplicht."
+}

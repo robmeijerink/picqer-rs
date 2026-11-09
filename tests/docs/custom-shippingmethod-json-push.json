@@ -1,0 +1,50 @@
+{
+  "title": "Custom shipping method via JSON push",
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "https://your-endpoint-url.com"
+    },
+    {
+      "method": "POST",
+      "path": "https://your-endpoint-url.com"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Response attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "identifier",
+          "string",
+          "required"
+        ],
+        [
+          "trackingurl",
+          "string",
+          "optional"
+        ],
+        [
+          "carrier_key",
+          "string",
+          "optional"
+        ],
+        [
+          "label_contents_pdf",
+          "string",
+          "required"
+        ],
+        [
+          "label_contents_zpl",
+          "string",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

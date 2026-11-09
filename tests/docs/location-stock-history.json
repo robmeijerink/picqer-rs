@@ -1,0 +1,38 @@
+{
+  "title": "Location stock history",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/location-stock-history"
+    },
+    {
+      "method": "GET",
+      "path": "/location-stock-history/{idproduct_location_stock_history}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "sincedate"
+        ],
+        [
+          "untildate"
+        ],
+        [
+          "idproduct"
+        ],
+        [
+          "idlocation"
+        ],
+        [
+          "iduser"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Stats",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/stats"
+    },
+    {
+      "method": "GET",
+      "path": "/stats/{key}"
+    }
+  ],
+  "tables": []
+}

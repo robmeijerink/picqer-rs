@@ -1,0 +1,304 @@
+{
+  "title": "Webhooks",
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "http(s)://example.com/your-endpoint"
+    },
+    {
+      "method": "GET",
+      "path": "/hooks"
+    },
+    {
+      "method": "GET",
+      "path": "/hooks/{idhook}"
+    },
+    {
+      "method": "POST",
+      "path": "/hooks"
+    },
+    {
+      "method": "DELETE",
+      "path": "/hooks/{idhook}"
+    },
+    {
+      "method": "POST",
+      "path": "/hooks/{idhook}/reactivate"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Available events",
+      "columns": [],
+      "rows": [
+        [
+          "Orders"
+        ],
+        [
+          "orders.created",
+          "Triggered when an order is created."
+        ],
+        [
+          "orders.allocated",
+          "Triggered when an order is allocated."
+        ],
+        [
+          "orders.closed",
+          "Triggered when you process an order."
+        ],
+        [
+          "orders.paused",
+          "Triggered when you pause an order."
+        ],
+        [
+          "orders.resumed",
+          "Triggered when you resume an order."
+        ],
+        [
+          "orders.status_changed",
+          "Triggered when the status of an order changes, e.g. from concept to processing or from completed to cancelled."
+        ],
+        [
+          "orders.completed",
+          "Triggered when an order is completed, this is when all products are shipped to the customer."
+        ],
+        [
+          "orders.notes.created",
+          "Triggered when a note is added to an order."
+        ],
+        [
+          "Picklists"
+        ],
+        [
+          "picklists.created",
+          "Triggered when a picklist is created."
+        ],
+        [
+          "picklists.changed",
+          "Triggered when the metadata of a picklist changes. For example, changes in status, urgency, assignee, or when products are added to, cancelled/removed from or split off the picklist."
+        ],
+        [
+          "picklists.paused",
+          "Triggered when you pause a picklist."
+        ],
+        [
+          "picklists.resumed",
+          "Triggered when you resume a picklist."
+        ],
+        [
+          "picklists.closed",
+          "Triggered when a picklist is closed."
+        ],
+        [
+          "picklists.cancelled",
+          "Triggered when a picklist is cancelled."
+        ],
+        [
+          "picklists.snoozed",
+          "Triggered when a picklist is snoozed."
+        ],
+        [
+          "picklists.unsnoozed",
+          "Triggered when a picklist is unsnoozed, either automatically or manually."
+        ],
+        [
+          "picklists.shipments.created",
+          "Triggered when a shipment is created on a picklist (can happen 0, 1 or multiple times per picklist)."
+        ],
+        [
+          "picklists.shipments.cancelled",
+          "Triggered when a shipment is cancelled on a picklist (can happen 0, 1 or multiple times per picklist)."
+        ],
+        [
+          "Picklist batches"
+        ],
+        [
+          "picklist_batches.created",
+          "Triggered when a picklist batch is created."
+        ],
+        [
+          "picklist_batches.changed",
+          "Triggered when a picklist batch is changed (excluding pick actions)."
+        ],
+        [
+          "picklist_batches.completed",
+          "Triggered when a picklist batch is completed."
+        ],
+        [
+          "Products"
+        ],
+        [
+          "products.created",
+          "Triggered when a product is added."
+        ],
+        [
+          "products.changed",
+          "Triggered when a product is added or edited."
+        ],
+        [
+          "products.free_stock_changed",
+          "Triggered when the free stock of a normal product is changed."
+        ],
+        [
+          "products.stock_changed",
+          "Triggered when the real stock of a normal product is changed. (Do not use this for tracking of free stock changes. Use free_stock_changed for that information.)"
+        ],
+        [
+          "products.assembled_stock_changed",
+          "Triggered when the virtual stock of a virtual assembled product is changed."
+        ],
+        [
+          "products.stock_on_location_changed",
+          "Triggered when stock on a location is changed."
+        ],
+        [
+          "products.parts.changed",
+          "Triggered when parts of a product change, like added or removed parts or changes to the amount of a part."
+        ],
+        [
+          "Purchase orders"
+        ],
+        [
+          "purchase_orders.created",
+          "Triggered when a purchase order is created."
+        ],
+        [
+          "purchase_orders.changed",
+          "Triggered when a purchase order is changed, like added or removed products."
+        ],
+        [
+          "purchase_orders.purchased",
+          "Triggered when a purchase order is marked as purchased."
+        ],
+        [
+          "purchase_orders.receipts.created",
+          "Deprecated: please use receipts.completed Triggered when a purchase order receipt is created."
+        ],
+        [
+          "Receipts"
+        ],
+        [
+          "receipts.created",
+          "Triggered when a receipt is created."
+        ],
+        [
+          "receipts.completed",
+          "Triggered when a receipt is completed and all products added to the stock."
+        ],
+        [
+          "receipts.product_received",
+          "Triggered when a product for a v2 receipt is received."
+        ],
+        [
+          "receipts.product_reverted",
+          "Triggered when a product for a v2 receipt is reverted."
+        ],
+        [
+          "Returns"
+        ],
+        [
+          "returns.created",
+          "Triggered when a return is created."
+        ],
+        [
+          "returns.changed",
+          "Triggered when a return is edited, products or replacements are added."
+        ],
+        [
+          "returns.status_changed",
+          "Triggered when the status of a return is changed, or when a comment/note is added."
+        ],
+        [
+          "returns.products_received",
+          "Triggered when returned products for a return are received."
+        ],
+        [
+          "Comments"
+        ],
+        [
+          "comments.created",
+          "Triggered when a new comment is added."
+        ],
+        [
+          "Movements"
+        ],
+        [
+          "movements.moved",
+          "Triggered when a movement is moved from one warehouse to another and the stock is changed."
+        ],
+        [
+          "Stock counts"
+        ],
+        [
+          "location_stock_counts.completed",
+          "Triggered when a location stock count is completed."
+        ],
+        [
+          "Tasks"
+        ],
+        [
+          "tasks.created",
+          "Triggered when a task is created."
+        ],
+        [
+          "tasks.changed",
+          "Triggered when a task is changed."
+        ],
+        [
+          "tasks.deleted",
+          "Triggered when a task is deleted."
+        ],
+        [
+          "tasks.completed",
+          "Triggered when a task is completed."
+        ],
+        [
+          "tasks.uncompleted",
+          "Triggered when a task is reopened."
+        ],
+        [
+          "Webshop Orders"
+        ],
+        [
+          "webshop_orders.imported",
+          "Triggered when an order is imported from a webshop integration."
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idhook",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "event",
+          "string",
+          "required"
+        ],
+        [
+          "address",
+          "string",
+          "required"
+        ],
+        [
+          "secret",
+          "string",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

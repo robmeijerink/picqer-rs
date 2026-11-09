@@ -1,0 +1,12 @@
+[
+  {
+    "idproduct": 52948438,
+    "idwarehouse": 14153,
+    "stock_level_order": 0,
+    "stock_level_desired": 0,
+    "stock_level_maximum": 0,
+    "picking_stock_replenish_trigger": null,
+    "picking_stock_replenish_to": null,
+    "stock_location": null
+  }
+]

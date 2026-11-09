@@ -1,0 +1,76 @@
+[
+  {
+    "idcustomer": 146465613,
+    "idtemplate": null,
+    "customerid": null,
+    "name": "Example Customer 1",
+    "contactname": null,
+    "telephone": null,
+    "emailaddress": null,
+    "discount": 0,
+    "vatnumber": null,
+    "calculatevat": true,
+    "remarks": null,
+    "defaultorderremarks": null,
+    "default_order_remarks": null,
+    "auto_split": null,
+    "partialdelivery": null,
+    "language": "nl",
+    "idfulfilment_customer": 11012,
+    "comment_count": 0,
+    "addresses": [
+      {
+        "idcustomer_address": 169827014,
+        "name": "Example Customer 1",
+        "contactname": null,
+        "address": "Voorbeeldstraat 1",
+        "address2": null,
+        "zipcode": "1001 AA",
+        "city": "Voorbeeldstad",
+        "region": "Flevoland",
+        "country": "NL",
+        "full_address": "Example Customer 1\nVoorbeeldstraat 1\n1001 AA Voorbeeldstad\nNederland",
+        "defaultinvoice": true,
+        "defaultdelivery": true
+      }
+    ],
+    "tags": {}
+  },
+  {
+    "idcustomer": 146465696,
+    "idtemplate": null,
+    "customerid": null,
+    "name": "Example Customer 2",
+    "contactname": null,
+    "telephone": null,
+    "emailaddress": null,
+    "discount": 0,
+    "vatnumber": null,
+    "calculatevat": true,
+    "remarks": null,
+    "defaultorderremarks": null,
+    "default_order_remarks": null,
+    "auto_split": null,
+    "partialdelivery": null,
+    "language": "nl",
+    "idfulfilment_customer": 11012,
+    "comment_count": 0,
+    "addresses": [
+      {
+        "idcustomer_address": 169827097,
+        "name": "Example Customer 2",
+        "contactname": null,
+        "address": "Voorbeeldstraat 2",
+        "address2": null,
+        "zipcode": "1002 AA",
+        "city": "Voorbeeldstad",
+        "region": "Groningen",
+        "country": "NL",
+        "full_address": "Example Customer 2\nVoorbeeldstraat 2\n1002 AA Voorbeeldstad\nNederland",
+        "defaultinvoice": true,
+        "defaultdelivery": true
+      }
+    ],
+    "tags": {}
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "title": "Pricelists",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/pricelists"
+    },
+    {
+      "method": "GET",
+      "path": "/pricelists/{idpricelist}"
+    }
+  ],
+  "tables": []
+}

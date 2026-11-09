@@ -1,0 +1,38 @@
+{
+  "open-picklists": {
+    "description": "Number of open picklists"
+  },
+  "open-orders": {
+    "description": "Number of open orders"
+  },
+  "backorders": {
+    "description": "Number of current backorders"
+  },
+  "new-orders-today": {
+    "description": "Number of new orders created today"
+  },
+  "new-orders-this-week": {
+    "description": "Number of new orders created this week"
+  },
+  "closed-picklists-today": {
+    "description": "Number of picklists closed today"
+  },
+  "closed-picklists-this-week": {
+    "description": "Number of picklists closed this week"
+  },
+  "new-customers-this-week": {
+    "description": "Number of new customers this week"
+  },
+  "total-orders": {
+    "description": "Total number of orders"
+  },
+  "total-products": {
+    "description": "Number of products"
+  },
+  "active-products": {
+    "description": "Number of active products"
+  },
+  "inactive-products": {
+    "description": "Number of inactive products"
+  }
+}

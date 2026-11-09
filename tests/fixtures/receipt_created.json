@@ -1,0 +1,23 @@
+{
+  "idreceipt": 5227601,
+  "receiptid": "RC2026-1008",
+  "idwarehouse": 14153,
+  "version": 2,
+  "status": "processing",
+  "supplier": {
+    "idsupplier": 229504,
+    "name": "picqer-rs-live-supplier"
+  },
+  "purchaseorder": {
+    "idpurchaseorder": 3452022,
+    "purchaseorderid": "PO2026-1033"
+  },
+  "comment_count": 0,
+  "amount_received": 0,
+  "fulfilment_customer": null,
+  "products": [],
+  "completed_at": null,
+  "completed_by": null,
+  "created": "2026-11-09 20:59:49",
+  "updated": "2026-11-09 20:59:49"
+}

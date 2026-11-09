@@ -1,0 +1,35 @@
+{
+  "idcomment": 21259288,
+  "body": "Hello @Alice Example, see this",
+  "author_type": "user",
+  "author": {
+    "iduser": 43968,
+    "username": "alice",
+    "full_name": "Alice Example",
+    "image_url": "https://example.picqer.com/api/v1/users/43968/avatar"
+  },
+  "source_type": "customer",
+  "source": {
+    "idcustomer": 146465613,
+    "customerid": null,
+    "name": "Example Customer 1"
+  },
+  "mentions": [
+    {
+      "text": "@Alice Example",
+      "mentioned_type": "user",
+      "mentioned": {
+        "iduser": 43968,
+        "username": "alice",
+        "full_name": "Alice Example",
+        "image_url": "https://example.picqer.com/api/v1/users/43968/avatar"
+      }
+    }
+  ],
+  "show_at_related": false,
+  "reactions": [],
+  "images": [],
+  "is_visible_fulfilment": true,
+  "created_at": "2026-11-09 15:10:21",
+  "updated_at": "2026-11-09 15:10:21"
+}

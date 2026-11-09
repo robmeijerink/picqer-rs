@@ -1,0 +1,31 @@
+[
+  {
+    "idreturn_product": 11591124,
+    "idreturn": 7170814,
+    "idreturn_reason": 13907,
+    "idproduct": 52947981,
+    "idwarehouse": null,
+    "idlocation": null,
+    "price": 284.58,
+    "amount": 5,
+    "status": "expected",
+    "changeable": true,
+    "lot_number": null,
+    "expiration_date": null,
+    "product": {
+      "idproduct": 52947981,
+      "image_url": "https://files.example.com/30feb2de-a9a8-48c7-94cf-53cb7512316a/thumbnail-36-36-0-0-100.jpg",
+      "productcode": "IR934793",
+      "name": "Sony 1080i L",
+      "active": true,
+      "type": "normal",
+      "track_lot_numbers": false,
+      "track_expiration_dates": false
+    },
+    "return_reason": {
+      "idreturn_reason": 13907,
+      "name": "Wrong size"
+    },
+    "location": null
+  }
+]

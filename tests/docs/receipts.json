@@ -1,0 +1,261 @@
+{
+  "title": "Receipts, receiving purchases",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/receipts"
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/{idreceipt}"
+    },
+    {
+      "method": "POST",
+      "path": "/receipts"
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/{idreceipt}/expected-products"
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/{idreceipt}/expected-products/{idproduct}"
+    },
+    {
+      "method": "POST",
+      "path": "/receipts/{idreceipt}/products"
+    },
+    {
+      "method": "POST",
+      "path": "/receipts/{idreceipt}/products"
+    },
+    {
+      "method": "POST",
+      "path": "/receipts/{idreceipt}/products/{idreceipt_product}/revert"
+    },
+    {
+      "method": "PUT",
+      "path": "/receipts/{idreceipt}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/receipts/{idreceipt}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idreceipt",
+          "integer",
+          "generated"
+        ],
+        [
+          "idwarehouse",
+          "integer",
+          "optional"
+        ],
+        [
+          "version",
+          "integer",
+          "optional"
+        ],
+        [
+          "supplier",
+          "array",
+          "optional*"
+        ],
+        [
+          "purchaseorder",
+          "array",
+          "optional*"
+        ],
+        [
+          "receiptid",
+          "string",
+          "generated"
+        ],
+        [
+          "status",
+          "string",
+          "read-only"
+        ],
+        [
+          "completed_by",
+          "array",
+          "optional*"
+        ],
+        [
+          "completed_by.iduser",
+          "integer",
+          "read-only"
+        ],
+        [
+          "completed_by.name",
+          "string",
+          "read-only"
+        ],
+        [
+          "amount_received",
+          "integer",
+          "read-only"
+        ],
+        [
+          "completed_at",
+          "string",
+          "read-only"
+        ],
+        [
+          "created",
+          "string",
+          "read-only"
+        ],
+        [
+          "products",
+          "array",
+          "required"
+        ],
+        [
+          "products.idreceipt_product",
+          "integer",
+          "generated"
+        ],
+        [
+          "products.idpurchaseorder_product",
+          "integer",
+          "read-only"
+        ],
+        [
+          "products.idproduct",
+          "integer",
+          "required"
+        ],
+        [
+          "products.idpurchaseorder",
+          "integer",
+          "read-only"
+        ],
+        [
+          "products.productcode",
+          "string",
+          "read-only"
+        ],
+        [
+          "products.name",
+          "string",
+          "read-only"
+        ],
+        [
+          "products.amount",
+          "integer",
+          "required"
+        ],
+        [
+          "products.amount_ordered",
+          "integer",
+          "read-only"
+        ],
+        [
+          "products.added_by_receipt",
+          "boolean",
+          "read-only"
+        ],
+        [
+          "products.location",
+          "array",
+          "read-only"
+        ],
+        [
+          "products.created_at",
+          "string",
+          "read-only"
+        ],
+        [
+          "products.received_by_iduser",
+          "integer",
+          "read-only"
+        ],
+        [
+          "products.lot_number",
+          "string|null",
+          "read-only"
+        ],
+        [
+          "products.expiration_date",
+          "string|null",
+          "read-only"
+        ],
+        [
+          "products.reverted_at",
+          "string",
+          "read-only"
+        ],
+        [
+          "products.reverted_by_iduser",
+          "integer",
+          "read-only"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "receiptid"
+        ],
+        [
+          "status"
+        ],
+        [
+          "idpurchaseorder"
+        ],
+        [
+          "idsupplier"
+        ],
+        [
+          "updated_after"
+        ],
+        [
+          "completed_after"
+        ],
+        [
+          "include_indirect_receipts"
+        ]
+      ]
+    },
+    {
+      "heading": "Receiving traceable products",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "lot_number",
+          "string",
+          "when tracking lot numbers"
+        ],
+        [
+          "expiration_date",
+          "string",
+          "when tracking expiration dates"
+        ],
+        [
+          "idlocation",
+          "integer",
+          "for traceable products"
+        ]
+      ]
+    }
+  ]
+}

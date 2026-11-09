@@ -1,0 +1,64 @@
+{
+  "title": "Productfields",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/productfields"
+    },
+    {
+      "method": "GET",
+      "path": "/productfields/{idproductfield}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idproductfield",
+          "integer"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "type",
+          "text"
+        ],
+        [
+          "values",
+          "array"
+        ],
+        [
+          "required",
+          "boolean"
+        ],
+        [
+          "visible_picklist",
+          "boolean"
+        ],
+        [
+          "visible_invoice",
+          "boolean"
+        ],
+        [
+          "visible_shippinglist",
+          "boolean"
+        ],
+        [
+          "visible_portal",
+          "boolean"
+        ],
+        [
+          "visible_purchase_order",
+          "boolean"
+        ]
+      ]
+    }
+  ]
+}

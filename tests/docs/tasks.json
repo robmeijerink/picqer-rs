@@ -1,0 +1,186 @@
+{
+  "title": "Tasks",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/tasks"
+    },
+    {
+      "method": "GET",
+      "path": "/tasks/{id}"
+    },
+    {
+      "method": "POST",
+      "path": "/tasks"
+    },
+    {
+      "method": "PUT",
+      "path": "/tasks/{id}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/tasks/{id}"
+    },
+    {
+      "method": "POST",
+      "path": "/tasks/{id}/complete"
+    },
+    {
+      "method": "POST",
+      "path": "/tasks/{id}/uncomplete"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idtask",
+          "integer",
+          "generated"
+        ],
+        [
+          "title",
+          "string",
+          "required"
+        ],
+        [
+          "description",
+          "string",
+          "optional"
+        ],
+        [
+          "assigned_to_iduser",
+          "integer",
+          "optional"
+        ],
+        [
+          "is_seen_by_assignee",
+          "boolean",
+          "optional"
+        ],
+        [
+          "deadline_date",
+          "datetime",
+          "optional"
+        ],
+        [
+          "deadline_time",
+          "time",
+          "optional"
+        ],
+        [
+          "completed_at",
+          "datetime",
+          "optional"
+        ],
+        [
+          "completed_by_iduser",
+          "integer",
+          "optional"
+        ],
+        [
+          "created_by_iduser",
+          "integer",
+          "optional"
+        ],
+        [
+          "created_at",
+          "datetime",
+          "required"
+        ],
+        [
+          "updated_at",
+          "datetime",
+          "required"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "completed"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "title",
+          "string",
+          "required"
+        ],
+        [
+          "description",
+          "string",
+          "optional"
+        ],
+        [
+          "deadline_date",
+          "date",
+          "optional"
+        ],
+        [
+          "deadline_time",
+          "time",
+          "optional"
+        ],
+        [
+          "assigned_to_iduser",
+          "integer",
+          "optional"
+        ]
+      ]
+    },
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "title",
+          "string",
+          "optional"
+        ],
+        [
+          "description",
+          "string",
+          "optional"
+        ],
+        [
+          "deadline_date",
+          "date",
+          "required if deadline_time is provided"
+        ],
+        [
+          "deadline_time",
+          "time",
+          "optional"
+        ],
+        [
+          "assigned_to_iduser",
+          "integer",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

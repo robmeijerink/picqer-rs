@@ -1,0 +1,67 @@
+{
+  "idproduct": 52949235,
+  "idvatgroup": 29348,
+  "idsupplier": null,
+  "productcode": "picqer-rs-probe-d-1794232994",
+  "name": "picqer-rs probe d",
+  "price": 2.5,
+  "fixedstockprice": 0,
+  "productcode_supplier": null,
+  "deliverytime": null,
+  "description": null,
+  "barcode": null,
+  "unlimitedstock": false,
+  "assembled": false,
+  "type": "normal",
+  "weight": null,
+  "length": null,
+  "width": null,
+  "height": null,
+  "minimum_purchase_quantity": 0,
+  "purchase_in_quantities_of": 0,
+  "hs_code": null,
+  "country_of_origin": null,
+  "mid_code": null,
+  "show_on_portal": true,
+  "active": false,
+  "created": "2026-11-09 15:03:15",
+  "updated": "2026-11-09 15:03:15",
+  "idfulfilment_customer": null,
+  "comment_count": 0,
+  "analysis_abc_classification": null,
+  "analysis_pick_amount_per_day": null,
+  "tags": {},
+  "productfields": [
+    {
+      "idproductfield": 6242,
+      "title": "Season",
+      "value": "created"
+    },
+    {
+      "idproductfield": 6243,
+      "title": "Quantity",
+      "value": "many"
+    }
+  ],
+  "images": [],
+  "stock": [
+    {
+      "idwarehouse": 14153,
+      "stock": 0,
+      "reserved": 0,
+      "reservedbackorders": 0,
+      "reservedpicklists": 0,
+      "reservedallocations": 0,
+      "freestock": 0
+    }
+  ],
+  "pricelists": [
+    {
+      "idpricelist": 2004,
+      "price": 1.99
+    }
+  ],
+  "suppliers": [],
+  "track_lot_numbers": false,
+  "track_expiration_dates": false
+}

@@ -1,0 +1,17 @@
+{
+  "idproductfield": 6246,
+  "title": "Countries",
+  "type": "multicheckbox",
+  "values": [
+    "netherlands",
+    "belgium",
+    "luxembourg"
+  ],
+  "required": true,
+  "visible_picklist": true,
+  "visible_invoice": false,
+  "visible_shippinglist": true,
+  "visible_portal": false,
+  "visible_purchase_order": true,
+  "visible_receipt": true
+}

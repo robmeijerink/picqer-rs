@@ -1,0 +1,234 @@
+{
+  "idreturn": 7173525,
+  "idreturn_status": 17648,
+  "idcustomer": null,
+  "idorder": null,
+  "idtemplate": 14879,
+  "returnid": "R2026-1030",
+  "name": null,
+  "contactname": "Kim Voorbeeld",
+  "address": "Voorbeeldstraat 1",
+  "address2": "x",
+  "zipcode": "1234AB",
+  "city": "Voorbeeldstad",
+  "region": "y",
+  "country": "NL",
+  "full_address": "Sam Voorbeeld\nKim Voorbeeld\nVoorbeeldstraat 1\n1234AB Voorbeeldstad\nNederland",
+  "telephone": "0612",
+  "emailaddress": "probe@example.com",
+  "language": "nl",
+  "reference": "ref2",
+  "tracking_code": "TRK1",
+  "received_at": "2026-11-09 10:00:00",
+  "completed_at": "2026-11-09 21:35:24",
+  "completed_by_iduser": 1,
+  "created_at": "2026-11-09 21:34:40",
+  "updated_at": "2026-11-09 21:35:24",
+  "idfulfilment_customer": null,
+  "completed_by_fulfilment_customer_at": null,
+  "return_status": {
+    "idreturn_status": 17648,
+    "name": "Ontvangen",
+    "default": true,
+    "completed": false,
+    "color": "1db0de",
+    "created_at": "2026-11-09 12:15:56",
+    "updated_at": "2026-11-09 12:15:56",
+    "deleted_at": null
+  },
+  "customer": null,
+  "order": null,
+  "returned_products": [
+    {
+      "idreturn_product": 11595343,
+      "idreturn": 7173525,
+      "idreturn_reason": 13906,
+      "idproduct": 52975317,
+      "idwarehouse": 14153,
+      "idlocation": null,
+      "price": 0,
+      "amount": 2,
+      "status": "added_to_stock",
+      "changeable": false,
+      "lot_number": null,
+      "expiration_date": null,
+      "product": {
+        "idproduct": 52975317,
+        "image_url": null,
+        "productcode": "picqer-rs-live-locations",
+        "name": "picqer-rs live test locations",
+        "active": true,
+        "type": "normal",
+        "track_lot_numbers": false,
+        "track_expiration_dates": false
+      },
+      "return_reason": {
+        "idreturn_reason": 13906,
+        "name": "Defective"
+      },
+      "location": null
+    },
+    {
+      "idreturn_product": 11595345,
+      "idreturn": 7173525,
+      "idreturn_reason": 13906,
+      "idproduct": 52975317,
+      "idwarehouse": null,
+      "idlocation": null,
+      "price": 0,
+      "amount": 9,
+      "status": "unsalable",
+      "changeable": true,
+      "lot_number": null,
+      "expiration_date": null,
+      "product": {
+        "idproduct": 52975317,
+        "image_url": null,
+        "productcode": "picqer-rs-live-locations",
+        "name": "picqer-rs live test locations",
+        "active": true,
+        "type": "normal",
+        "track_lot_numbers": false,
+        "track_expiration_dates": false
+      },
+      "return_reason": {
+        "idreturn_reason": 13906,
+        "name": "Defective"
+      },
+      "location": null
+    },
+    {
+      "idreturn_product": 11595346,
+      "idreturn": 7173525,
+      "idreturn_reason": 13907,
+      "idproduct": 52975317,
+      "idwarehouse": 14153,
+      "idlocation": null,
+      "price": 20,
+      "amount": 4,
+      "status": "added_to_stock",
+      "changeable": false,
+      "lot_number": "R1",
+      "expiration_date": "2027-01-15",
+      "product": {
+        "idproduct": 52975317,
+        "image_url": null,
+        "productcode": "picqer-rs-live-locations",
+        "name": "picqer-rs live test locations",
+        "active": true,
+        "type": "normal",
+        "track_lot_numbers": false,
+        "track_expiration_dates": false
+      },
+      "return_reason": {
+        "idreturn_reason": 13907,
+        "name": "Wrong size"
+      },
+      "location": null
+    },
+    {
+      "idreturn_product": 11595348,
+      "idreturn": 7173525,
+      "idreturn_reason": 13906,
+      "idproduct": 52975317,
+      "idwarehouse": null,
+      "idlocation": null,
+      "price": 1,
+      "amount": 1,
+      "status": "expected",
+      "changeable": true,
+      "lot_number": null,
+      "expiration_date": null,
+      "product": {
+        "idproduct": 52975317,
+        "image_url": null,
+        "productcode": "picqer-rs-live-locations",
+        "name": "picqer-rs live test locations",
+        "active": true,
+        "type": "normal",
+        "track_lot_numbers": false,
+        "track_expiration_dates": false
+      },
+      "return_reason": {
+        "idreturn_reason": 13906,
+        "name": "Defective"
+      },
+      "location": null
+    },
+    {
+      "idreturn_product": 11595349,
+      "idreturn": 7173525,
+      "idreturn_reason": 13906,
+      "idproduct": 52975317,
+      "idwarehouse": null,
+      "idlocation": null,
+      "price": -1,
+      "amount": 1,
+      "status": "expected",
+      "changeable": true,
+      "lot_number": null,
+      "expiration_date": null,
+      "product": {
+        "idproduct": 52975317,
+        "image_url": null,
+        "productcode": "picqer-rs-live-locations",
+        "name": "picqer-rs live test locations",
+        "active": true,
+        "type": "normal",
+        "track_lot_numbers": false,
+        "track_expiration_dates": false
+      },
+      "return_reason": {
+        "idreturn_reason": 13906,
+        "name": "Defective"
+      },
+      "location": null
+    }
+  ],
+  "replacement_products": [
+    {
+      "idreturn_product_replacement": 650801,
+      "idreturn": 7173525,
+      "idproduct": 52975317,
+      "idpicklist": null,
+      "idbackorder": null,
+      "price": 0,
+      "amount": 1,
+      "status": "concept",
+      "changeable": true,
+      "product": {
+        "idproduct": 52975317,
+        "image_url": null,
+        "productcode": "picqer-rs-live-locations",
+        "name": "picqer-rs live test locations"
+      }
+    },
+    {
+      "idreturn_product_replacement": 650803,
+      "idreturn": 7173525,
+      "idproduct": 52975317,
+      "idpicklist": null,
+      "idbackorder": null,
+      "price": 5,
+      "amount": 3,
+      "status": "concept",
+      "changeable": true,
+      "product": {
+        "idproduct": 52975317,
+        "image_url": null,
+        "productcode": "picqer-rs-live-locations",
+        "name": "picqer-rs live test locations"
+      }
+    }
+  ],
+  "totals": {
+    "returned_products_count": 17,
+    "returned_products_value": 80,
+    "returned_products_value_vat": 16.8,
+    "replacement_products_count": 4,
+    "replacement_products_value": 15,
+    "replacement_products_value_vat": 3.1500000000000004,
+    "days_after_order_shipped": null
+  },
+  "comment_count": 0
+}

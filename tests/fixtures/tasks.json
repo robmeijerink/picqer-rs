@@ -1,0 +1,32 @@
+[
+  {
+    "idtask": 58187,
+    "idrecurring_task": null,
+    "title": "Restock shelf",
+    "description": "Refill with fifty units",
+    "assigned_to_iduser": 1,
+    "is_seen_by_assignee": false,
+    "deadline_date": "2031-03-04 00:00:00",
+    "deadline_time": "23:59:00",
+    "completed_at": null,
+    "completed_by_iduser": null,
+    "created_by_iduser": 1,
+    "created_at": "2026-11-09 22:49:35",
+    "updated_at": "2026-11-09 22:49:35"
+  },
+  {
+    "idtask": 58188,
+    "idrecurring_task": null,
+    "title": "picqer-rs fixture plain",
+    "description": null,
+    "assigned_to_iduser": null,
+    "is_seen_by_assignee": null,
+    "deadline_date": null,
+    "deadline_time": null,
+    "completed_at": "2026-11-09 22:49:35",
+    "completed_by_iduser": 1,
+    "created_by_iduser": 1,
+    "created_at": "2026-11-09 22:49:35",
+    "updated_at": "2026-11-09 22:49:35"
+  }
+]

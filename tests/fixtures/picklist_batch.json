@@ -1,0 +1,113 @@
+{
+  "idpicklist_batch": 9772360,
+  "idwarehouse": 14153,
+  "idpicklist_batch_preset": 18113,
+  "picklist_batchid": 2,
+  "title": "Singles batch",
+  "display_title": "Singles batch",
+  "type": "singles",
+  "status": "open",
+  "assigned_to": {
+    "iduser": 1,
+    "full_name": "Alex Example",
+    "username": "alex"
+  },
+  "completed_by": null,
+  "total_products": 31,
+  "total_picklists": 25,
+  "comment_count": 0,
+  "completed_at": null,
+  "created_at": "2026-11-09 16:51:42",
+  "updated_at": "2026-11-09 16:51:42",
+  "idfulfilment_customer": null,
+  "products": [
+    {
+      "idproduct": 52948001,
+      "name": "Diesel Photo Black",
+      "productcode": "WT309651",
+      "productcode_supplier": "DIE-WT309651",
+      "productcode_suppliers": [
+        "DIE-WT309651"
+      ],
+      "weight": 897,
+      "length": null,
+      "width": null,
+      "height": null,
+      "image": "https://files.example.com/80e22539-0d53-4ecf-ad1e-2c1078598df6/original.jpg",
+      "barcodes": [
+        "9748715026630"
+      ],
+      "productfields": [],
+      "stock_location": "A.4.6.4",
+      "amount": 11,
+      "amount_picked": 0,
+      "amount_collected": 0
+    },
+    {
+      "idproduct": 52947977,
+      "name": "Snom",
+      "productcode": "EC224205",
+      "productcode_supplier": "SNO-EC224205",
+      "productcode_suppliers": [
+        "SNO-EC224205"
+      ],
+      "weight": 1589,
+      "length": null,
+      "width": null,
+      "height": null,
+      "image": "https://files.example.com/07a281ab-0ad2-44f8-8979-dec0de735bb8/original.jpg",
+      "barcodes": [
+        "7253971842740"
+      ],
+      "productfields": [],
+      "stock_location": "A.6.2.5",
+      "amount": 6,
+      "amount_picked": 0,
+      "amount_collected": 0
+    }
+  ],
+  "picklists": [
+    {
+      "idpicklist": 197985537,
+      "picklistid": "P2026-1082",
+      "reference": "skikoffer #473712",
+      "status": "new",
+      "alias": "A",
+      "picking_container": null,
+      "total_products": 1,
+      "delivery_name": "Mick van Leeuwen",
+      "has_notes": false,
+      "has_customer_remarks": false,
+      "customer_remarks": null,
+      "created_at": "2026-11-09 12:47:53"
+    },
+    {
+      "idpicklist": 197985590,
+      "picklistid": "P2026-1126",
+      "reference": "wintersjaal #924308",
+      "status": "new",
+      "alias": "B",
+      "picking_container": null,
+      "total_products": 1,
+      "delivery_name": "Sterre Smeets",
+      "has_notes": false,
+      "has_customer_remarks": false,
+      "customer_remarks": null,
+      "created_at": "2026-11-09 12:47:58"
+    },
+    {
+      "idpicklist": 197985606,
+      "picklistid": "P2026-1142",
+      "reference": "",
+      "status": "new",
+      "alias": "C",
+      "picking_container": null,
+      "total_products": 1,
+      "delivery_name": "Guus Simsek",
+      "has_notes": false,
+      "has_customer_remarks": false,
+      "customer_remarks": null,
+      "created_at": "2026-11-09 12:48:00"
+    }
+  ]
+}

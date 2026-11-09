@@ -1,0 +1,9 @@
+{
+  "idhook": 70255,
+  "name": "picqer-rs live hook secret",
+  "event": "movements.moved",
+  "address": "https://example.com/picqer-rs-live-secret",
+  "active": false,
+  "secret": true,
+  "idfulfilment_customer": null
+}

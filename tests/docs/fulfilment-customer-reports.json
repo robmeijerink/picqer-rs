@@ -1,0 +1,28 @@
+{
+  "title": "Fulfilment customer reports",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/fulfilment/customers/{idfulfilment_customer}/report"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "idfulfilment_customer"
+        ],
+        [
+          "start-date"
+        ],
+        [
+          "end-date"
+        ]
+      ]
+    }
+  ]
+}

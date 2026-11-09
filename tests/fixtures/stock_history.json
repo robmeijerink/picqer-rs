@@ -1,0 +1,54 @@
+[
+  {
+    "idproduct_stock_history": 603015013,
+    "idproduct": 52947999,
+    "idwarehouse": 14153,
+    "iduser": 43968,
+    "idlocation": null,
+    "old_stock": 7,
+    "stock_change": 7,
+    "new_stock": 14,
+    "reason": "Purchase order received",
+    "change_type": "initialimport",
+    "changed_at": "2026-11-08 14:32:53"
+  },
+  {
+    "idproduct_stock_history": 603015012,
+    "idproduct": 52947999,
+    "idwarehouse": 14153,
+    "iduser": 43968,
+    "idlocation": null,
+    "old_stock": 10,
+    "stock_change": -3,
+    "new_stock": 7,
+    "reason": "Products picked for picklist #P2018-24942",
+    "change_type": "initialimport",
+    "changed_at": "2026-11-06 13:25:53"
+  },
+  {
+    "idproduct_stock_history": 603101447,
+    "idproduct": 52948438,
+    "idwarehouse": 14153,
+    "iduser": 43968,
+    "idlocation": null,
+    "old_stock": -100,
+    "stock_change": 100,
+    "new_stock": 0,
+    "reason": "picqer-rs probe cleanup",
+    "change_type": "api",
+    "changed_at": "2026-11-09 14:24:54"
+  },
+  {
+    "idproduct_stock_history": 603101438,
+    "idproduct": 52948438,
+    "idwarehouse": 14153,
+    "iduser": 43968,
+    "idlocation": null,
+    "old_stock": -101,
+    "stock_change": 1,
+    "new_stock": -100,
+    "reason": "picqer-rs probe",
+    "change_type": "api",
+    "changed_at": "2026-11-09 14:24:54"
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "idproductfield": 6242,
+    "title": "Season",
+    "type": "text",
+    "values": [],
+    "required": true,
+    "visible_picklist": false,
+    "visible_invoice": false,
+    "visible_shippinglist": true,
+    "visible_portal": false,
+    "visible_purchase_order": false,
+    "visible_receipt": true
+  },
+  {
+    "idproductfield": 6243,
+    "title": "Quantity",
+    "type": "radio",
+    "values": [
+      "none",
+      "few",
+      "many"
+    ],
+    "required": false,
+    "visible_picklist": false,
+    "visible_invoice": false,
+    "visible_shippinglist": false,
+    "visible_portal": false,
+    "visible_purchase_order": true,
+    "visible_receipt": true
+  },
+  {
+    "idproductfield": 6244,
+    "title": "Notes",
+    "type": "textarea",
+    "values": [],
+    "required": false,
+    "visible_picklist": true,
+    "visible_invoice": false,
+    "visible_shippinglist": true,
+    "visible_portal": false,
+    "visible_purchase_order": false,
+    "visible_receipt": false
+  },
+  {
+    "idproductfield": 6245,
+    "title": "Options",
+    "type": "checkbox",
+    "values": [
+      "Active",
+      "Once"
+    ],
+    "required": false,
+    "visible_picklist": true,
+    "visible_invoice": false,
+    "visible_shippinglist": false,
+    "visible_portal": false,
+    "visible_purchase_order": false,
+    "visible_receipt": true
+  },
+  {
+    "idproductfield": 6246,
+    "title": "Countries",
+    "type": "multicheckbox",
+    "values": [
+      "netherlands",
+      "belgium",
+      "luxembourg"
+    ],
+    "required": true,
+    "visible_picklist": true,
+    "visible_invoice": false,
+    "visible_shippinglist": true,
+    "visible_portal": false,
+    "visible_purchase_order": true,
+    "visible_receipt": true
+  },
+  {
+    "idproductfield": 6247,
+    "title": "Priority",
+    "type": "select",
+    "values": [
+      "none",
+      "low",
+      "high"
+    ],
+    "required": true,
+    "visible_picklist": false,
+    "visible_invoice": false,
+    "visible_shippinglist": false,
+    "visible_portal": false,
+    "visible_purchase_order": true,
+    "visible_receipt": false
+  }
+]

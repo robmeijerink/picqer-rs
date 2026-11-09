@@ -1,0 +1,59 @@
+{
+  "title": "Warehouses",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/warehouses"
+    },
+    {
+      "method": "GET",
+      "path": "/warehouses/{idwarehouse}"
+    },
+    {
+      "method": "GET",
+      "path": "/warehouses/{idwarehouse}/stock"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idwarehouse",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "accept_orders",
+          "boolean",
+          "required"
+        ],
+        [
+          "counts_for_general_stock",
+          "boolean",
+          "required"
+        ],
+        [
+          "priority",
+          "integer",
+          "required"
+        ],
+        [
+          "active",
+          "boolean",
+          "required"
+        ]
+      ]
+    }
+  ]
+}

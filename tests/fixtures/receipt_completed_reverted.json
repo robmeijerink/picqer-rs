@@ -1,0 +1,51 @@
+{
+  "idreceipt": 5227599,
+  "receiptid": "RC2026-1006",
+  "idwarehouse": 14153,
+  "version": 2,
+  "status": "completed",
+  "supplier": {
+    "idsupplier": 229504,
+    "name": "picqer-rs-live-supplier"
+  },
+  "purchaseorder": {
+    "idpurchaseorder": 3452020,
+    "purchaseorderid": "PO2026-1032"
+  },
+  "comment_count": 0,
+  "amount_received": 0,
+  "fulfilment_customer": null,
+  "products": [
+    {
+      "idreceipt_product": 128535534,
+      "idpurchaseorder": 3452020,
+      "idpurchaseorder_product": 56064961,
+      "idproduct": 52948437,
+      "purchaseorderid": "PO2026-1032",
+      "productcode": "picqer-rs-probe-a",
+      "productcode_supplier": null,
+      "name": "picqer-rs probe minimal",
+      "barcode": null,
+      "abc_classification": null,
+      "image": null,
+      "price": 0,
+      "amount": 1,
+      "amount_ordered": 5,
+      "added_by_receipt": false,
+      "received_by_iduser": 1,
+      "reverted_by_iduser": 1,
+      "reverted_at": "2026-11-09 20:58:27",
+      "lot_number": null,
+      "expiration_date": null,
+      "location": null,
+      "created_at": "2026-11-09 20:58:23"
+    }
+  ],
+  "completed_at": "2026-11-09 20:58:24",
+  "completed_by": {
+    "iduser": 1,
+    "name": "Alex Example"
+  },
+  "created": "2026-11-09 20:58:23",
+  "updated": "2026-11-09 20:58:27"
+}

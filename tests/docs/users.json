@@ -1,0 +1,91 @@
+{
+  "title": "Users",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/users"
+    },
+    {
+      "method": "GET",
+      "path": "/users/{iduser}"
+    },
+    {
+      "method": "GET",
+      "path": "/users/me"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "iduser",
+          "integer"
+        ],
+        [
+          "idpacking_station",
+          "integer"
+        ],
+        [
+          "username",
+          "string"
+        ],
+        [
+          "firstname",
+          "string"
+        ],
+        [
+          "lastname",
+          "string"
+        ],
+        [
+          "first_name",
+          "string"
+        ],
+        [
+          "last_name",
+          "string"
+        ],
+        [
+          "emailaddress",
+          "string"
+        ],
+        [
+          "language",
+          "string"
+        ],
+        [
+          "admin",
+          "boolean"
+        ],
+        [
+          "active",
+          "boolean"
+        ],
+        [
+          "last_login_at",
+          "datetime"
+        ],
+        [
+          "rights",
+          "array"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "active"
+        ]
+      ]
+    }
+  ]
+}

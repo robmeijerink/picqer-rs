@@ -1,0 +1,13 @@
+{
+  "idcompany_webshop_order": 101,
+  "idcompany_webshop": 1,
+  "idorder": 5001,
+  "foreign_id": "WEB12345",
+  "foreign_number": "ORDER-2025-001",
+  "foreign_status": "paid",
+  "status": "imported",
+  "reason": null,
+  "ordered": "2025-07-10 10:00:00",
+  "created": "2025-07-10 10:05:15",
+  "updated": "2025-07-11 14:30:00"
+}

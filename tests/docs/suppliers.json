@@ -1,0 +1,98 @@
+{
+  "title": "Suppliers",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/suppliers"
+    },
+    {
+      "method": "GET",
+      "path": "/suppliers/{idsupplier}"
+    },
+    {
+      "method": "POST",
+      "path": "/suppliers"
+    },
+    {
+      "method": "PUT",
+      "path": "/suppliers/{idsupplier}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idsupplier",
+          "integer",
+          "generated"
+        ],
+        [
+          "name",
+          "string",
+          "required"
+        ],
+        [
+          "contactname",
+          "string",
+          "optional"
+        ],
+        [
+          "address",
+          "string",
+          "optional"
+        ],
+        [
+          "address2",
+          "string",
+          "optional"
+        ],
+        [
+          "zipcode",
+          "string",
+          "optional"
+        ],
+        [
+          "city",
+          "string",
+          "optional"
+        ],
+        [
+          "region",
+          "string",
+          "optional"
+        ],
+        [
+          "country",
+          "string",
+          "optional"
+        ],
+        [
+          "telephone",
+          "string",
+          "optional"
+        ],
+        [
+          "emailaddress",
+          "string",
+          "optional"
+        ],
+        [
+          "remarks",
+          "text",
+          "optional"
+        ],
+        [
+          "language",
+          "string",
+          "optional"
+        ]
+      ]
+    }
+  ]
+}

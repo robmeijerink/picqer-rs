@@ -1,0 +1,73 @@
+{
+  "title": "Tags",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/tags"
+    },
+    {
+      "method": "GET",
+      "path": "/tags/{idtag}"
+    },
+    {
+      "method": "POST",
+      "path": "/tags"
+    },
+    {
+      "method": "PUT",
+      "path": "/tags/{idtag}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/tags/{idtag}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idtag",
+          "integer",
+          "generated"
+        ],
+        [
+          "title",
+          "string",
+          "required"
+        ],
+        [
+          "color",
+          "string",
+          "required"
+        ],
+        [
+          "inherit",
+          "boolean",
+          "required"
+        ],
+        [
+          "textColor",
+          "string",
+          "read-only"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "search"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "iduser": 43968,
+    "idpacking_station": null,
+    "username": "alice",
+    "firstname": "Alice",
+    "lastname": "Example",
+    "first_name": "Alice",
+    "last_name": "Example",
+    "full_name": "Alice Example",
+    "emailaddress": "alice@example.com",
+    "language": null,
+    "admin": true,
+    "active": true,
+    "last_login_at": null,
+    "created_at": "2026-11-09 12:15:56",
+    "updated_at": "2026-11-09 12:25:27"
+  }
+]

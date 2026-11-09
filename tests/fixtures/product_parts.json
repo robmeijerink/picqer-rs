@@ -1,0 +1,18 @@
+[
+  {
+    "idproduct_part": 2999942,
+    "idproduct": 52948028,
+    "amount": 2,
+    "productcode": "AI229209",
+    "name": "Nestle Wireless Photo 30 liters",
+    "type": "normal"
+  },
+  {
+    "idproduct_part": 2999943,
+    "idproduct": 52948438,
+    "amount": 1,
+    "productcode": "picqer-rs-probe-b-1794228447",
+    "name": "picqer-rs probe full",
+    "type": "virtual_composition"
+  }
+]

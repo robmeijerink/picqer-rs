@@ -1,0 +1,30 @@
+[
+  {
+    "idorder_product": 742133029,
+    "idproduct": 52947999,
+    "idvatgroup": 29348,
+    "productcode": "AF863248",
+    "name": "Nikon Replacement Camera Calculator S",
+    "remarks": null,
+    "price": 572.42,
+    "amount": 1,
+    "amount_cancelled": 0,
+    "weight": 711,
+    "partof_idorder_product": null,
+    "has_parts": false
+  },
+  {
+    "idorder_product": 742133034,
+    "idproduct": 52948028,
+    "idvatgroup": 29348,
+    "productcode": "AI229209",
+    "name": "Nestle Wireless Photo 30 liters",
+    "remarks": "handle with care",
+    "price": 698.73,
+    "amount": 2,
+    "amount_cancelled": 0,
+    "weight": 2417,
+    "partof_idorder_product": null,
+    "has_parts": false
+  }
+]

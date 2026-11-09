@@ -1,0 +1,157 @@
+{
+  "title": "Picklist Shipments",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/shipments"
+    },
+    {
+      "method": "GET",
+      "path": "/shipments/{idshipment}"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/{idpicklist}/shipments"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/{idpicklist}/shippingmethods"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/shipments?return=shipment"
+    },
+    {
+      "method": "POST",
+      "path": "/picklists/{idpicklist}/shipments?return=shipment"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idshipment",
+          "integer"
+        ],
+        [
+          "idpicklist",
+          "integer"
+        ],
+        [
+          "idorder",
+          "integer"
+        ],
+        [
+          "idreturn",
+          "integer"
+        ],
+        [
+          "idpackaging",
+          "integer"
+        ],
+        [
+          "idcompany_shippingprovider",
+          "integer"
+        ],
+        [
+          "provider",
+          "string"
+        ],
+        [
+          "providername",
+          "string"
+        ],
+        [
+          "public_providername",
+          "string"
+        ],
+        [
+          "carrier_key",
+          "string"
+        ],
+        [
+          "weight",
+          "integer"
+        ],
+        [
+          "cancelled",
+          "boolean"
+        ],
+        [
+          "idfulfilment_customer",
+          "integer"
+        ],
+        [
+          "parcels",
+          "array"
+        ],
+        [
+          "parcels.idparcel",
+          "integer"
+        ],
+        [
+          "parcels.idpackaging",
+          "integer"
+        ],
+        [
+          "parcels.weight",
+          "integer"
+        ],
+        [
+          "parcels.tracking_code",
+          "string"
+        ],
+        [
+          "parcels.tracking_url",
+          "string"
+        ],
+        [
+          "parcels.documents",
+          "array"
+        ],
+        [
+          "parcels.documents.idparcel_document",
+          "integer"
+        ],
+        [
+          "parcels.documents.type",
+          "string"
+        ],
+        [
+          "parcels.documents.size",
+          "string"
+        ],
+        [
+          "parcels.documents.format",
+          "string"
+        ],
+        [
+          "parcels.documents.url",
+          "string"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "search"
+        ],
+        [
+          "sincedate"
+        ],
+        [
+          "untildate"
+        ]
+      ]
+    }
+  ]
+}

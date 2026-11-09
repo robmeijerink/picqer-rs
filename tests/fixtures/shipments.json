@@ -1,0 +1,137 @@
+[
+  {
+    "idshipment": 194206218,
+    "idpicklist": 198029214,
+    "idorder": 282431557,
+    "idreturn": null,
+    "idshippingprovider": 4,
+    "idcompany_shippingprovider": 15793,
+    "idcompany_shippingprovider_profile": 53795,
+    "provider": "Manual",
+    "providername": "TestManual",
+    "public_providername": "Example",
+    "profile_name": "TestManualProfile",
+    "carrier_key": "postal",
+    "labelurl": "https://files.example.com/a2269221-058a-47ff-833f-33dd9af4cad2/label.pdf",
+    "labelurl_pdf": "https://files.example.com/a2269221-058a-47ff-833f-33dd9af4cad2/label.pdf",
+    "labelurl_zpl": null,
+    "trackingcode": "ABC",
+    "trackingurl": "https://example.com/t/ABC",
+    "tracktraceurl": "https://example.com/t/ABC",
+    "weight": 900,
+    "created_by_iduser": 1,
+    "cancelled": false,
+    "created": "2026-11-09 18:39:35",
+    "updated": "2026-11-09 18:39:35",
+    "idfulfilment_customer": 11012,
+    "idpackaging": 3132,
+    "parcels": [
+      {
+        "idparcel": 180992014,
+        "idpackaging": 3132,
+        "weight": 900,
+        "tracking_code": "ABC",
+        "tracking_url": "https://example.com/t/ABC",
+        "documents": [
+          {
+            "idparcel_document": 274471306,
+            "type": "label",
+            "size": "A6",
+            "format": "pdf",
+            "url": "https://files.example.com/a2269221-058a-47ff-833f-33dd9af4cad2/label.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idshipment": 194206217,
+    "idpicklist": 198029214,
+    "idorder": 282431557,
+    "idreturn": null,
+    "idshippingprovider": 4,
+    "idcompany_shippingprovider": 15793,
+    "idcompany_shippingprovider_profile": 53795,
+    "provider": "Manual",
+    "providername": "TestManual",
+    "public_providername": "Example",
+    "profile_name": "TestManualProfile",
+    "carrier_key": "postal",
+    "labelurl": "https://files.example.com/4e4c4090-7a15-4472-b73c-b88c74246982/label.pdf",
+    "labelurl_pdf": "https://files.example.com/4e4c4090-7a15-4472-b73c-b88c74246982/label.pdf",
+    "labelurl_zpl": null,
+    "trackingcode": null,
+    "trackingurl": null,
+    "tracktraceurl": null,
+    "weight": 800,
+    "created_by_iduser": 1,
+    "cancelled": false,
+    "created": "2026-11-09 18:39:34",
+    "updated": "2026-11-09 18:39:34",
+    "idfulfilment_customer": 11012,
+    "idpackaging": null,
+    "parcels": [
+      {
+        "idparcel": 180992013,
+        "idpackaging": null,
+        "weight": 800,
+        "tracking_code": null,
+        "tracking_url": null,
+        "documents": [
+          {
+            "idparcel_document": 274471305,
+            "type": "label",
+            "size": "A6",
+            "format": "pdf",
+            "url": "https://files.example.com/4e4c4090-7a15-4472-b73c-b88c74246982/label.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idshipment": 194206224,
+    "idpicklist": 198029214,
+    "idorder": 282431557,
+    "idreturn": null,
+    "idshippingprovider": 4,
+    "idcompany_shippingprovider": 15793,
+    "idcompany_shippingprovider_profile": 53795,
+    "provider": "Manual",
+    "providername": "TestManual",
+    "public_providername": "Example",
+    "profile_name": "TestManualProfile",
+    "carrier_key": "postal",
+    "labelurl": "https://files.example.com/7b49e49c-09f5-4993-8e06-694b84361653/label.pdf",
+    "labelurl_pdf": "https://files.example.com/7b49e49c-09f5-4993-8e06-694b84361653/label.pdf",
+    "labelurl_zpl": null,
+    "trackingcode": null,
+    "trackingurl": null,
+    "tracktraceurl": null,
+    "weight": 0,
+    "created_by_iduser": 1,
+    "cancelled": false,
+    "created": "2026-11-09 18:39:36",
+    "updated": "2026-11-09 18:39:36",
+    "idfulfilment_customer": 11012,
+    "idpackaging": null,
+    "parcels": [
+      {
+        "idparcel": 180992020,
+        "idpackaging": null,
+        "weight": 0,
+        "tracking_code": null,
+        "tracking_url": null,
+        "documents": [
+          {
+            "idparcel_document": 274471313,
+            "type": "label",
+            "size": "A6",
+            "format": "pdf",
+            "url": "https://files.example.com/7b49e49c-09f5-4993-8e06-694b84361653/label.pdf"
+          }
+        ]
+      }
+    ]
+  }
+]

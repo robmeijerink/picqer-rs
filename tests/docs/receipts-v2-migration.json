@@ -1,0 +1,96 @@
+{
+  "title": "Migrating to v2 receipts",
+  "endpoints": [],
+  "tables": [
+    {
+      "heading": "Removed fields",
+      "columns": [
+        "change",
+        "v1",
+        "v2"
+      ],
+      "rows": [
+        [
+          "Added field",
+          "version (also added to v1 resource)",
+          "version"
+        ],
+        [
+          "Changed field",
+          "products.stock_location",
+          "products.location"
+        ],
+        [
+          "Removed field",
+          "remarks",
+          "-"
+        ],
+        [
+          "Removed field",
+          "amount_received_excessive",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.amount_backorders",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.amount_more_than_ordered",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.amount_previously_received",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.amount_receiving",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.candidate_purchaseorders",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.locations",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.product_locations",
+          "-"
+        ],
+        [
+          "Removed field",
+          "products.stock",
+          "-"
+        ],
+        [
+          "Added field",
+          "-",
+          "products.created_at"
+        ],
+        [
+          "Added field",
+          "-",
+          "products.received_by_iduser"
+        ],
+        [
+          "Added field",
+          "-",
+          "products.reverted_at"
+        ],
+        [
+          "Added field",
+          "-",
+          "products.reverted_by_iduser"
+        ]
+      ]
+    }
+  ]
+}

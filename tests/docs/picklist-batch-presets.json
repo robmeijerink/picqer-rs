@@ -1,0 +1,51 @@
+{
+  "title": "Picklist batch presets",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/picklists/batches/presets"
+    },
+    {
+      "method": "GET",
+      "path": "/picklists/batches/presets/{idpicklist_batch_preset}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type"
+      ],
+      "rows": [
+        [
+          "idpicklist_batch_preset",
+          "integer"
+        ],
+        [
+          "name",
+          "string"
+        ],
+        [
+          "active",
+          "boolean"
+        ],
+        [
+          "picklists_count",
+          "integer"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "inactive"
+        ]
+      ]
+    }
+  ]
+}

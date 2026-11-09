@@ -1,0 +1,16 @@
+[
+  {
+    "old_fixedstockprice": 3.25,
+    "fixedstockprice_change": 2.25,
+    "new_fixedstockprice": 5.5,
+    "iduser": 43968,
+    "date": "2026-11-09 14:38:03"
+  },
+  {
+    "old_fixedstockprice": 5.5,
+    "fixedstockprice_change": 0.75,
+    "new_fixedstockprice": 6.25,
+    "iduser": 43968,
+    "date": "2026-11-09 14:38:03"
+  }
+]

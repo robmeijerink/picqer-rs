@@ -1,0 +1,29 @@
+{
+  "idreturn_product": 11595349,
+  "idreturn": 7173525,
+  "idreturn_reason": 13906,
+  "idproduct": 52975317,
+  "idwarehouse": null,
+  "idlocation": null,
+  "price": -1,
+  "amount": 1,
+  "status": "expected",
+  "changeable": true,
+  "lot_number": null,
+  "expiration_date": null,
+  "product": {
+    "idproduct": 52975317,
+    "image_url": null,
+    "productcode": "picqer-rs-live-locations",
+    "name": "picqer-rs live test locations",
+    "active": true,
+    "type": "normal",
+    "track_lot_numbers": false,
+    "track_expiration_dates": false
+  },
+  "return_reason": {
+    "idreturn_reason": 13906,
+    "name": "Defective"
+  },
+  "location": null
+}

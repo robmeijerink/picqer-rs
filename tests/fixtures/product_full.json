@@ -1,0 +1,73 @@
+{
+  "idproduct": 52948438,
+  "idvatgroup": 29348,
+  "idsupplier": 229481,
+  "productcode": "picqer-rs-probe-b-1794228447",
+  "name": "picqer-rs probe full",
+  "price": 12.5,
+  "fixedstockprice": 3.25,
+  "productcode_supplier": "SUP-1",
+  "deliverytime": 3,
+  "description": "A longer description",
+  "barcode": "8712345678906",
+  "unlimitedstock": false,
+  "assembled": false,
+  "type": "normal",
+  "weight": 250,
+  "length": 10,
+  "width": 20,
+  "height": 30,
+  "minimum_purchase_quantity": 2,
+  "purchase_in_quantities_of": 2,
+  "hs_code": "123456",
+  "country_of_origin": "NL",
+  "mid_code": "NLMID123",
+  "show_on_portal": true,
+  "active": false,
+  "created": "2026-11-09 13:47:28",
+  "updated": "2026-11-09 14:05:18",
+  "idfulfilment_customer": null,
+  "comment_count": 0,
+  "analysis_abc_classification": null,
+  "analysis_pick_amount_per_day": null,
+  "tags": {
+    "lightspeed": {
+      "idtag": 262297,
+      "title": "lightspeed",
+      "color": "#1dc42e",
+      "inherit": false,
+      "textColor": "#000000"
+    }
+  },
+  "productfields": [],
+  "images": [],
+  "stock": [
+    {
+      "idwarehouse": 14153,
+      "stock": 0,
+      "reserved": 0,
+      "reservedbackorders": 0,
+      "reservedpicklists": 0,
+      "reservedallocations": 0,
+      "freestock": 0
+    }
+  ],
+  "pricelists": [
+    {
+      "idpricelist": 2003,
+      "price": 9.99
+    }
+  ],
+  "suppliers": [
+    {
+      "idsupplier": 229481,
+      "productcode": "SUP-1",
+      "deliverytime": 3,
+      "minimum_purchase_quantity": 2,
+      "purchase_in_quantities_of": 2,
+      "is_default": true
+    }
+  ],
+  "track_lot_numbers": false,
+  "track_expiration_dates": false
+}

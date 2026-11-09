@@ -1,0 +1,100 @@
+{
+  "product": {
+    "idproduct": 52975317,
+    "idvatgroup": 29348,
+    "idsupplier": null,
+    "productcode": "picqer-rs-live-locations",
+    "name": "picqer-rs live test locations",
+    "price": 1,
+    "fixedstockprice": 0,
+    "productcode_supplier": null,
+    "deliverytime": null,
+    "description": null,
+    "barcode": null,
+    "unlimitedstock": false,
+    "assembled": false,
+    "type": "normal",
+    "weight": null,
+    "length": null,
+    "width": null,
+    "height": null,
+    "minimum_purchase_quantity": 0,
+    "purchase_in_quantities_of": 0,
+    "hs_code": null,
+    "country_of_origin": null,
+    "mid_code": null,
+    "show_on_portal": true,
+    "active": true,
+    "created": "2026-11-09 20:28:24",
+    "updated": "2026-11-09 20:59:16",
+    "idfulfilment_customer": null,
+    "comment_count": 0,
+    "analysis_abc_classification": null,
+    "analysis_pick_amount_per_day": null,
+    "tags": {},
+    "productfields": [],
+    "images": [],
+    "stock": [
+      {
+        "idwarehouse": 14153,
+        "stock": 0,
+        "reserved": 0,
+        "reservedbackorders": 0,
+        "reservedpicklists": 0,
+        "reservedallocations": 0,
+        "freestock": 0
+      },
+      {
+        "idwarehouse": 14160,
+        "stock": 0,
+        "reserved": 0,
+        "reservedbackorders": 0,
+        "reservedpicklists": 0,
+        "reservedallocations": 0,
+        "freestock": 0
+      }
+    ],
+    "pricelists": [],
+    "suppliers": [],
+    "track_lot_numbers": false,
+    "track_expiration_dates": false
+  },
+  "unavailable_backorders": 0,
+  "earliest_delivery_date": null,
+  "totals": {
+    "expected": 20,
+    "received": 0,
+    "remaining": 20
+  },
+  "strategies": [
+    {
+      "id": "2bd9c0ed00116be1258e0cc66617d7c8",
+      "id_v2": "eyJzdHJhdGVneSI6ImF1dG9tYXRpYyIsImlkcHVyY2hhc2VvcmRlcl9wcm9kdWN0cyI6WzU2MDY0OTYzXX0=",
+      "strategy": "automatic",
+      "parameters": {},
+      "ordered": 20,
+      "received": 0,
+      "remaining": 20
+    },
+    {
+      "id": "740ca34d93035549bbc885a542e20ab6",
+      "id_v2": "eyJzdHJhdGVneSI6InB1cmNoYXNlb3JkZXJfcHJvZHVjdCIsImlkcHVyY2hhc2VvcmRlcl9wcm9kdWN0Ijo1NjA2NDk2M30=",
+      "strategy": "purchaseorder_product",
+      "parameters": {
+        "idpurchaseorder_product": 56064963
+      },
+      "purchaseorderid": "PO2026-1033",
+      "ordered": 20,
+      "received": 0,
+      "remaining": 20
+    },
+    {
+      "id": "22af645d1859cb5ca6da0c484f1f37ea",
+      "id_v2": "eyJzdHJhdGVneSI6Im5ldyJ9",
+      "strategy": "new",
+      "parameters": {},
+      "idpurchaseorder": 3452022,
+      "purchaseorderid": "PO2026-1033"
+    }
+  ]
+}

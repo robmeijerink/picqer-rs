@@ -1,0 +1,126 @@
+[
+  {
+    "idproduct": 52947999,
+    "idvatgroup": 29348,
+    "idsupplier": 229481,
+    "productcode": "AF863248",
+    "name": "Nikon Replacement Camera Calculator S",
+    "price": 572.42,
+    "fixedstockprice": 555.25,
+    "productcode_supplier": "NIK-AF863248",
+    "deliverytime": null,
+    "description": null,
+    "barcode": "4917108336627",
+    "unlimitedstock": false,
+    "assembled": false,
+    "type": "normal",
+    "weight": 711,
+    "length": null,
+    "width": null,
+    "height": null,
+    "minimum_purchase_quantity": 0,
+    "purchase_in_quantities_of": 0,
+    "hs_code": null,
+    "country_of_origin": null,
+    "mid_code": null,
+    "show_on_portal": true,
+    "active": true,
+    "created": "2026-08-27 14:07:21",
+    "updated": "2026-11-09 12:43:51",
+    "idfulfilment_customer": 11012,
+    "comment_count": 0,
+    "analysis_abc_classification": null,
+    "analysis_pick_amount_per_day": null,
+    "tags": {},
+    "productfields": [],
+    "images": [
+      "https://files-cdn.picqer.net/7398/a0274bcb-2d14-44c2-af4e-57653ce31647/original.jpg"
+    ],
+    "stock": [
+      {
+        "idwarehouse": 14153,
+        "stock": 14,
+        "reserved": 6,
+        "reservedbackorders": 0,
+        "reservedpicklists": 6,
+        "reservedallocations": 0,
+        "freestock": 8
+      }
+    ],
+    "pricelists": [],
+    "suppliers": [
+      {
+        "idsupplier": 229481,
+        "productcode": "NIK-AF863248",
+        "deliverytime": null,
+        "minimum_purchase_quantity": null,
+        "purchase_in_quantities_of": null,
+        "is_default": true
+      }
+    ],
+    "track_lot_numbers": false,
+    "track_expiration_dates": false
+  },
+  {
+    "idproduct": 52948028,
+    "idvatgroup": 29348,
+    "idsupplier": 229480,
+    "productcode": "AI229209",
+    "name": "Nestle Wireless Photo 30 liters",
+    "price": 698.73,
+    "fixedstockprice": 517.06,
+    "productcode_supplier": "NES-AI229209",
+    "deliverytime": null,
+    "description": null,
+    "barcode": "6009912273033",
+    "unlimitedstock": false,
+    "assembled": false,
+    "type": "normal",
+    "weight": 2417,
+    "length": null,
+    "width": null,
+    "height": null,
+    "minimum_purchase_quantity": 0,
+    "purchase_in_quantities_of": 0,
+    "hs_code": null,
+    "country_of_origin": null,
+    "mid_code": null,
+    "show_on_portal": true,
+    "active": true,
+    "created": "2026-08-24 00:20:59",
+    "updated": "2026-11-09 12:45:00",
+    "idfulfilment_customer": 11012,
+    "comment_count": 0,
+    "analysis_abc_classification": null,
+    "analysis_pick_amount_per_day": null,
+    "tags": {},
+    "productfields": [],
+    "images": [
+      "https://files-cdn.picqer.net/7398/d9ca3c18-7a78-4672-9070-6012a7f233ac/original.jpg"
+    ],
+    "stock": [
+      {
+        "idwarehouse": 14153,
+        "stock": 24,
+        "reserved": 21,
+        "reservedbackorders": 0,
+        "reservedpicklists": 21,
+        "reservedallocations": 0,
+        "freestock": 3
+      }
+    ],
+    "pricelists": [],
+    "suppliers": [
+      {
+        "idsupplier": 229480,
+        "productcode": "NES-AI229209",
+        "deliverytime": null,
+        "minimum_purchase_quantity": null,
+        "purchase_in_quantities_of": null,
+        "is_default": true
+      }
+    ],
+    "track_lot_numbers": false,
+    "track_expiration_dates": false
+  }
+]

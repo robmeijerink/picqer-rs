@@ -1,0 +1,235 @@
+{
+  "title": "Purchase orders",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/purchaseorders"
+    },
+    {
+      "method": "GET",
+      "path": "/purchaseorders/{idpurchaseorder}"
+    },
+    {
+      "method": "POST",
+      "path": "/purchaseorders"
+    },
+    {
+      "method": "POST",
+      "path": "/purchaseorders/{idpurchaseorder}/mark-as-purchased"
+    },
+    {
+      "method": "PUT",
+      "path": "/purchaseorders/{idpurchaseorder}"
+    },
+    {
+      "method": "POST",
+      "path": "/purchaseorders/{idpurchaseorder}/close"
+    },
+    {
+      "method": "POST",
+      "path": "/purchaseorders/{idpurchaseorder}/cancel"
+    },
+    {
+      "method": "POST",
+      "path": "/purchaseorders/{idpurchaseorder}/products"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Attributes",
+      "columns": [
+        "name",
+        "type",
+        "required"
+      ],
+      "rows": [
+        [
+          "idpurchaseorder",
+          "integer",
+          "generated"
+        ],
+        [
+          "idsupplier",
+          "integer",
+          "optional"
+        ],
+        [
+          "idwarehouse",
+          "integer",
+          "optional"
+        ],
+        [
+          "idtemplate",
+          "integer",
+          "optional"
+        ],
+        [
+          "purchaseorderid",
+          "string",
+          "generated"
+        ],
+        [
+          "supplier_orderid",
+          "string",
+          "optional"
+        ],
+        [
+          "supplier_name",
+          "string",
+          "optional"
+        ],
+        [
+          "status",
+          "string",
+          "generated"
+        ],
+        [
+          "remarks",
+          "string",
+          "optional"
+        ],
+        [
+          "delivery_date",
+          "string",
+          "optional"
+        ],
+        [
+          "language",
+          "string",
+          "optional"
+        ],
+        [
+          "purchased_by_iduser",
+          "integer",
+          "read-only"
+        ],
+        [
+          "purchased_at",
+          "string",
+          "read-only"
+        ],
+        [
+          "completed_by_iduser",
+          "integer",
+          "read-only"
+        ],
+        [
+          "completed_at",
+          "string",
+          "read-only"
+        ],
+        [
+          "created_by_iduser",
+          "integer",
+          "read-only"
+        ],
+        [
+          "created",
+          "string",
+          "read-only"
+        ],
+        [
+          "updated",
+          "string",
+          "read-only"
+        ],
+        [
+          "idfulfilment_customer",
+          "integer",
+          "optional"
+        ],
+        [
+          "comment_count",
+          "integer",
+          "read-only"
+        ],
+        [
+          "products",
+          "array",
+          "optional"
+        ],
+        [
+          "products.idpurchaseorder_product",
+          "integer",
+          "generated"
+        ],
+        [
+          "products.idproduct",
+          "integer",
+          "required"
+        ],
+        [
+          "products.idvatgroup",
+          "integer",
+          "read-only"
+        ],
+        [
+          "products.productcode",
+          "string",
+          "read-only"
+        ],
+        [
+          "products.productcode_supplier",
+          "string",
+          "read-only"
+        ],
+        [
+          "products.name",
+          "string",
+          "read-only"
+        ],
+        [
+          "products.price",
+          "float",
+          "optional"
+        ],
+        [
+          "products.amount",
+          "integer",
+          "required"
+        ],
+        [
+          "products.amountreceived",
+          "integer",
+          "read-only"
+        ],
+        [
+          "products.delivery_date",
+          "string",
+          "optional"
+        ],
+        [
+          "products.weight",
+          "integer",
+          "read-only"
+        ]
+      ]
+    },
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "status"
+        ],
+        [
+          "search"
+        ],
+        [
+          "updated_after"
+        ],
+        [
+          "idfulfilment_customer"
+        ],
+        [
+          "idsupplier"
+        ],
+        [
+          "idwarehouse"
+        ]
+      ]
+    }
+  ]
+}

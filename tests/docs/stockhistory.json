@@ -1,0 +1,38 @@
+{
+  "title": "Stock history",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/stockhistory"
+    },
+    {
+      "method": "GET",
+      "path": "/stockhistory/{idproduct_stock_history}"
+    }
+  ],
+  "tables": [
+    {
+      "heading": "Filters",
+      "columns": [
+        "attribute"
+      ],
+      "rows": [
+        [
+          "sincedate"
+        ],
+        [
+          "untildate"
+        ],
+        [
+          "idproduct"
+        ],
+        [
+          "idwarehouse"
+        ],
+        [
+          "iduser"
+        ]
+      ]
+    }
+  ]
+}

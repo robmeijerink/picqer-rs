@@ -1,0 +1,21 @@
+{
+  "idreturn_log": 23066716,
+  "idpicklist": null,
+  "picklistid": null,
+  "idreturn_status": 17650,
+  "iduser": 1,
+  "type": "comment",
+  "message": "notify",
+  "notified_customer": true,
+  "created_at": "2026-11-09 21:35:24",
+  "updated_at": "2026-11-09 21:35:24",
+  "return_status": {
+    "idreturn_status": 17650,
+    "name": "In repair",
+    "color": "ff4444"
+  },
+  "user": {
+    "iduser": 1,
+    "name": "Alex Example"
+  }
+}

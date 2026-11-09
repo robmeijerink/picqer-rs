@@ -1,0 +1,30 @@
+[
+  {
+    "idtag": 262297,
+    "title": "lightspeed",
+    "color": "#1dc42e",
+    "inherit": false,
+    "textColor": "#000000"
+  },
+  {
+    "idtag": 262299,
+    "title": "magento",
+    "color": "#c17da4",
+    "inherit": false,
+    "textColor": "#000000"
+  },
+  {
+    "idtag": 262298,
+    "title": "skikoffer",
+    "color": "#ba7033",
+    "inherit": false,
+    "textColor": "#000000"
+  },
+  {
+    "idtag": 262300,
+    "title": "wintersjaal",
+    "color": "#24f221",
+    "inherit": false,
+    "textColor": "#000000"
+  }
+]
