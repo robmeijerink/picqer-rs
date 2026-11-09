@@ -1,5 +1,7 @@
 # picqer-rs
 
+> WORK IN PROGRESS
+
 Async Rust client for the [Picqer](https://picqer.com) API.
 
 > This is an unofficial, community-maintained library. It is not affiliated with, endorsed by or supported by Picqer.
