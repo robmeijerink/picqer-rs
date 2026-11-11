@@ -1,7 +1,5 @@
 # picqer-rs
 
-> WORK IN PROGRESS
-
 Async Rust client for the [Picqer](https://picqer.com) API.
 
 > This is an unofficial, community-maintained library. It is not affiliated with, endorsed by or supported by Picqer.
@@ -35,31 +33,13 @@ async fn main() -> picqer_rs::Result<()> {
 
 `Client::from_env` reads `PICQER_SUBDOMAIN` and `PICQER_API_KEY`, see [Configuration](#configuration). Create an API key in your Picqer account under Settings > API Keys. To pass the subdomain and the key yourself, use `Client::new(Subdomain::new("example")?, ApiKey::new(key)?, user_agent)?`.
 
-Making an order works the same way. The amount of a line is a `NonZeroU32` and an order needs at least one line, so what Picqer would silently accept, such as an order without lines or a negative amount, does not compile or is refused before it is sent:
+### Examples
 
-```rust
-use std::num::NonZeroU32;
+The [`examples`](examples) folder has a runnable example for every part of the crate, listed in [`examples/README.md`](examples/README.md). Each one starts with what it does and whether it writes to the account.
 
-use picqer_rs::orders::{NewOrder, NewOrderProduct};
-use picqer_rs::types::{CustomerId, NonEmpty, ProductId};
-use picqer_rs::Client;
-
-async fn make_order(client: &Client) -> picqer_rs::Result<()> {
-    let line = NewOrderProduct::by_id(ProductId(1234), NonZeroU32::new(2).unwrap());
-    let order = NewOrder::for_customer(CustomerId(5678), NonEmpty::new(vec![line])?)
-        .reference("webshop-1001");
-
-    let created = client.orders().create(&order).await?;
-    println!("{} is {:?}", created.orderid, created.status);
-
-    client.orders().process(created.idorder).await?;
-    let order = client.orders().get(created.idorder).await?;
-    println!("{} is now {:?}", order.orderid, order.status);
-    Ok(())
-}
+```sh
+PICQER_SUBDOMAIN=example PICQER_API_KEY=... cargo run --example list_orders
 ```
-
-Picqer makes the order a concept. `process` turns it into picklists in the background, so the order that comes back from `get` can still show its old status for a moment, see [Orders](#orders).
 
 ### Configuration
 
@@ -105,7 +85,7 @@ When the limit is reached the request fails with `Error::RateLimited`. Picqer ig
 
 Requests in flight at the same time are not counted by `throttle`, so it lowers the number of `429` responses but does not rule them out.
 
-### Webhooks
+### Webhook signatures
 
 ```rust
 let secret = WebhookSecret::new(secret)?;
@@ -138,7 +118,7 @@ Use `default-features = false, features = ["native-tls"]` to switch TLS backends
 
 ## Covered
 
-Packagings, shipping providers, shipments, receipts, returns, backorders, tasks, picking containers, webhook subscriptions, stats, webshop orders, picklist batches and their presets, locations, the locations of a product, moving stock, location types and the stock history of locations, templates, users, packing stations, purchase orders, suppliers, picklists, orders, comments, customers (with their addresses and tags), customer fields, order fields, warehouses (with their stock), VAT groups, tags, pricelists, product fields, products (including their tags, pricelist prices, stock, parts, compositions, images, warehouse settings, price histories and expected deliveries) and the stock history. Every list has a call for one page and a call that follows all pages. The sections of the [API documentation](https://picqer.com/en/api) that are not listed here are added step by step.
+Packagings, shipping providers, shipments, receipts, returns, backorders, tasks, picking containers, webhook subscriptions, stats, webshop orders, fulfilment customers and their reports, the protocol of custom and external shipping providers, picklist batches and their presets, locations, the locations of a product, moving stock, location types and the stock history of locations, templates, users, packing stations, purchase orders, suppliers, picklists, orders, comments, customers (with their addresses and tags), customer fields, order fields, warehouses (with their stock), VAT groups, tags, pricelists, product fields, products (including their tags, pricelist prices, stock, parts, compositions, images, warehouse settings, price histories and expected deliveries) and the stock history. Every list has a call for one page and a call that follows all pages. What is left out is listed under [What is not included](#what-is-not-included).
 
 ### Money, dates and units
 
@@ -162,11 +142,11 @@ An order is made for a customer or for a guest. A guest order needs both address
 
 Picqer does the work of a status change in the background. The order that comes back still has its old status, so fetch it again a little later. While Picqer is busy with an earlier request for the order, such as allocating stock, it refuses another with `ErrorCode::OrderBeingProcessed`. Cancelling a processed order needs `force_cancel`, which takes its picklists away too. A cancelled order stays in Picqer, and `undo_cancellation` makes it a concept again. A change to an order ignores the fields it may not change, such as the status.
 
-The status of an order, its `orderid` and the tags are read as described for reading orders. The orders of a customer made through a fulfilment customer can only hold products of that fulfilment customer. The deprecated notes are not covered.
+The orders of a customer made through a fulfilment customer can only hold products of that fulfilment customer. The deprecated notes are not covered.
 
 Order fields and customer fields are made in the Picqer app and all six types were checked. Order fields are read with `order_fields()`. `NewOrder::orderfields` sets values when an order is made, and `orders().set_field`, `fields` and `remove_field` change them later, one field per call. Picqer reports a value as text, also when a number was sent, and does not check a value against the values of a radio, select, checkbox or multicheckbox field. `OrderField::value` checks that a radio, select or checkbox value is one of the listed values, because the app lets a checkbox take only one, and `choices` writes the ticked values of a multicheckbox with a semicolon between them, as the app does. An empty text removes the value of an order field, but a customer field keeps it as an empty value, so remove that one with `cleared`. Customer fields work the same way: `CustomerField::value`, `choices` and `cleared` build what `NewCustomer::customerfields` and `CustomerChanges::customerfields` take, and a single customer reports the fields that have a value. Picqer does not enforce a required order or customer field when an order or customer is made through the API.
 
-Picqer's documentation calls the number of an order (`orderid`) an integer, but it is text such as `O2026-1599`. A status Picqer reports that this crate does not know is kept as `Reported::Unknown`. The tags of an order are an object when it has some and an empty list when it has none, and both are read. The picklists of an order, `pickup_point_data` and `comment_count` are not read yet.
+Picqer's documentation calls the number of an order (`orderid`) an integer, but it is text such as `O2026-1599`. A status Picqer reports that this crate does not know is kept as `Reported::Unknown`. The tags of an order are an object when it has some and an empty list when it has none, and both are read. `pickup_point_data` and `comment_count` are not read.
 
 ### Suppliers
 
@@ -288,7 +268,7 @@ A product has settings for a warehouse only once they are set. Picqer applies ru
 
 ### Product fields
 
-A value is built from the field: `field.value("x")` checks it against the values of a radio, select or checkbox field, which Picqer does not (it stores any text); the app lets a checkbox take only one value. `field.cleared()` removes the value, which Picqer does when it is sent as `null`. Picqer reports every value as text, also when a number was sent, only reports the fields that have a value, ignores a field it does not know, and does not enforce `required`. The types are `text`, `textarea`, `radio`, `checkbox`, `multicheckbox` and `select`; another type is kept as `Reported::Unknown`. Picqer stores every value as text: an array is stored as its JSON text and `true` as `1`. The app writes the choices of a `multicheckbox` with a semicolon between them, so build that value with `field.choices([...])`, which checks every choice against the field, and read it with `entry.choices()`. 
+A value is built from the field: `field.value("x")` checks it against the values of a radio, select or checkbox field, which Picqer does not (it stores any text); the app lets a checkbox take only one value. `field.cleared()` removes the value, which Picqer does when it is sent as `null`. Picqer reports every value as text, also when a number was sent, only reports the fields that have a value, ignores a field it does not know, and does not enforce `required`. The types are `text`, `textarea`, `radio`, `checkbox`, `multicheckbox` and `select`; another type is kept as `Reported::Unknown`. Picqer stores every value as text: an array is stored as its JSON text and `true` as `1`. The app writes the choices of a `multicheckbox` with a semicolon between them, so build that value with `field.choices([...])`, which checks every choice against the field, and read it with `entry.choices()`. These rules were checked against real fields of all six types.
 
 ### Products
 
@@ -308,9 +288,9 @@ Picqer requires a language when creating one, although its documentation says it
 
 ## What is not included
 
-Not covered: the deprecated order notes and the old JSON push for custom shipping methods, for which Picqer recommends the newer protocol. The requests Picqer makes to endpoints of yours, for webhooks and shipping providers, are described by types and are not requests this crate makes.
+Not covered: `GET /movements`, which exists but has no documentation page and answered an empty list on the account this crate was checked against, so its fields are not known; the deprecated order notes and the old JSON push for custom shipping methods, for which Picqer recommends the newer protocol. The requests Picqer makes to endpoints of yours, for webhooks and shipping providers, are described by types and are not requests this crate makes.
 
-Product fields were checked against real fields of all six types. Pricelists are read only here, as documented.
+Pricelists are read only here, as documented.
 
 ## Testing
 
@@ -326,7 +306,7 @@ PICQER_SUBDOMAIN=... PICQER_API_KEY=... cargo test --test live -- --ignored
 
 The live tests also read a `.env` file in the project root: copy `.env.example` to `.env` and fill it in. Variables that are already set in your environment win over the file. The crate itself never reads `.env`.
 
-The product test leaves one inactive product behind.
+The live tests leave behind what Picqer cannot delete: one inactive product, their deactivated hooks and one fulfilment customer, which the next run reuses. With `PICQER_LIVE_CREATE_BATCHES=1` every run also leaves a completed picklist batch.
 
 ### Documentation drift
 

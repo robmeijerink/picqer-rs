@@ -7,7 +7,7 @@ description = "Unofficial async client for the Picqer API"
 license = "MIT"
 repository = "https://github.com/robmeijerink/picqer-rs"
 readme = "README.md"
-keywords = ["picqer", "warehouse", "fulfilment", "api-client"]
+keywords = ["picqer", "warehouse", "fulfilment", "api-client", "wms"]
 categories = ["api-bindings", "web-programming::http-client"]
 exclude = [".github", "tests", "xtask", ".cargo"]
 
@@ -40,3 +40,8 @@ wiremock = "0.6"
 
 [package.metadata.docs.rs]
 all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[[example]]
+name = "blocking"
+required-features = ["blocking"]
