@@ -6,7 +6,7 @@ Async Rust client for the [Picqer](https://picqer.com) API.
 
 ```toml
 [dependencies]
-picqer-rs = "0.1"
+picqer-rs = "1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 ```
 

@@ -29,7 +29,7 @@ jobs:
 
       - name: Tag matches crate version
         run: |
-          version=$(cargo metadata --no-deps --format-version 1 | jq -r '.packages[0].version')
+          version=$(cargo metadata --no-deps --format-version 1 | jq -r '.packages[] | select(.name == "picqer-rs") | .version')
           if [ "$GITHUB_REF_NAME" != "v$version" ]; then
             echo "tag $GITHUB_REF_NAME does not match Cargo.toml version $version (expected v$version)" >&2
             exit 1
