@@ -20,29 +20,7 @@
 //! # }
 //! ```
 //!
-//! Making an order takes the same few steps:
-//!
-//! ```no_run
-//! use std::num::NonZeroU32;
-//!
-//! use picqer_rs::orders::{NewOrder, NewOrderProduct};
-//! use picqer_rs::types::{CustomerId, NonEmpty, ProductId};
-//! use picqer_rs::Client;
-//!
-//! # async fn run(client: &Client) -> picqer_rs::Result<()> {
-//! let line = NewOrderProduct::by_id(ProductId(1234), NonZeroU32::new(2).unwrap());
-//! let order = NewOrder::for_customer(CustomerId(5678), NonEmpty::new(vec![line])?)
-//!     .reference("webshop-1001");
-//!
-//! let created = client.orders().create(&order).await?;
-//! println!("{} is {:?}", created.orderid, created.status);
-//!
-//! client.orders().process(created.idorder).await?;
-//! let order = client.orders().get(created.idorder).await?;
-//! println!("{} is now {:?}", order.orderid, order.status);
-//! # Ok(())
-//! # }
-//! ```
+//! The `examples` folder of the repository has a runnable example for every part of the crate.
 //!
 //! # Features
 //!
@@ -51,6 +29,7 @@
 //! - `blocking`: the [`blocking`] client with the same operations.
 
 #![forbid(unsafe_code)]
+#![cfg_attr(docsrs, feature(doc_cfg))]
 #![warn(missing_docs)]
 
 #[macro_use]
@@ -65,6 +44,7 @@ mod reported;
 mod serde_util;
 
 #[cfg(feature = "blocking")]
+#[cfg_attr(docsrs, doc(cfg(feature = "blocking")))]
 pub mod blocking;
 
 pub mod backorders;

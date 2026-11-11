@@ -47,14 +47,21 @@ impl Page {
 macro_rules! collect_pages {
     ($page:ident => $fetch:expr) => {{
         let mut all = ::std::vec::Vec::new();
+        let mut previous = ::std::option::Option::None;
         let mut $page = $crate::pagination::Page::FIRST;
         loop {
             let items = $fetch?;
-            let full = items.len() >= $crate::pagination::PAGE_SIZE;
-            all.extend(items);
-            if !full {
+            if items.len() < $crate::pagination::PAGE_SIZE {
+                all.extend(items);
                 break;
             }
+            if previous.as_ref() == ::std::option::Option::Some(&items) {
+                return ::std::result::Result::Err($crate::error::Error::UnexpectedResponse(
+                    "the API sent the same page twice, so it does not follow the offset",
+                ));
+            }
+            previous = ::std::option::Option::Some(items.clone());
+            all.extend(items);
             $page = $page.next();
         }
         Ok(all)

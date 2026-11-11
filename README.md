@@ -126,7 +126,7 @@ An amount is a `Money`, kept in cents. Picqer stores two decimals and accepts ne
 
 ### Pages
 
-Picqer returns at most 100 results and pages by `offset`. Some endpoints, such as the one for products, round an offset down to a multiple of 100, and others skip exactly that many results. A `Page` counts whole pages from zero, which works the same on all of them.
+Picqer returns at most 100 results and pages by `offset`. Some endpoints, such as the one for products, round an offset down to a multiple of 100, and others skip exactly that many results. A `Page` counts whole pages from zero, which works the same on all of them. The calls that follow all pages stop when a page is shorter than 100 results, and fail with `Error::UnexpectedResponse` when a full page comes back identical to the one before it, which means the endpoint ignores the offset.
 
 ### Stock
 

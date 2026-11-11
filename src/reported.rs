@@ -4,7 +4,7 @@ use serde_json::Value;
 
 /// A value reported by the API.
 ///
-/// MyParcel extends its enums regularly. A value this crate knows is returned as
+/// Picqer extends its enums regularly. A value this crate knows is returned as
 /// [`Reported::Known`]; anything else is kept untouched as [`Reported::Unknown`] instead of failing
 /// the whole response. Values sent to the API are always strictly typed.
 #[derive(Debug, Clone, PartialEq, Eq)]

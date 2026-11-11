@@ -229,17 +229,25 @@ async fn filters_and_pages_become_query_parameters() {
 async fn all_pages_are_followed_until_one_is_short() {
     let (server, client) = setup().await;
     let item = json("products")[0].clone();
-    let full: Vec<Value> = (0..100).map(|_| item.clone()).collect();
-    let last: Vec<Value> = (0..7).map(|_| item.clone()).collect();
+    let page = |first: u64, length: u64| -> Vec<Value> {
+        (first..first + length)
+            .map(|id| {
+                let mut product = item.clone();
+                product["idproduct"] = value!(id);
+                product
+            })
+            .collect()
+    };
+    let (first, second, last) = (page(0, 100), page(100, 100), page(200, 7));
     Mock::given(path("/products"))
         .and(query_param_is_missing("offset"))
-        .respond_with(ResponseTemplate::new(200).set_body_json(&full))
+        .respond_with(ResponseTemplate::new(200).set_body_json(&first))
         .expect(1)
         .mount(&server)
         .await;
     Mock::given(path("/products"))
         .and(query_param("offset", "100"))
-        .respond_with(ResponseTemplate::new(200).set_body_json(&full))
+        .respond_with(ResponseTemplate::new(200).set_body_json(&second))
         .expect(1)
         .mount(&server)
         .await;
@@ -256,6 +264,25 @@ async fn all_pages_are_followed_until_one_is_short() {
         .await
         .unwrap();
     assert_eq!(products.len(), 207);
+}
+
+#[tokio::test]
+async fn an_api_that_repeats_a_page_is_an_error_instead_of_a_loop() {
+    let (server, client) = setup().await;
+    let item = json("products")[0].clone();
+    let full: Vec<Value> = (0..100).map(|_| item.clone()).collect();
+    Mock::given(path("/products"))
+        .respond_with(ResponseTemplate::new(200).set_body_json(&full))
+        .expect(2)
+        .mount(&server)
+        .await;
+
+    let error = client
+        .products()
+        .list_all(&ProductQuery::new())
+        .await
+        .unwrap_err();
+    assert!(matches!(error, picqer_rs::Error::UnexpectedResponse(_)));
 }
 
 #[tokio::test]
