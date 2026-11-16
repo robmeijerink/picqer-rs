@@ -1,0 +1,11 @@
+[
+  {
+    "idproduct_supplier": 22993010,
+    "idsupplier": null,
+    "productcode": null,
+    "deliverytime": null,
+    "minimum_purchase_quantity": 0,
+    "purchase_in_quantities_of": 0,
+    "is_default": true
+  }
+]

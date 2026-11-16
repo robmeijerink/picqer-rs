@@ -118,7 +118,7 @@ Use `default-features = false, features = ["native-tls"]` to switch TLS backends
 
 ## Covered
 
-Packagings, shipping providers, shipments, receipts, returns, backorders, tasks, picking containers, webhook subscriptions, stats, webshop orders, fulfilment customers and their reports, the protocol of custom and external shipping providers, picklist batches and their presets, locations, the locations of a product, moving stock, location types and the stock history of locations, templates, users, packing stations, purchase orders, suppliers, picklists, orders, comments, customers (with their addresses and tags), customer fields, order fields, warehouses (with their stock), VAT groups, tags, pricelists, product fields, products (including their tags, pricelist prices, stock, parts, compositions, images, warehouse settings, price histories and expected deliveries) and the stock history. Every list has a call for one page and a call that follows all pages. What is left out is listed under [What is not included](#what-is-not-included).
+Packagings, shipping providers, shipments, receipts, returns, backorders, tasks, picking containers, webhook subscriptions, stats, webshop orders, fulfilment customers and their reports, the protocol of custom and external shipping providers, picklist batches and their presets, locations, the locations of a product, moving stock, location types and the stock history of locations, templates, users, packing stations, purchase orders, suppliers, picklists, orders, comments, customers (with their addresses and tags), customer fields, order fields, warehouses (with their stock), VAT groups, tags, pricelists, product fields, products (including their tags, pricelist prices, stock, suppliers, parts, compositions, images, warehouse settings, price histories and expected deliveries) and the stock history. Every list has a call for one page and a call that follows all pages. What is left out is listed under [What is not included](#what-is-not-included).
 
 ### Money, dates and units
 
@@ -150,7 +150,7 @@ Picqer's documentation calls the number of an order (`orderid`) an integer, but 
 
 ### Suppliers
 
-`suppliers()` lists, fetches, creates and changes suppliers. Picqer cannot delete a supplier and requires its name to be unique. Picqer replaces a language it does not offer with `en` and does not check the country, so only `nl` and `en` and an ISO country can be sent. `active`, `idtemplate`, `minimum_order_total`, `full_address` and `comment_count` are reported but not documented, and are not read.
+`suppliers()` lists, fetches, creates and changes suppliers. Picqer cannot delete a supplier and requires its name to be unique. Picqer replaces a language it does not offer with `en` and does not check the country, so only `nl`, `en`, `de`, `fr` and an ISO country can be sent. `active`, `idtemplate`, `minimum_order_total`, `full_address` and `comment_count` are reported but not documented, and are not read.
 
 ### Packagings, shipping providers, templates and users
 
@@ -248,7 +248,7 @@ Picqer answers adding a comment with `200` instead of `201`, sends `images` and 
 
 ### Customers
 
-Your own number for a customer is `customerid`. Picqer's documentation calls it an integer, but it reports and accepts text such as `ABC-1`, so it is a `CustomerNumber`. A new address needs a country: the documentation calls it optional, but Picqer refuses to change an address without one. An empty address name would be replaced by the name of the customer, so it is refused too. A discount can be 0 to 100 percent when sent, although Picqer stores any number and reports what it stored. Only `nl` and `en` are accepted as a language; Picqer refused the other languages it was tried with.
+Your own number for a customer is `customerid`. Picqer's documentation calls it an integer, but it reports and accepts text such as `ABC-1`, so it is a `CustomerNumber`. A new address needs a country: the documentation calls it optional, but Picqer refuses to change an address without one. An empty address name would be replaced by the name of the customer, so it is refused too. A discount can be 0 to 100 percent when sent, although Picqer stores any number and reports what it stored. Only `nl`, `en`, `de` and `fr` are accepted as a language; Picqer refused the other languages it was tried with.
 
 The addresses of a customer are changed through their own calls, because Picqer ignores them in a change of the customer.
 
@@ -274,13 +274,15 @@ A value is built from the field: `field.value("x")` checks it against the values
 
 `products().list` lists the active products. `ProductStatus::Inactive` lists the inactive ones: Picqer treats the presence of the `inactive` parameter as asking for them, whatever its value, so the active ones are asked for by leaving it out.
 
+`products().suppliers` lists the suppliers of a product with the purchase details of each, the default supplier first, and `add_supplier`, `update_supplier` and `remove_supplier` manage them. The supplier fields on the product itself always show the default supplier. A product that has purchase details without a supplier has an entry with no `idsupplier`, and no supplier can be added to it. An account of Picqer Fulfilment can link one supplier per product and refuses a second one with error code `31`, so the rules for more than one supplier (making another one the default, the default moving when it is removed, the error codes `37` and `38`) are taken from the documentation, not checked against an account. Picqer stores an empty code as no code and accepts negative numbers and zero for the purchase details, so the code is one to 255 characters and the numbers are not negative.
+
 Picqer does not delete products. `inactivate` is the closest: a product can only be made inactive when it has no stock, is in no compositions and is on no open picklists, backorders or purchase orders.
 
 ### Fulfilment customers
 
 `fulfilment_customers()` lists, fetches, creates and changes the customers of Picqer Fulfilment, and `report` gives the statistics of one over a period (`ReportPeriod`; without one Picqer reports the current month). Picqer has no call to delete a fulfilment customer, so one that was made stays.
 
-Picqer requires a language when creating one, although its documentation says it is optional, so `NewFulfilmentCustomer::new` takes it. It does not check the email address, a username without a password or a login without a username, and it takes an unknown shipping profile as none. The shipping profiles are only in a single customer, not in the list. The password is write-only and wiped on drop.
+Picqer requires a language when creating one, although its documentation says it is optional, so `NewFulfilmentCustomer::new` takes it. It takes `nl` and `en` as a language, and `de` only when German is an interface language of the account, and refuses `fr`. It does not check the email address, a username without a password or a login without a username, and it takes an unknown shipping profile as none. The shipping profiles are only in a single customer, not in the list. The password is write-only and wiped on drop.
 
 ### Custom and external shipping providers
 

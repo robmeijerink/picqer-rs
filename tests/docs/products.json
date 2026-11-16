@@ -71,6 +71,26 @@
     },
     {
       "method": "GET",
+      "path": "/products/{idproduct}/suppliers"
+    },
+    {
+      "method": "GET",
+      "path": "/products/{idproduct}/suppliers/{idproduct_supplier}"
+    },
+    {
+      "method": "POST",
+      "path": "/products/{idproduct}/suppliers"
+    },
+    {
+      "method": "PUT",
+      "path": "/products/{idproduct}/suppliers/{idproduct_supplier}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/products/{idproduct}/suppliers/{idproduct_supplier}"
+    },
+    {
+      "method": "GET",
       "path": "/products/{idproduct}/pricehistory"
     },
     {
@@ -245,6 +265,46 @@
           "pricelists.price",
           "float",
           "required"
+        ],
+        [
+          "suppliers",
+          "array",
+          "generated"
+        ],
+        [
+          "suppliers.idproduct_supplier",
+          "integer",
+          "generated"
+        ],
+        [
+          "suppliers.idsupplier",
+          "integer",
+          "generated"
+        ],
+        [
+          "suppliers.productcode",
+          "string",
+          "generated"
+        ],
+        [
+          "suppliers.deliverytime",
+          "integer",
+          "generated"
+        ],
+        [
+          "suppliers.minimum_purchase_quantity",
+          "integer",
+          "generated"
+        ],
+        [
+          "suppliers.purchase_in_quantities_of",
+          "integer",
+          "generated"
+        ],
+        [
+          "suppliers.is_default",
+          "boolean",
+          "generated"
         ]
       ]
     },

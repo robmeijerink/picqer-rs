@@ -9,7 +9,7 @@ use crate::stock::StockLevel;
 use crate::tags::Tag;
 use crate::types::{
     Centimeters, DateTime, FulfilmentCustomerId, Grams, Money, ProductFieldId, ProductId,
-    SupplierId, VatGroupId,
+    ProductSupplierId, SupplierId, VatGroupId,
 };
 
 use crate::pricelists::PricelistPrice;
@@ -42,13 +42,14 @@ string_enum! {
 
 /// A supplier of a product, with the terms of that supplier.
 ///
-/// The attribute table and the examples of the documentation do not list this, but the API reports
-/// it. A product without a supplier still has one entry, for the default supplier, and that entry
-/// has no supplier.
+/// A product can have more than one. A product that has purchase details without a supplier has
+/// an entry without a supplier, and a product that has neither has no entries.
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize)]
 #[non_exhaustive]
 pub struct ProductSupplier {
-    /// The supplier, which is missing in the entry of a product that has none.
+    /// This supplier on this product, as the endpoints for the suppliers of a product take it.
+    pub idproduct_supplier: ProductSupplierId,
+    /// The supplier, which is missing in the entry of a product that has purchase details only.
     pub idsupplier: Option<SupplierId>,
     /// The code of the product at the supplier.
     pub productcode: Option<String>,

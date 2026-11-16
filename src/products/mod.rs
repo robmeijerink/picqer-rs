@@ -8,6 +8,7 @@ mod query;
 mod request;
 mod response;
 mod settings;
+mod suppliers;
 
 pub use history::{ExpectedDelivery, FixedStockPriceChange, PriceChange};
 pub use images::{ImageType, NewProductImage, ProductImage};
@@ -22,6 +23,8 @@ pub use query::{ProductQuery, ProductStatus};
 pub use request::{NewProduct, ProductChanges, ProductFieldValue};
 pub use response::{AbcClassification, Product, ProductFieldEntry, ProductSupplier, ProductType};
 pub use settings::{WarehouseSettings, WarehouseSettingsChanges};
+pub use suppliers::{NewProductSupplier, ProductSupplierChanges, SupplierProductCode};
+pub(crate) use suppliers::{add_supplier, remove_supplier, supplier, suppliers, update_supplier};
 
 use std::num::NonZeroU32;
 
@@ -517,6 +520,67 @@ macro_rules! products_methods {
             image: $crate::types::ProductImageId,
         ) -> $crate::error::Result<()> {
             self.client.execute($crate::products::remove_image(id, image)) $(.$await)?
+        }
+
+        /// Lists the suppliers of a product with their purchase details, the default supplier first.
+        ///
+        /// Purchase details without a supplier are included, with no `idsupplier`. A virtual
+        /// composition or a product with unlimited stock has no suppliers.
+        pub $($async)? fn suppliers(
+            &self,
+            id: $crate::types::ProductId,
+        ) -> $crate::error::Result<Vec<$crate::products::ProductSupplier>> {
+            self.client.execute($crate::products::suppliers(id)) $(.$await)?
+        }
+
+        /// Fetches one supplier of a product. Picqer answers `404` for one of another product.
+        pub $($async)? fn supplier(
+            &self,
+            id: $crate::types::ProductId,
+            supplier: $crate::types::ProductSupplierId,
+        ) -> $crate::error::Result<$crate::products::ProductSupplier> {
+            self.client.execute($crate::products::supplier(id, supplier)) $(.$await)?
+        }
+
+        /// Links a supplier to a product.
+        ///
+        /// Picqer refuses it with `37` when the supplier is linked already, with `38` for a virtual
+        /// composition or a product with unlimited stock, and with `39` when the product has
+        /// purchase details without a supplier. An account of Picqer Fulfilment can link one
+        /// supplier per product and refuses a second one with `31`.
+        pub $($async)? fn add_supplier(
+            &self,
+            id: $crate::types::ProductId,
+            supplier: &$crate::products::NewProductSupplier,
+        ) -> $crate::error::Result<$crate::products::ProductSupplier> {
+            self.client.execute($crate::products::add_supplier(id, supplier)?) $(.$await)?
+        }
+
+        /// Changes the purchase details of a supplier of a product, or makes it the default.
+        ///
+        /// Picqer refuses it with `39` when it would unset the default supplier or change the
+        /// supplier itself.
+        pub $($async)? fn update_supplier(
+            &self,
+            id: $crate::types::ProductId,
+            supplier: $crate::types::ProductSupplierId,
+            changes: &$crate::products::ProductSupplierChanges,
+        ) -> $crate::error::Result<$crate::products::ProductSupplier> {
+            self.client.execute($crate::products::update_supplier(id, supplier, changes)?) $(.$await)?
+        }
+
+        /// Unlinks a supplier from a product, with its purchase details. This also works for
+        /// purchase details without a supplier.
+        ///
+        /// When the default supplier is removed, the supplier that was linked first of the others
+        /// becomes the default. When the only supplier is removed, the supplier fields of the
+        /// product are cleared.
+        pub $($async)? fn remove_supplier(
+            &self,
+            id: $crate::types::ProductId,
+            supplier: $crate::types::ProductSupplierId,
+        ) -> $crate::error::Result<()> {
+            self.client.execute($crate::products::remove_supplier(id, supplier)) $(.$await)?
         }
 
         /// Lists the changes of the price of a product.

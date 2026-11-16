@@ -3775,6 +3775,172 @@ async fn a_picklist_can_be_changed_picked_split_and_cancelled() {
 
 #[tokio::test]
 #[ignore = "needs a Picqer account"]
+async fn the_suppliers_of_a_product_can_be_linked_changed_and_removed() {
+    use picqer_rs::ErrorCode;
+    use picqer_rs::products::{NewProductSupplier, ProductSupplierChanges, SupplierProductCode};
+
+    let client = client();
+    let products = client.products();
+    let code = ProductCode::new("picqer-rs-live-product-suppliers").unwrap();
+    let product = match products.find_by_productcode(&code).await.unwrap() {
+        Some(existing) => {
+            products.activate(existing.idproduct).await.unwrap();
+            existing.idproduct
+        }
+        None => {
+            let vat_group = client.vat_groups().list_all().await.unwrap()[0].idvatgroup;
+            products
+                .create(&NewProduct::new(
+                    vat_group,
+                    code.clone(),
+                    ProductName::new("picqer-rs live test product suppliers").unwrap(),
+                    Money::from_cents(100).unwrap(),
+                ))
+                .await
+                .unwrap()
+                .idproduct
+        }
+    };
+    for left_over in products.suppliers(product).await.unwrap() {
+        products
+            .remove_supplier(product, left_over.idproduct_supplier)
+            .await
+            .unwrap();
+    }
+    assert!(products.suppliers(product).await.unwrap().is_empty());
+
+    let suppliers = client.suppliers().list_all().await.unwrap();
+    let first = suppliers[0].idsupplier;
+    let second = suppliers[1].idsupplier;
+    let linked = products
+        .add_supplier(product, &NewProductSupplier::new(first))
+        .await
+        .unwrap();
+    assert_eq!(linked.idsupplier, Some(first));
+    assert_eq!(linked.is_default, Some(true));
+    assert_eq!(linked.productcode, None);
+    assert_eq!(linked.deliverytime, None);
+    assert_eq!(products.get(product).await.unwrap().idsupplier, Some(first));
+
+    match products
+        .add_supplier(product, &NewProductSupplier::new(second))
+        .await
+    {
+        Err(error) => {
+            let api = error.as_api().unwrap();
+            assert_eq!(api.status, 400);
+            assert_eq!(
+                api.code,
+                Some(Reported::Known(ErrorCode::NotAvailableForFulfilment))
+            );
+        }
+        Ok(extra) => {
+            assert_eq!(extra.is_default, Some(false));
+            assert_eq!(products.suppliers(product).await.unwrap().len(), 2);
+            products
+                .remove_supplier(product, extra.idproduct_supplier)
+                .await
+                .unwrap();
+        }
+    }
+
+    let changed = products
+        .update_supplier(
+            product,
+            linked.idproduct_supplier,
+            &ProductSupplierChanges::new()
+                .productcode(SupplierProductCode::new("picqer-rs-live").unwrap())
+                .deliverytime(3)
+                .minimum_purchase_quantity(10)
+                .purchase_in_quantities_of(5)
+                .make_default(),
+        )
+        .await
+        .unwrap();
+    assert_eq!(changed.productcode.as_deref(), Some("picqer-rs-live"));
+    assert_eq!(changed.deliverytime, Some(3));
+    assert_eq!(changed.minimum_purchase_quantity, Some(10));
+    assert_eq!(changed.purchase_in_quantities_of, Some(5));
+    assert_eq!(changed.is_default, Some(true));
+    let kept = products
+        .update_supplier(
+            product,
+            linked.idproduct_supplier,
+            &ProductSupplierChanges::new().deliverytime(4),
+        )
+        .await
+        .unwrap();
+    assert_eq!(kept.deliverytime, Some(4));
+    assert_eq!(kept.productcode.as_deref(), Some("picqer-rs-live"));
+    let on_product = products.get(product).await.unwrap();
+    assert_eq!(
+        on_product.productcode_supplier.as_deref(),
+        Some("picqer-rs-live")
+    );
+    assert_eq!(on_product.deliverytime, Some(4));
+    assert_eq!(
+        on_product.suppliers.unwrap()[0].idproduct_supplier,
+        linked.idproduct_supplier
+    );
+
+    let cleared = products
+        .update_supplier(
+            product,
+            linked.idproduct_supplier,
+            &ProductSupplierChanges::new()
+                .without_productcode()
+                .without_deliverytime()
+                .without_minimum_purchase_quantity()
+                .without_purchase_in_quantities_of(),
+        )
+        .await
+        .unwrap();
+    assert_eq!(cleared.productcode, None);
+    assert_eq!(cleared.deliverytime, None);
+    assert_eq!(cleared.minimum_purchase_quantity, None);
+    assert_eq!(cleared.purchase_in_quantities_of, None);
+    assert_eq!(
+        products
+            .supplier(product, linked.idproduct_supplier)
+            .await
+            .unwrap(),
+        cleared
+    );
+
+    let other = products
+        .list(&ProductQuery::new(), picqer_rs::pagination::Page::FIRST)
+        .await
+        .unwrap()
+        .into_iter()
+        .find(|other| other.idproduct != product)
+        .unwrap()
+        .idproduct;
+    assert!(
+        products
+            .supplier(other, linked.idproduct_supplier)
+            .await
+            .unwrap_err()
+            .is_not_found()
+    );
+
+    products
+        .remove_supplier(product, linked.idproduct_supplier)
+        .await
+        .unwrap();
+    assert!(products.suppliers(product).await.unwrap().is_empty());
+    assert_eq!(products.get(product).await.unwrap().idsupplier, None);
+    assert!(
+        products
+            .remove_supplier(product, linked.idproduct_supplier)
+            .await
+            .unwrap_err()
+            .is_not_found()
+    );
+    products.inactivate(product).await.unwrap();
+}
+
+#[tokio::test]
+#[ignore = "needs a Picqer account"]
 async fn a_supplier_can_be_created_and_changed() {
     use picqer_rs::customers::Language;
     use picqer_rs::suppliers::{NewSupplier, SupplierChanges, SupplierName};
@@ -3813,6 +3979,17 @@ async fn a_supplier_can_be_created_and_changed() {
     assert_eq!(changed.country, Some(Reported::Known(CountryCode::BE)));
     assert_eq!(changed.language, Some(Reported::Known(Language::En)));
     assert_eq!(changed.city.as_deref(), Some("Antwerpen"));
+    for language in [Language::De, Language::Fr] {
+        let changed = client
+            .suppliers()
+            .update(
+                supplier.idsupplier,
+                &SupplierChanges::new().language(language),
+            )
+            .await
+            .unwrap();
+        assert_eq!(changed.language, Some(Reported::Known(language)));
+    }
     let back = client
         .suppliers()
         .update(

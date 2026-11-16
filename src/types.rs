@@ -186,6 +186,12 @@ id_type! {
 }
 
 id_type! {
+    /// Identifier of the link between a product and one of its suppliers, with the purchase details
+    /// of that supplier.
+    ProductSupplierId
+}
+
+id_type! {
     /// Identifier of a purchase order.
     PurchaseOrderId
 }

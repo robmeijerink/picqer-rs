@@ -60,6 +60,7 @@
   ],
   "suppliers": [
     {
+      "idproduct_supplier": 22991596,
       "idsupplier": 229481,
       "productcode": "SUP-1",
       "deliverytime": 3,

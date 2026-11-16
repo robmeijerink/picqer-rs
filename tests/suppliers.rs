@@ -38,7 +38,7 @@ async fn what_picqer_stores_is_read_even_when_it_would_not_be_sent() {
     let (server, client) = setup().await;
     let mut supplier = common::json("supplier");
     supplier["country"] = json!("NLD");
-    supplier["language"] = json!("de");
+    supplier["language"] = json!("es");
     Mock::given(path("/suppliers/1"))
         .respond_with(ResponseTemplate::new(200).set_body_json(supplier))
         .mount(&server)

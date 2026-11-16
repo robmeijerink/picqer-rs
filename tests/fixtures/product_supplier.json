@@ -1,0 +1,9 @@
+{
+  "idproduct_supplier": 23180285,
+  "idsupplier": 229481,
+  "productcode": "P-1",
+  "deliverytime": 3,
+  "minimum_purchase_quantity": 10,
+  "purchase_in_quantities_of": 5,
+  "is_default": true
+}

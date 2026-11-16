@@ -103,7 +103,8 @@ pub struct NewFulfilmentCustomer {
 }
 
 impl NewFulfilmentCustomer {
-    /// A fulfilment customer with a name and the language of the portal.
+    /// A fulfilment customer with a name and the language of the portal. Picqer refuses `fr`, and
+    /// `de` when German is not an interface language of the account.
     pub fn new(name: FulfilmentCustomerName, language: Language) -> Self {
         let mut fields = Map::new();
         fields.insert("name".into(), json!(name));
@@ -191,7 +192,8 @@ impl FulfilmentCustomerChanges {
         self
     }
 
-    /// Changes the language of the portal.
+    /// Changes the language of the portal. Picqer refuses `fr` here, and `de` when German is not an
+    /// interface language of the account.
     pub fn language(mut self, language: Language) -> Self {
         self.fields.insert("language".into(), json!(language));
         self

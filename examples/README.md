@@ -25,6 +25,7 @@ that need an id of your account take it as an argument, and each one starts with
 | `custom_fields` | Values of product, order and customer fields | writes |
 | `compositions` | Parts of a composition, its compositions and producing | writes |
 | `images` | Adding and removing a product image | writes |
+| `product_suppliers` | Linking a supplier to a product, changing its purchase details and removing it | writes, cleans up |
 | `customers` | Customers with an address and a tag | writes, cleans up |
 | `picklist_workflow` | Picking, shipping and closing a picklist | writes |
 | `picklist_batches` | Open batches, adding and removing a picklist, presets | writes, cleans up |

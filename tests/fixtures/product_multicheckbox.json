@@ -63,6 +63,7 @@
   "pricelists": [],
   "suppliers": [
     {
+      "idproduct_supplier": 22993010,
       "idsupplier": null,
       "productcode": null,
       "deliverytime": null,

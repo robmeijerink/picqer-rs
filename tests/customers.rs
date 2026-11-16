@@ -64,7 +64,7 @@ async fn what_picqer_stores_is_read_even_when_it_would_not_be_sent() {
     let (server, client) = setup().await;
     let mut customer = common::json("customer_full");
     customer["discount"] = json!(150);
-    customer["language"] = json!("de");
+    customer["language"] = json!("es");
     customer["addresses"][0]["country"] = json!("nl");
     Mock::given(path("/customers/5"))
         .respond_with(ResponseTemplate::new(200).set_body_json(customer))
@@ -75,7 +75,7 @@ async fn what_picqer_stores_is_read_even_when_it_would_not_be_sent() {
     assert_eq!(customer.discount.unwrap().get(), 150.0);
     assert_eq!(
         customer.language,
-        Some(Reported::Unknown(Value::from("de")))
+        Some(Reported::Unknown(Value::from("es")))
     );
     assert_eq!(
         customer.addresses[0].country,

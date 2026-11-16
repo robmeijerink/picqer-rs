@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0 - 2026-11-16
+
+Follows the Picqer API changes of 10 and 13 November 2026.
+
+- Add the suppliers of a product, which a product can have more than one of since 13 November: `products().suppliers`, `supplier`, `add_supplier`, `update_supplier` and `remove_supplier`, with `NewProductSupplier`, `ProductSupplierChanges`, `SupplierProductCode` and `ProductSupplierId`. An account of Picqer Fulfilment can link one supplier per product. The rules for more than one supplier are taken from the documentation, because they could not be checked against such an account.
+- `ProductSupplier` has `idproduct_supplier`, which the new calls take.
+- `Language` has `De` and `Fr`, which Picqer accepts for orders, customers, purchase orders, suppliers and returns since 10 November. A fulfilment customer takes `de` only when German is an interface language of the account, and refuses `fr`.
+- Add the `product_suppliers` example.
+- Refresh the snapshot of the documentation.
+
 ## 1.0.0 - 2026-11-11
 
 - Add an `examples` folder with a runnable example for every part of the crate, and an overview in `examples/README.md`.

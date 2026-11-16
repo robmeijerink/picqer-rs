@@ -50,6 +50,7 @@
     "pricelists": [],
     "suppliers": [
       {
+        "idproduct_supplier": 22991596,
         "idsupplier": 229481,
         "productcode": "NIK-AF863248",
         "deliverytime": null,
@@ -112,6 +113,7 @@
     "pricelists": [],
     "suppliers": [
       {
+        "idproduct_supplier": 22991623,
         "idsupplier": 229480,
         "productcode": "NES-AI229209",
         "deliverytime": null,

@@ -152,8 +152,8 @@ impl NewPurchaseOrder {
         self
     }
 
-    /// Sets the language. Picqer replaces a language it does not offer with `en`, so only the two
-    /// it offers can be sent.
+    /// Sets the language. Picqer replaces a language it does not offer with `en`, so only the
+    /// languages of [`Language`] can be sent.
     pub fn language(mut self, language: Language) -> Self {
         self.language = Some(language);
         self

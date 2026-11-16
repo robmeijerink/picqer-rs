@@ -104,7 +104,7 @@ macro_rules! supplier_setters {
             /// Sets remarks.
             remarks: String,
             /// Sets the language. Picqer replaces a language it does not offer with `en`, so only
-            /// the two it offers can be sent.
+            /// the languages of [`Language`] can be sent.
             language: Language,
         }
     };

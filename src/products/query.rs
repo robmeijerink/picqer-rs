@@ -58,7 +58,7 @@ impl ProductQuery {
         self
     }
 
-    /// Lists the products linked to a supplier.
+    /// Lists the products linked to a supplier, as the default supplier or as an extra one.
     pub fn idsupplier(mut self, idsupplier: SupplierId) -> Self {
         self.idsupplier = Some(idsupplier);
         self

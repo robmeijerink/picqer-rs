@@ -12,13 +12,18 @@ use crate::types::{
 string_enum! {
     /// The language of a customer, used for what is sent to them.
     ///
-    /// These are the two languages Picqer accepted on the account this was checked against. It
-    /// refused `de`, `fr` and others.
+    /// Orders, customers, purchase orders, suppliers and returns take all four. A fulfilment
+    /// customer takes `de` only when German is an interface language of the account, and refuses
+    /// `fr`. Picqer refused the other languages it was tried with.
     pub enum Language {
         /// Dutch.
         Nl = "nl",
         /// English.
         En = "en",
+        /// German.
+        De = "de",
+        /// French.
+        Fr = "fr",
     }
 }
 
